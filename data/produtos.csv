@@ -1,501 +1,501 @@
-sku_id,produto_nome,categoria,custo_unitario,preco_venda,lead_time_dias,vendas_mensais_base
-1,Fone Bluetooth,Eletrônicos,1147.67,2115.69,42,5.5
-2,Carregador Turbo,Eletrônicos,1579.98,2137.55,49,51.4
-3,Cabo USB-C,Eletrônicos,874.21,1325.89,35,15.0
-4,Caixa de Som,Eletrônicos,937.91,1551.7,33,3.5
-5,Adaptador HDMI,Eletrônicos,1142.59,2163.98,39,10.6
-6,Mouse sem Fio,Eletrônicos,136.46,186.9,31,11.2
-7,Teclado Compacto,Eletrônicos,1655.87,2808.48,38,2.9
-8,Hub USB,Eletrônicos,80.52,117.22,40,6.0
-9,Fone Bluetooth v2,Eletrônicos,702.99,950.48,44,7.5
-10,Carregador Turbo v2,Eletrônicos,1591.78,2595.21,50,4.0
-11,Cabo USB-C v2,Eletrônicos,1350.68,1891.39,32,15.2
-12,Caixa de Som v2,Eletrônicos,688.6,1156.16,41,4.1
-13,Adaptador HDMI v2,Eletrônicos,622.08,891.2,36,12.6
-14,Mouse sem Fio v2,Eletrônicos,1086.59,1828.49,50,16.5
-15,Teclado Compacto v2,Eletrônicos,322.37,513.27,36,11.1
-16,Hub USB v2,Eletrônicos,1744.02,2560.66,32,6.1
-17,Fone Bluetooth v3,Eletrônicos,1580.89,2709.99,41,47.3
-18,Carregador Turbo v3,Eletrônicos,1632.82,2715.94,29,10.5
-19,Cabo USB-C v3,Eletrônicos,1674.56,2769.35,26,11.9
-20,Caixa de Som v3,Eletrônicos,1051.27,1636.78,30,8.6
-21,Adaptador HDMI v3,Eletrônicos,126.22,231.22,42,9.6
-22,Mouse sem Fio v3,Eletrônicos,1367.31,1864.82,39,3.7
-23,Teclado Compacto v3,Eletrônicos,273.83,515.33,28,5.5
-24,Hub USB v3,Eletrônicos,1578.69,2430.1,45,7.2
-25,Fone Bluetooth v4,Eletrônicos,678.42,1109.56,41,27.2
-26,Carregador Turbo v4,Eletrônicos,1684.15,2278.4,48,13.9
-27,Cabo USB-C v4,Eletrônicos,297.97,470.91,51,16.3
-28,Caixa de Som v4,Eletrônicos,1439.86,2350.07,50,2.0
-29,Adaptador HDMI v4,Eletrônicos,405.43,628.3,28,2.3
-30,Mouse sem Fio v4,Eletrônicos,1057.6,1625.57,30,15.3
-31,Teclado Compacto v4,Eletrônicos,833.39,1574.45,29,10.2
-32,Hub USB v4,Eletrônicos,1352.42,2257.67,40,7.8
-33,Fone Bluetooth v5,Eletrônicos,776.26,1441.92,27,47.3
-34,Carregador Turbo v5,Eletrônicos,1714.63,2551.45,27,6.7
-35,Cabo USB-C v5,Eletrônicos,1307.73,2218.29,53,9.3
-36,Caixa de Som v5,Eletrônicos,413.07,569.16,55,70.4
-37,Adaptador HDMI v5,Eletrônicos,1521.89,2148.64,48,55.0
-38,Mouse sem Fio v5,Eletrônicos,1207.14,1833.24,43,2.3
-39,Teclado Compacto v5,Eletrônicos,1152.9,1959.21,27,21.2
-40,Hub USB v5,Eletrônicos,1389.41,2498.68,30,4.0
-41,Fone Bluetooth v6,Eletrônicos,1649.24,2953.99,47,8.7
-42,Carregador Turbo v6,Eletrônicos,141.17,192.93,52,11.6
-43,Cabo USB-C v6,Eletrônicos,492.51,715.68,55,7.7
-44,Caixa de Som v6,Eletrônicos,348.86,601.03,42,11.7
-45,Adaptador HDMI v6,Eletrônicos,1692.71,2786.4,44,8.5
-46,Mouse sem Fio v6,Eletrônicos,392.78,654.34,50,22.1
-47,Teclado Compacto v6,Eletrônicos,1730.52,3149.04,25,2.5
-48,Hub USB v6,Eletrônicos,256.13,434.05,26,31.2
-49,Fone Bluetooth v7,Eletrônicos,1561.29,2792.24,34,10.5
-50,Carregador Turbo v7,Eletrônicos,403.27,671.65,29,11.4
-51,Cabo USB-C v7,Eletrônicos,227.47,389.81,26,20.2
-52,Caixa de Som v7,Eletrônicos,629.27,1099.41,44,5.5
-53,Adaptador HDMI v7,Eletrônicos,341.03,465.4,40,102.0
-54,Mouse sem Fio v7,Eletrônicos,1703.96,2655.84,45,13.3
-55,Teclado Compacto v7,Eletrônicos,1203.6,1691.79,43,14.6
-56,Hub USB v7,Eletrônicos,1505.16,2343.94,36,2.0
-57,Fone Bluetooth v8,Eletrônicos,434.2,645.25,31,7.9
-58,Carregador Turbo v8,Eletrônicos,1369.75,2285.4,35,5.3
-59,Cabo USB-C v8,Eletrônicos,1387.93,1973.77,40,14.0
-60,Caixa de Som v8,Eletrônicos,1637.12,2452.54,29,4.7
-61,Adaptador HDMI v8,Eletrônicos,1138.67,1654.41,25,11.7
-62,Mouse sem Fio v8,Eletrônicos,1296.93,1819.91,38,58.0
-63,Teclado Compacto v8,Eletrônicos,1496.83,2575.76,35,17.3
-64,Hub USB v8,Eletrônicos,1377.98,2004.91,36,10.3
-65,Fone Bluetooth v9,Eletrônicos,1362.1,2510.52,42,62.1
-66,Carregador Turbo v9,Eletrônicos,1181.47,2063.48,28,64.7
-67,Cabo USB-C v9,Eletrônicos,1526.86,2713.86,43,16.7
-68,Caixa de Som v9,Eletrônicos,1381.52,2440.77,37,61.1
-69,Adaptador HDMI v9,Eletrônicos,718.03,1135.11,39,66.9
-70,Mouse sem Fio v9,Eletrônicos,734.28,1212.6,26,4.4
-71,Organizador Multiuso,Casa e Utilidades,251.73,634.22,22,10.8
-72,Jogo de Panelas,Casa e Utilidades,297.99,520.88,23,5.7
-73,Luminária de Mesa,Casa e Utilidades,277.36,478.0,24,61.8
-74,Cortina Blackout,Casa e Utilidades,65.39,142.22,16,16.3
-75,Tapete Antiderrapante,Casa e Utilidades,69.31,174.27,30,10.4
-76,Suporte de Prateleira,Casa e Utilidades,149.92,244.75,19,3.9
-77,Organizador Multiuso v2,Casa e Utilidades,220.13,452.37,30,61.8
-78,Jogo de Panelas v2,Casa e Utilidades,276.15,509.93,16,11.1
-79,Luminária de Mesa v2,Casa e Utilidades,50.6,82.63,35,59.1
-80,Cortina Blackout v2,Casa e Utilidades,260.24,542.4,25,8.1
-81,Tapete Antiderrapante v2,Casa e Utilidades,90.77,193.06,31,10.0
-82,Suporte de Prateleira v2,Casa e Utilidades,167.82,334.9,20,22.3
-83,Organizador Multiuso v3,Casa e Utilidades,66.12,114.8,22,19.8
-84,Jogo de Panelas v3,Casa e Utilidades,80.74,207.49,17,27.3
-85,Luminária de Mesa v3,Casa e Utilidades,156.75,394.22,31,25.5
-86,Cortina Blackout v3,Casa e Utilidades,33.92,62.3,15,4.2
-87,Tapete Antiderrapante v3,Casa e Utilidades,231.87,563.21,35,4.3
-88,Suporte de Prateleira v3,Casa e Utilidades,209.22,488.67,30,8.4
-89,Organizador Multiuso v4,Casa e Utilidades,230.61,407.22,23,3.7
-90,Jogo de Panelas v4,Casa e Utilidades,281.94,494.84,34,16.7
-91,Luminária de Mesa v4,Casa e Utilidades,290.15,631.19,24,19.9
-92,Cortina Blackout v4,Casa e Utilidades,215.31,483.09,31,4.0
-93,Tapete Antiderrapante v4,Casa e Utilidades,133.3,305.54,19,51.8
-94,Suporte de Prateleira v4,Casa e Utilidades,74.58,160.47,32,10.0
-95,Organizador Multiuso v5,Casa e Utilidades,222.43,359.32,28,7.0
-96,Jogo de Panelas v5,Casa e Utilidades,220.33,467.83,35,36.0
-97,Luminária de Mesa v5,Casa e Utilidades,175.4,378.53,15,8.2
-98,Cortina Blackout v5,Casa e Utilidades,194.86,419.09,34,5.9
-99,Tapete Antiderrapante v5,Casa e Utilidades,78.33,140.65,20,32.6
-100,Suporte de Prateleira v5,Casa e Utilidades,228.83,527.98,33,5.1
-101,Organizador Multiuso v6,Casa e Utilidades,147.76,328.08,15,19.8
-102,Jogo de Panelas v6,Casa e Utilidades,130.75,282.2,32,11.5
-103,Luminária de Mesa v6,Casa e Utilidades,123.42,255.06,16,14.2
-104,Cortina Blackout v6,Casa e Utilidades,250.64,496.51,30,2.4
-105,Tapete Antiderrapante v6,Casa e Utilidades,142.48,329.54,33,14.6
-106,Suporte de Prateleira v6,Casa e Utilidades,180.17,388.78,15,6.4
-107,Organizador Multiuso v7,Casa e Utilidades,181.33,366.4,17,24.1
-108,Jogo de Panelas v7,Casa e Utilidades,137.76,358.05,18,2.7
-109,Luminária de Mesa v7,Casa e Utilidades,120.91,263.76,31,17.2
-110,Cortina Blackout v7,Casa e Utilidades,91.07,226.25,34,90.8
-111,Tapete Antiderrapante v7,Casa e Utilidades,35.89,88.52,19,4.9
-112,Suporte de Prateleira v7,Casa e Utilidades,134.77,327.23,21,5.1
-113,Organizador Multiuso v8,Casa e Utilidades,233.85,481.28,32,22.8
-114,Jogo de Panelas v8,Casa e Utilidades,105.22,242.69,22,10.1
-115,Luminária de Mesa v8,Casa e Utilidades,223.86,541.17,25,9.0
-116,Cortina Blackout v8,Casa e Utilidades,85.16,191.04,24,13.1
-117,Tapete Antiderrapante v8,Casa e Utilidades,88.57,183.92,18,13.0
-118,Suporte de Prateleira v8,Casa e Utilidades,289.18,546.3,26,6.3
-119,Organizador Multiuso v9,Casa e Utilidades,34.23,69.24,35,4.7
-120,Jogo de Panelas v9,Casa e Utilidades,54.03,103.81,31,11.2
-121,Luminária de Mesa v9,Casa e Utilidades,278.11,627.52,27,17.0
-122,Cortina Blackout v9,Casa e Utilidades,112.99,209.82,28,3.5
-123,Tapete Antiderrapante v9,Casa e Utilidades,55.39,113.07,19,15.7
-124,Suporte de Prateleira v9,Casa e Utilidades,64.51,121.49,28,5.1
-125,Organizador Multiuso v10,Casa e Utilidades,67.37,118.91,35,17.0
-126,Jogo de Panelas v10,Casa e Utilidades,61.43,114.85,24,8.7
-127,Luminária de Mesa v10,Casa e Utilidades,190.88,382.96,32,17.9
-128,Cortina Blackout v10,Casa e Utilidades,278.29,693.91,23,25.5
-129,Tapete Antiderrapante v10,Casa e Utilidades,204.04,448.96,22,43.4
-130,Suporte de Prateleira v10,Casa e Utilidades,267.57,458.71,31,34.6
-131,Organizador Multiuso v11,Casa e Utilidades,251.82,633.35,34,3.7
-132,Jogo de Panelas v11,Casa e Utilidades,208.35,452.15,35,17.7
-133,Luminária de Mesa v11,Casa e Utilidades,110.68,233.85,20,3.8
-134,Cortina Blackout v11,Casa e Utilidades,135.0,330.95,15,15.0
-135,Tapete Antiderrapante v11,Casa e Utilidades,37.09,64.25,26,24.1
-136,Suporte de Prateleira v11,Casa e Utilidades,279.48,524.98,18,19.3
-137,Organizador Multiuso v12,Casa e Utilidades,258.25,517.34,22,18.3
-138,Jogo de Panelas v12,Casa e Utilidades,55.61,133.44,15,5.7
-139,Luminária de Mesa v12,Casa e Utilidades,91.26,231.73,30,7.4
-140,Cortina Blackout v12,Casa e Utilidades,247.29,424.74,20,11.9
-141,Shampoo 400ml,Beleza e Higiene,86.11,242.48,18,18.4
-142,Creme Hidratante,Beleza e Higiene,94.35,205.24,11,12.9
-143,Escova de Cabelo,Beleza e Higiene,130.45,280.67,21,16.4
-144,Kit Manicure,Beleza e Higiene,61.71,164.76,22,5.1
-145,Sabonete Líquido,Beleza e Higiene,11.76,34.76,18,3.0
-146,Protetor Solar,Beleza e Higiene,47.57,112.41,21,2.9
-147,Shampoo 400ml v2,Beleza e Higiene,48.9,105.95,18,37.7
-148,Creme Hidratante v2,Beleza e Higiene,32.56,61.07,11,5.7
-149,Escova de Cabelo v2,Beleza e Higiene,112.91,328.23,19,5.3
-150,Kit Manicure v2,Beleza e Higiene,18.67,36.4,14,16.7
-151,Sabonete Líquido v2,Beleza e Higiene,122.25,229.82,23,126.3
-152,Protetor Solar v2,Beleza e Higiene,8.81,21.37,19,62.4
-153,Shampoo 400ml v3,Beleza e Higiene,18.4,38.97,14,5.9
-154,Creme Hidratante v3,Beleza e Higiene,145.54,317.84,23,6.3
-155,Escova de Cabelo v3,Beleza e Higiene,29.78,56.53,11,22.2
-156,Kit Manicure v3,Beleza e Higiene,99.89,218.59,19,41.8
-157,Sabonete Líquido v3,Beleza e Higiene,91.68,253.34,25,27.1
-158,Protetor Solar v3,Beleza e Higiene,77.71,155.35,18,169.4
-159,Shampoo 400ml v4,Beleza e Higiene,27.18,66.7,23,10.7
-160,Creme Hidratante v4,Beleza e Higiene,60.86,149.11,21,26.3
-161,Escova de Cabelo v4,Beleza e Higiene,23.2,64.53,20,26.7
-162,Kit Manicure v4,Beleza e Higiene,32.66,92.07,24,11.1
-163,Sabonete Líquido v4,Beleza e Higiene,55.2,112.11,17,19.5
-164,Protetor Solar v4,Beleza e Higiene,32.32,77.06,17,9.6
-165,Shampoo 400ml v5,Beleza e Higiene,70.15,138.15,24,97.5
-166,Creme Hidratante v5,Beleza e Higiene,24.52,67.92,15,4.0
-167,Escova de Cabelo v5,Beleza e Higiene,9.81,27.91,18,3.0
-168,Kit Manicure v5,Beleza e Higiene,80.12,160.12,12,12.5
-169,Sabonete Líquido v5,Beleza e Higiene,15.44,31.8,25,85.2
-170,Protetor Solar v5,Beleza e Higiene,91.33,195.18,12,6.8
-171,Shampoo 400ml v6,Beleza e Higiene,115.24,242.81,13,14.8
-172,Creme Hidratante v6,Beleza e Higiene,133.97,388.74,16,9.3
-173,Escova de Cabelo v6,Beleza e Higiene,43.94,86.45,25,27.3
-174,Kit Manicure v6,Beleza e Higiene,28.72,76.25,17,17.6
-175,Sabonete Líquido v6,Beleza e Higiene,146.12,385.01,13,8.0
-176,Protetor Solar v6,Beleza e Higiene,21.16,46.51,12,7.9
-177,Shampoo 400ml v7,Beleza e Higiene,138.39,350.67,23,28.5
-178,Creme Hidratante v7,Beleza e Higiene,88.09,236.49,11,5.4
-179,Escova de Cabelo v7,Beleza e Higiene,30.25,83.96,15,19.5
-180,Kit Manicure v7,Beleza e Higiene,148.86,315.47,16,2.9
-181,Sabonete Líquido v7,Beleza e Higiene,142.29,319.79,16,7.1
-182,Protetor Solar v7,Beleza e Higiene,115.44,273.07,25,27.0
-183,Shampoo 400ml v8,Beleza e Higiene,69.46,136.68,12,14.0
-184,Creme Hidratante v8,Beleza e Higiene,103.41,285.7,10,20.3
-185,Escova de Cabelo v8,Beleza e Higiene,47.46,102.74,18,3.5
-186,Kit Manicure v8,Beleza e Higiene,98.35,199.05,22,2.4
-187,Sabonete Líquido v8,Beleza e Higiene,115.42,248.8,17,7.1
-188,Protetor Solar v8,Beleza e Higiene,90.07,189.52,20,35.8
-189,Shampoo 400ml v9,Beleza e Higiene,91.77,182.17,13,29.5
-190,Creme Hidratante v9,Beleza e Higiene,36.74,77.31,21,5.1
-191,Escova de Cabelo v9,Beleza e Higiene,48.7,123.03,10,8.9
-192,Kit Manicure v9,Beleza e Higiene,82.01,206.79,25,8.5
-193,Sabonete Líquido v9,Beleza e Higiene,54.56,98.49,16,25.3
-194,Protetor Solar v9,Beleza e Higiene,36.75,80.85,10,57.3
-195,Shampoo 400ml v10,Beleza e Higiene,139.62,324.23,24,7.4
-196,Creme Hidratante v10,Beleza e Higiene,42.79,126.35,13,8.2
-197,Escova de Cabelo v10,Beleza e Higiene,21.23,46.32,16,2.4
-198,Kit Manicure v10,Beleza e Higiene,25.92,66.35,10,50.2
-199,Sabonete Líquido v10,Beleza e Higiene,136.2,299.99,18,109.5
-200,Protetor Solar v10,Beleza e Higiene,104.05,255.61,15,80.4
-201,Shampoo 400ml v11,Beleza e Higiene,44.96,112.42,21,8.7
-202,Creme Hidratante v11,Beleza e Higiene,81.67,148.49,25,11.8
-203,Escova de Cabelo v11,Beleza e Higiene,26.33,69.29,22,10.6
-204,Kit Manicure v11,Beleza e Higiene,33.14,61.06,22,4.7
-205,Sabonete Líquido v11,Beleza e Higiene,42.67,121.15,25,28.2
-206,Garrafa Térmica,Esporte e Lazer,30.51,56.57,28,3.6
-207,Faixa Elástica,Esporte e Lazer,364.24,799.54,38,6.9
-208,Bola de Treino,Esporte e Lazer,658.91,1254.04,38,21.9
-209,Luva de Academia,Esporte e Lazer,693.54,1361.65,35,15.6
-210,Corda de Pular,Esporte e Lazer,318.89,721.02,21,6.6
-211,Mochila Esportiva,Esporte e Lazer,127.41,232.65,34,3.4
-212,Garrafa Térmica v2,Esporte e Lazer,413.84,690.3,37,47.5
-213,Faixa Elástica v2,Esporte e Lazer,496.48,821.91,26,44.3
-214,Bola de Treino v2,Esporte e Lazer,63.44,116.92,29,7.1
-215,Luva de Academia v2,Esporte e Lazer,195.54,296.18,36,14.4
-216,Corda de Pular v2,Esporte e Lazer,224.69,455.1,31,41.0
-217,Mochila Esportiva v2,Esporte e Lazer,673.05,1275.02,35,130.4
-218,Garrafa Térmica v3,Esporte e Lazer,567.1,981.0,29,86.1
-219,Faixa Elástica v3,Esporte e Lazer,431.76,967.44,32,29.7
-220,Bola de Treino v3,Esporte e Lazer,280.87,500.01,21,25.9
-221,Luva de Academia v3,Esporte e Lazer,445.62,703.22,32,4.8
-222,Corda de Pular v3,Esporte e Lazer,625.24,1341.32,34,19.6
-223,Mochila Esportiva v3,Esporte e Lazer,161.84,355.28,25,22.1
-224,Garrafa Térmica v4,Esporte e Lazer,375.64,650.79,38,13.7
-225,Faixa Elástica v4,Esporte e Lazer,565.79,1266.19,35,10.6
-226,Bola de Treino v4,Esporte e Lazer,115.75,191.09,22,37.6
-227,Luva de Academia v4,Esporte e Lazer,314.73,523.86,40,19.9
-228,Corda de Pular v4,Esporte e Lazer,337.8,751.11,33,79.6
-229,Mochila Esportiva v4,Esporte e Lazer,233.82,518.04,29,14.3
-230,Garrafa Térmica v5,Esporte e Lazer,479.11,754.83,28,10.7
-231,Faixa Elástica v5,Esporte e Lazer,44.65,77.72,28,10.8
-232,Bola de Treino v5,Esporte e Lazer,169.02,265.21,40,4.6
-233,Luva de Academia v5,Esporte e Lazer,239.87,380.65,37,25.8
-234,Corda de Pular v5,Esporte e Lazer,117.98,228.12,37,12.7
-235,Mochila Esportiva v5,Esporte e Lazer,608.11,1101.92,37,5.1
-236,Garrafa Térmica v6,Esporte e Lazer,542.35,1130.8,30,12.9
-237,Faixa Elástica v6,Esporte e Lazer,510.96,939.66,36,9.5
-238,Bola de Treino v6,Esporte e Lazer,456.75,947.79,28,15.2
-239,Luva de Academia v6,Esporte e Lazer,341.33,638.94,39,9.0
-240,Corda de Pular v6,Esporte e Lazer,494.31,903.34,25,32.6
-241,Mochila Esportiva v6,Esporte e Lazer,45.27,103.92,28,6.7
-242,Garrafa Térmica v7,Esporte e Lazer,58.39,113.22,32,21.8
-243,Faixa Elástica v7,Esporte e Lazer,230.67,457.13,23,42.9
-244,Bola de Treino v7,Esporte e Lazer,409.54,616.24,37,2.7
-245,Luva de Academia v7,Esporte e Lazer,105.22,231.05,35,10.7
-246,Corda de Pular v7,Esporte e Lazer,220.26,488.06,33,42.0
-247,Mochila Esportiva v7,Esporte e Lazer,531.26,987.79,24,16.8
-248,Garrafa Térmica v8,Esporte e Lazer,395.79,829.17,23,19.1
-249,Faixa Elástica v8,Esporte e Lazer,424.84,971.58,20,18.2
-250,Bola de Treino v8,Esporte e Lazer,614.62,1208.12,29,16.8
-251,Luva de Academia v8,Esporte e Lazer,611.74,945.65,22,28.4
-252,Corda de Pular v8,Esporte e Lazer,244.23,481.88,35,12.8
-253,Mochila Esportiva v8,Esporte e Lazer,33.58,55.57,29,22.3
-254,Garrafa Térmica v9,Esporte e Lazer,370.59,781.26,27,9.9
-255,Faixa Elástica v9,Esporte e Lazer,83.8,156.69,28,6.4
-256,Bola de Treino v9,Esporte e Lazer,322.05,582.17,38,6.6
-257,Luva de Academia v9,Esporte e Lazer,667.15,1181.17,29,2.0
-258,Corda de Pular v9,Esporte e Lazer,501.65,941.45,28,3.5
-259,Mochila Esportiva v9,Esporte e Lazer,675.38,1165.71,21,8.1
-260,Garrafa Térmica v10,Esporte e Lazer,596.99,1186.53,22,15.5
-261,Faixa Elástica v10,Esporte e Lazer,555.76,862.95,29,14.2
-262,Bola de Treino v10,Esporte e Lazer,111.31,245.83,40,139.9
-263,Luva de Academia v10,Esporte e Lazer,361.5,613.63,38,11.4
-264,Corda de Pular v10,Esporte e Lazer,565.63,921.3,28,5.9
-265,Mochila Esportiva v10,Esporte e Lazer,692.9,1087.52,40,4.9
-266,Caderno Universitário,Papelaria,25.77,67.59,14,7.4
-267,Caneta Gel (cx),Papelaria,10.38,22.51,17,2.0
-268,Marcador de Texto,Papelaria,81.31,248.95,8,6.0
-269,Agenda Anual,Papelaria,3.06,7.36,19,11.6
-270,Pasta Organizadora,Papelaria,64.12,198.27,20,25.6
-271,Post-it Colorido,Papelaria,78.08,233.79,20,42.0
-272,Caderno Universitário v2,Papelaria,14.91,35.78,12,30.7
-273,Caneta Gel (cx) v2,Papelaria,48.39,151.57,18,2.4
-274,Marcador de Texto v2,Papelaria,14.01,43.3,10,36.2
-275,Agenda Anual v2,Papelaria,80.44,215.38,12,10.5
-276,Pasta Organizadora v2,Papelaria,46.49,91.37,16,13.0
-277,Post-it Colorido v2,Papelaria,60.19,162.61,16,49.7
-278,Caderno Universitário v3,Papelaria,13.72,35.58,7,47.5
-279,Caneta Gel (cx) v3,Papelaria,17.93,43.62,12,25.5
-280,Marcador de Texto v3,Papelaria,67.06,157.7,14,52.6
-281,Agenda Anual v3,Papelaria,87.61,168.4,13,9.2
-282,Pasta Organizadora v3,Papelaria,48.47,130.81,17,57.1
-283,Post-it Colorido v3,Papelaria,37.14,105.09,13,18.9
-284,Caderno Universitário v4,Papelaria,45.93,104.06,13,5.0
-285,Caneta Gel (cx) v4,Papelaria,41.3,94.22,17,102.3
-286,Marcador de Texto v4,Papelaria,56.87,174.76,18,20.6
-287,Agenda Anual v4,Papelaria,41.59,114.18,17,16.1
-288,Pasta Organizadora v4,Papelaria,60.92,178.78,20,12.3
-289,Post-it Colorido v4,Papelaria,31.38,88.51,10,11.9
-290,Caderno Universitário v5,Papelaria,20.5,40.58,10,18.7
-291,Caneta Gel (cx) v5,Papelaria,60.91,141.18,7,54.5
-292,Marcador de Texto v5,Papelaria,53.13,143.58,16,15.9
-293,Agenda Anual v5,Papelaria,66.15,165.6,8,5.8
-294,Pasta Organizadora v5,Papelaria,50.19,135.99,17,36.7
-295,Post-it Colorido v5,Papelaria,7.97,23.14,12,7.9
-296,Caderno Universitário v6,Papelaria,31.02,78.63,10,17.4
-297,Caneta Gel (cx) v6,Papelaria,58.5,162.73,20,29.2
-298,Marcador de Texto v6,Papelaria,55.86,139.5,12,25.1
-299,Agenda Anual v6,Papelaria,46.39,101.41,8,63.7
-300,Pasta Organizadora v6,Papelaria,80.74,190.63,12,56.3
-301,Post-it Colorido v6,Papelaria,14.05,42.98,11,32.6
-302,Caderno Universitário v7,Papelaria,13.25,30.67,8,23.2
-303,Caneta Gel (cx) v7,Papelaria,88.81,210.63,17,17.8
-304,Marcador de Texto v7,Papelaria,40.65,92.46,18,6.3
-305,Agenda Anual v7,Papelaria,14.66,33.43,8,3.8
-306,Pasta Organizadora v7,Papelaria,78.84,250.67,18,2.6
-307,Post-it Colorido v7,Papelaria,22.25,52.99,17,6.8
-308,Caderno Universitário v8,Papelaria,37.38,72.1,15,74.4
-309,Caneta Gel (cx) v8,Papelaria,72.4,159.55,10,18.3
-310,Marcador de Texto v8,Papelaria,19.41,47.05,16,24.0
-311,Agenda Anual v8,Papelaria,10.83,27.09,16,9.9
-312,Pasta Organizadora v8,Papelaria,85.24,255.01,10,10.1
-313,Post-it Colorido v8,Papelaria,74.6,212.35,9,4.4
-314,Caderno Universitário v9,Papelaria,28.91,80.2,17,15.6
-315,Caneta Gel (cx) v9,Papelaria,31.44,66.09,12,227.9
-316,Marcador de Texto v9,Papelaria,77.1,214.8,13,58.4
-317,Agenda Anual v9,Papelaria,21.95,56.2,14,11.3
-318,Pasta Organizadora v9,Papelaria,10.48,30.24,8,5.0
-319,Post-it Colorido v9,Papelaria,72.39,179.05,15,12.9
-320,Caderno Universitário v10,Papelaria,29.75,68.34,11,33.5
-321,Furadeira Compacta,Ferramentas,221.4,434.8,30,68.9
-322,Kit Chaves de Fenda,Ferramentas,589.41,976.47,23,4.3
-323,Trena 5m,Ferramentas,111.23,179.02,45,6.6
-324,Nível a Laser,Ferramentas,891.76,1634.18,30,9.6
-325,Parafusadeira,Ferramentas,160.25,228.12,45,7.5
-326,Serra Manual,Ferramentas,109.58,196.29,44,3.2
-327,Furadeira Compacta v2,Ferramentas,649.36,1009.11,31,3.3
-328,Kit Chaves de Fenda v2,Ferramentas,422.33,762.55,40,74.2
-329,Trena 5m v2,Ferramentas,80.81,137.12,30,60.3
-330,Nível a Laser v2,Ferramentas,238.34,470.92,26,65.2
-331,Parafusadeira v2,Ferramentas,634.96,1009.2,43,3.1
-332,Serra Manual v2,Ferramentas,390.87,728.08,30,44.7
-333,Furadeira Compacta v3,Ferramentas,441.54,797.3,33,2.0
-334,Kit Chaves de Fenda v3,Ferramentas,179.06,283.88,36,22.9
-335,Trena 5m v3,Ferramentas,894.12,1618.24,42,8.3
-336,Nível a Laser v3,Ferramentas,833.42,1464.28,20,5.4
-337,Parafusadeira v3,Ferramentas,577.43,1107.81,27,31.3
-338,Serra Manual v3,Ferramentas,140.97,269.35,28,5.4
-339,Furadeira Compacta v4,Ferramentas,720.22,1294.04,33,9.0
-340,Kit Chaves de Fenda v4,Ferramentas,625.22,1044.75,21,22.4
-341,Trena 5m v4,Ferramentas,430.52,788.03,36,27.6
-342,Nível a Laser v4,Ferramentas,75.46,114.28,33,73.5
-343,Parafusadeira v4,Ferramentas,303.09,490.26,36,20.4
-344,Serra Manual v4,Ferramentas,730.87,1257.37,41,11.6
-345,Furadeira Compacta v5,Ferramentas,497.24,762.24,44,44.0
-346,Kit Chaves de Fenda v5,Ferramentas,41.56,80.32,42,23.6
-347,Trena 5m v5,Ferramentas,775.18,1456.58,36,2.0
-348,Nível a Laser v5,Ferramentas,425.82,663.55,42,55.0
-349,Parafusadeira v5,Ferramentas,695.09,1319.99,26,8.8
-350,Serra Manual v5,Ferramentas,427.69,844.17,23,5.3
-351,Furadeira Compacta v6,Ferramentas,662.18,1196.12,42,2.0
-352,Kit Chaves de Fenda v6,Ferramentas,753.0,1178.94,27,65.5
-353,Trena 5m v6,Ferramentas,304.39,558.37,20,65.7
-354,Nível a Laser v6,Ferramentas,772.29,1372.68,20,47.7
-355,Parafusadeira v6,Ferramentas,790.09,1466.75,36,7.4
-356,Serra Manual v6,Ferramentas,353.78,565.58,33,4.2
-357,Furadeira Compacta v7,Ferramentas,414.87,652.28,31,6.8
-358,Kit Chaves de Fenda v7,Ferramentas,564.75,959.17,29,30.6
-359,Trena 5m v7,Ferramentas,471.6,789.94,25,13.8
-360,Nível a Laser v7,Ferramentas,733.9,1322.05,38,28.6
-361,Parafusadeira v7,Ferramentas,635.34,986.48,34,2.0
-362,Serra Manual v7,Ferramentas,37.49,67.26,26,2.5
-363,Furadeira Compacta v8,Ferramentas,133.4,238.07,23,25.8
-364,Kit Chaves de Fenda v8,Ferramentas,255.64,428.76,41,6.6
-365,Trena 5m v8,Ferramentas,322.68,578.59,45,16.9
-366,Nível a Laser v8,Ferramentas,642.22,1182.19,33,4.8
-367,Parafusadeira v8,Ferramentas,852.61,1488.76,40,5.4
-368,Serra Manual v8,Ferramentas,475.64,736.66,27,15.4
-369,Furadeira Compacta v9,Ferramentas,707.21,1175.71,34,5.4
-370,Kit Chaves de Fenda v9,Ferramentas,30.92,61.41,21,5.8
-371,Trena 5m v9,Ferramentas,335.22,480.05,43,4.7
-372,Nível a Laser v9,Ferramentas,387.84,629.92,43,8.9
-373,Parafusadeira v9,Ferramentas,708.16,1314.22,38,16.3
-374,Serra Manual v9,Ferramentas,472.85,861.39,37,17.8
-375,Furadeira Compacta v10,Ferramentas,759.83,1074.5,43,10.6
-376,Kit Chaves de Fenda v10,Ferramentas,220.23,314.55,26,8.7
-377,Trena 5m v10,Ferramentas,155.01,295.11,45,5.3
-378,Nível a Laser v10,Ferramentas,795.92,1210.43,25,7.6
-379,Parafusadeira v10,Ferramentas,244.35,355.7,28,61.8
-380,Serra Manual v10,Ferramentas,707.57,1187.21,35,3.1
-381,Ração Premium 3kg,Pet,119.1,245.96,21,8.0
-382,Brinquedo Mordedor,Pet,69.56,167.26,12,3.3
-383,Coleira Ajustável,Pet,136.34,270.13,14,4.9
-384,Areia Sanitária,Pet,171.84,442.49,13,5.0
-385,Petisco Natural,Pet,118.39,245.56,17,46.4
-386,Cama Pet,Pet,59.19,135.89,13,37.8
-387,Ração Premium 3kg v2,Pet,234.87,485.83,24,46.8
-388,Brinquedo Mordedor v2,Pet,34.72,71.34,19,14.7
-389,Coleira Ajustável v2,Pet,226.95,554.86,25,25.8
-390,Areia Sanitária v2,Pet,25.16,64.52,13,12.1
-391,Petisco Natural v2,Pet,58.79,100.67,25,26.3
-392,Cama Pet v2,Pet,175.03,355.84,17,26.9
-393,Ração Premium 3kg v3,Pet,88.35,217.56,24,126.8
-394,Brinquedo Mordedor v3,Pet,226.14,576.34,24,4.8
-395,Coleira Ajustável v3,Pet,218.27,501.65,24,43.5
-396,Areia Sanitária v3,Pet,230.61,463.04,13,5.7
-397,Petisco Natural v3,Pet,92.2,238.84,12,6.9
-398,Cama Pet v3,Pet,11.61,22.82,13,29.9
-399,Ração Premium 3kg v4,Pet,232.79,570.59,12,53.3
-400,Brinquedo Mordedor v4,Pet,176.49,348.77,12,15.5
-401,Coleira Ajustável v4,Pet,80.06,148.76,10,15.0
-402,Areia Sanitária v4,Pet,176.37,377.65,24,20.2
-403,Petisco Natural v4,Pet,241.64,485.05,14,5.2
-404,Cama Pet v4,Pet,204.15,368.02,19,37.5
-405,Ração Premium 3kg v5,Pet,210.99,543.84,19,4.2
-406,Brinquedo Mordedor v5,Pet,135.17,255.83,21,28.6
-407,Coleira Ajustável v5,Pet,182.72,438.64,23,2.9
-408,Areia Sanitária v5,Pet,80.13,196.25,10,16.4
-409,Petisco Natural v5,Pet,89.88,190.24,25,41.4
-410,Cama Pet v5,Pet,197.68,419.44,23,18.5
-411,Ração Premium 3kg v6,Pet,189.98,432.35,21,19.3
-412,Brinquedo Mordedor v6,Pet,138.84,249.86,15,41.6
-413,Coleira Ajustável v6,Pet,18.99,48.42,20,13.7
-414,Areia Sanitária v6,Pet,113.91,266.76,18,8.7
-415,Petisco Natural v6,Pet,21.92,53.49,23,24.3
-416,Cama Pet v6,Pet,198.44,493.28,21,4.1
-417,Ração Premium 3kg v7,Pet,90.16,153.74,18,37.8
-418,Brinquedo Mordedor v7,Pet,193.73,403.78,13,37.4
-419,Coleira Ajustável v7,Pet,96.48,229.43,19,31.4
-420,Areia Sanitária v7,Pet,143.69,360.32,17,17.0
-421,Petisco Natural v7,Pet,174.93,311.04,14,12.1
-422,Cama Pet v7,Pet,161.35,407.34,25,102.7
-423,Ração Premium 3kg v8,Pet,188.29,475.46,21,116.2
-424,Brinquedo Mordedor v8,Pet,147.19,323.72,20,19.2
-425,Coleira Ajustável v8,Pet,186.93,473.2,23,18.2
-426,Areia Sanitária v8,Pet,190.43,374.49,11,2.0
-427,Petisco Natural v8,Pet,18.44,36.18,14,59.1
-428,Cama Pet v8,Pet,207.54,398.5,17,8.0
-429,Ração Premium 3kg v9,Pet,166.94,416.02,14,13.4
-430,Brinquedo Mordedor v9,Pet,162.4,332.52,24,10.2
-431,Coleira Ajustável v9,Pet,125.01,315.59,12,7.6
-432,Areia Sanitária v9,Pet,83.33,185.56,12,50.9
-433,Petisco Natural v9,Pet,191.02,452.2,21,12.3
-434,Cama Pet v9,Pet,228.94,568.48,12,13.2
-435,Ração Premium 3kg v10,Pet,116.86,217.21,15,82.9
-436,Café em Grãos 500g,Alimentos Não Perecíveis,25.93,40.06,12,47.2
-437,Barra de Cereal (cx),Alimentos Não Perecíveis,40.83,89.12,11,12.2
-438,Azeite Extra Virgem,Alimentos Não Perecíveis,29.44,60.62,17,6.4
-439,Macarrão Tipo 1,Alimentos Não Perecíveis,58.89,113.02,16,8.9
-440,Molho de Tomate,Alimentos Não Perecíveis,50.71,76.72,13,4.8
-441,Chá em Sachês,Alimentos Não Perecíveis,19.15,41.4,14,10.5
-442,Café em Grãos 500g v2,Alimentos Não Perecíveis,43.67,89.16,7,11.5
-443,Barra de Cereal (cx) v2,Alimentos Não Perecíveis,51.88,82.25,16,63.3
-444,Azeite Extra Virgem v2,Alimentos Não Perecíveis,56.82,114.22,7,7.1
-445,Macarrão Tipo 1 v2,Alimentos Não Perecíveis,43.14,83.63,15,4.0
-446,Molho de Tomate v2,Alimentos Não Perecíveis,48.05,93.41,11,25.3
-447,Chá em Sachês v2,Alimentos Não Perecíveis,54.55,96.42,7,77.3
-448,Café em Grãos 500g v3,Alimentos Não Perecíveis,49.99,96.87,18,27.5
-449,Barra de Cereal (cx) v3,Alimentos Não Perecíveis,38.25,66.92,16,12.3
-450,Azeite Extra Virgem v3,Alimentos Não Perecíveis,19.44,39.57,7,201.0
-451,Macarrão Tipo 1 v3,Alimentos Não Perecíveis,59.83,102.85,14,3.8
-452,Molho de Tomate v3,Alimentos Não Perecíveis,27.13,55.69,13,11.4
-453,Chá em Sachês v3,Alimentos Não Perecíveis,59.46,112.46,12,3.4
-454,Café em Grãos 500g v4,Alimentos Não Perecíveis,22.78,47.75,11,12.5
-455,Barra de Cereal (cx) v4,Alimentos Não Perecíveis,41.71,63.12,8,49.9
-456,Azeite Extra Virgem v4,Alimentos Não Perecíveis,22.24,46.77,7,4.7
-457,Macarrão Tipo 1 v4,Alimentos Não Perecíveis,11.33,22.12,8,7.3
-458,Molho de Tomate v4,Alimentos Não Perecíveis,32.51,63.83,8,2.9
-459,Chá em Sachês v4,Alimentos Não Perecíveis,15.88,31.58,18,19.1
-460,Café em Grãos 500g v5,Alimentos Não Perecíveis,11.29,17.77,8,15.7
-461,Barra de Cereal (cx) v5,Alimentos Não Perecíveis,25.39,45.01,9,14.9
-462,Azeite Extra Virgem v5,Alimentos Não Perecíveis,56.35,86.13,9,7.7
-463,Macarrão Tipo 1 v5,Alimentos Não Perecíveis,24.05,48.29,17,22.8
-464,Molho de Tomate v5,Alimentos Não Perecíveis,39.26,82.99,16,86.1
-465,Chá em Sachês v5,Alimentos Não Perecíveis,6.25,13.07,15,22.6
-466,Café em Grãos 500g v6,Alimentos Não Perecíveis,43.04,68.36,16,9.4
-467,Barra de Cereal (cx) v6,Alimentos Não Perecíveis,23.45,43.45,15,15.0
-468,Azeite Extra Virgem v6,Alimentos Não Perecíveis,8.63,13.68,18,3.4
-469,Macarrão Tipo 1 v6,Alimentos Não Perecíveis,50.93,97.0,11,9.4
-470,Molho de Tomate v6,Alimentos Não Perecíveis,23.16,42.79,13,5.3
-471,Chá em Sachês v6,Alimentos Não Perecíveis,16.89,25.63,9,7.6
-472,Café em Grãos 500g v7,Alimentos Não Perecíveis,44.43,89.97,8,30.1
-473,Barra de Cereal (cx) v7,Alimentos Não Perecíveis,30.59,64.36,15,11.7
-474,Azeite Extra Virgem v7,Alimentos Não Perecíveis,13.25,25.69,13,24.4
-475,Macarrão Tipo 1 v7,Alimentos Não Perecíveis,19.22,38.19,7,10.0
-476,Molho de Tomate v7,Alimentos Não Perecíveis,46.44,81.85,10,4.7
-477,Chá em Sachês v7,Alimentos Não Perecíveis,44.51,89.71,11,35.0
-478,Café em Grãos 500g v8,Alimentos Não Perecíveis,59.36,126.27,11,21.6
-479,Barra de Cereal (cx) v8,Alimentos Não Perecíveis,34.92,70.3,13,6.0
-480,Azeite Extra Virgem v8,Alimentos Não Perecíveis,12.83,21.42,8,28.9
-481,Macarrão Tipo 1 v8,Alimentos Não Perecíveis,13.19,28.65,10,2.0
-482,Molho de Tomate v8,Alimentos Não Perecíveis,31.7,55.6,11,162.2
-483,Chá em Sachês v8,Alimentos Não Perecíveis,39.62,80.88,14,25.7
-484,Café em Grãos 500g v9,Alimentos Não Perecíveis,21.33,46.03,17,5.3
-485,Barra de Cereal (cx) v9,Alimentos Não Perecíveis,52.34,104.29,7,6.7
-486,Azeite Extra Virgem v9,Alimentos Não Perecíveis,32.87,57.75,15,3.7
-487,Macarrão Tipo 1 v9,Alimentos Não Perecíveis,13.83,28.22,18,61.5
-488,Molho de Tomate v9,Alimentos Não Perecíveis,36.53,61.95,10,80.9
-489,Chá em Sachês v9,Alimentos Não Perecíveis,22.86,46.68,11,5.1
-490,Café em Grãos 500g v10,Alimentos Não Perecíveis,7.73,13.19,7,22.1
-491,Barra de Cereal (cx) v10,Alimentos Não Perecíveis,51.77,83.8,9,6.6
-492,Azeite Extra Virgem v10,Alimentos Não Perecíveis,31.45,67.49,16,13.5
-493,Macarrão Tipo 1 v10,Alimentos Não Perecíveis,8.48,18.07,17,15.8
-494,Molho de Tomate v10,Alimentos Não Perecíveis,34.91,69.38,18,2.7
-495,Chá em Sachês v10,Alimentos Não Perecíveis,18.63,31.82,9,14.3
-496,Café em Grãos 500g v11,Alimentos Não Perecíveis,5.45,10.95,7,6.8
-497,Barra de Cereal (cx) v11,Alimentos Não Perecíveis,37.74,62.45,8,4.3
-498,Azeite Extra Virgem v11,Alimentos Não Perecíveis,32.04,69.82,15,175.8
-499,Macarrão Tipo 1 v11,Alimentos Não Perecíveis,42.53,71.98,10,10.2
-500,Molho de Tomate v11,Alimentos Não Perecíveis,20.87,45.66,18,2.0
+sku_id,produto_nome,categoria,custo_unitario,preco_venda,lead_time_dias,vendas_mensais_base,fornecedor,comprador
+1,Fone Bluetooth,Eletrônicos,1147.67,2115.69,42,5.5,TechSupply Distribuidora,Ricardo Nunes
+2,Carregador Turbo,Eletrônicos,1579.98,2137.55,49,51.4,Nexus Componentes,Ricardo Nunes
+3,Cabo USB-C,Eletrônicos,874.21,1325.89,35,15.0,Nexus Componentes,Ricardo Nunes
+4,Caixa de Som,Eletrônicos,937.91,1551.7,33,3.5,Import Eletrônicos BR,Ricardo Nunes
+5,Adaptador HDMI,Eletrônicos,1142.59,2163.98,39,10.6,TechSupply Distribuidora,Ricardo Nunes
+6,Mouse sem Fio,Eletrônicos,136.46,186.9,31,11.2,Nexus Componentes,Ricardo Nunes
+7,Teclado Compacto,Eletrônicos,1655.87,2808.48,38,2.9,Import Eletrônicos BR,Ricardo Nunes
+8,Hub USB,Eletrônicos,80.52,117.22,40,6.0,Import Eletrônicos BR,Ricardo Nunes
+9,Fone Bluetooth v2,Eletrônicos,702.99,950.48,44,7.5,Import Eletrônicos BR,Ricardo Nunes
+10,Carregador Turbo v2,Eletrônicos,1591.78,2595.21,50,4.0,TechSupply Distribuidora,Ricardo Nunes
+11,Cabo USB-C v2,Eletrônicos,1350.68,1891.39,32,15.2,Import Eletrônicos BR,Ricardo Nunes
+12,Caixa de Som v2,Eletrônicos,688.6,1156.16,41,4.1,Nexus Componentes,Ricardo Nunes
+13,Adaptador HDMI v2,Eletrônicos,622.08,891.2,36,12.6,Nexus Componentes,Ricardo Nunes
+14,Mouse sem Fio v2,Eletrônicos,1086.59,1828.49,50,16.5,Nexus Componentes,Ricardo Nunes
+15,Teclado Compacto v2,Eletrônicos,322.37,513.27,36,11.1,TechSupply Distribuidora,Ricardo Nunes
+16,Hub USB v2,Eletrônicos,1744.02,2560.66,32,6.1,Import Eletrônicos BR,Ricardo Nunes
+17,Fone Bluetooth v3,Eletrônicos,1580.89,2709.99,41,47.3,TechSupply Distribuidora,Ricardo Nunes
+18,Carregador Turbo v3,Eletrônicos,1632.82,2715.94,29,10.5,Nexus Componentes,Ricardo Nunes
+19,Cabo USB-C v3,Eletrônicos,1674.56,2769.35,26,11.9,Import Eletrônicos BR,Ricardo Nunes
+20,Caixa de Som v3,Eletrônicos,1051.27,1636.78,30,8.6,TechSupply Distribuidora,Ricardo Nunes
+21,Adaptador HDMI v3,Eletrônicos,126.22,231.22,42,9.6,Nexus Componentes,Ricardo Nunes
+22,Mouse sem Fio v3,Eletrônicos,1367.31,1864.82,39,3.7,Nexus Componentes,Ricardo Nunes
+23,Teclado Compacto v3,Eletrônicos,273.83,515.33,28,5.5,TechSupply Distribuidora,Ricardo Nunes
+24,Hub USB v3,Eletrônicos,1578.69,2430.1,45,7.2,Nexus Componentes,Ricardo Nunes
+25,Fone Bluetooth v4,Eletrônicos,678.42,1109.56,41,27.2,TechSupply Distribuidora,Ricardo Nunes
+26,Carregador Turbo v4,Eletrônicos,1684.15,2278.4,48,13.9,Import Eletrônicos BR,Ricardo Nunes
+27,Cabo USB-C v4,Eletrônicos,297.97,470.91,51,16.3,Import Eletrônicos BR,Ricardo Nunes
+28,Caixa de Som v4,Eletrônicos,1439.86,2350.07,50,2.0,TechSupply Distribuidora,Ricardo Nunes
+29,Adaptador HDMI v4,Eletrônicos,405.43,628.3,28,2.3,Nexus Componentes,Ricardo Nunes
+30,Mouse sem Fio v4,Eletrônicos,1057.6,1625.57,30,15.3,Nexus Componentes,Ricardo Nunes
+31,Teclado Compacto v4,Eletrônicos,833.39,1574.45,29,10.2,Nexus Componentes,Ricardo Nunes
+32,Hub USB v4,Eletrônicos,1352.42,2257.67,40,7.8,Import Eletrônicos BR,Ricardo Nunes
+33,Fone Bluetooth v5,Eletrônicos,776.26,1441.92,27,47.3,Nexus Componentes,Ricardo Nunes
+34,Carregador Turbo v5,Eletrônicos,1714.63,2551.45,27,6.7,Import Eletrônicos BR,Ricardo Nunes
+35,Cabo USB-C v5,Eletrônicos,1307.73,2218.29,53,9.3,Import Eletrônicos BR,Ricardo Nunes
+36,Caixa de Som v5,Eletrônicos,413.07,569.16,55,70.4,Import Eletrônicos BR,Ricardo Nunes
+37,Adaptador HDMI v5,Eletrônicos,1521.89,2148.64,48,55.0,Import Eletrônicos BR,Ricardo Nunes
+38,Mouse sem Fio v5,Eletrônicos,1207.14,1833.24,43,2.3,Import Eletrônicos BR,Ricardo Nunes
+39,Teclado Compacto v5,Eletrônicos,1152.9,1959.21,27,21.2,Import Eletrônicos BR,Ricardo Nunes
+40,Hub USB v5,Eletrônicos,1389.41,2498.68,30,4.0,Import Eletrônicos BR,Ricardo Nunes
+41,Fone Bluetooth v6,Eletrônicos,1649.24,2953.99,47,8.7,Import Eletrônicos BR,Ricardo Nunes
+42,Carregador Turbo v6,Eletrônicos,141.17,192.93,52,11.6,Import Eletrônicos BR,Ricardo Nunes
+43,Cabo USB-C v6,Eletrônicos,492.51,715.68,55,7.7,TechSupply Distribuidora,Ricardo Nunes
+44,Caixa de Som v6,Eletrônicos,348.86,601.03,42,11.7,Import Eletrônicos BR,Ricardo Nunes
+45,Adaptador HDMI v6,Eletrônicos,1692.71,2786.4,44,8.5,Import Eletrônicos BR,Ricardo Nunes
+46,Mouse sem Fio v6,Eletrônicos,392.78,654.34,50,22.1,TechSupply Distribuidora,Ricardo Nunes
+47,Teclado Compacto v6,Eletrônicos,1730.52,3149.04,25,2.5,TechSupply Distribuidora,Ricardo Nunes
+48,Hub USB v6,Eletrônicos,256.13,434.05,26,31.2,TechSupply Distribuidora,Ricardo Nunes
+49,Fone Bluetooth v7,Eletrônicos,1561.29,2792.24,34,10.5,TechSupply Distribuidora,Ricardo Nunes
+50,Carregador Turbo v7,Eletrônicos,403.27,671.65,29,11.4,Nexus Componentes,Ricardo Nunes
+51,Cabo USB-C v7,Eletrônicos,227.47,389.81,26,20.2,Nexus Componentes,Ricardo Nunes
+52,Caixa de Som v7,Eletrônicos,629.27,1099.41,44,5.5,Nexus Componentes,Ricardo Nunes
+53,Adaptador HDMI v7,Eletrônicos,341.03,465.4,40,102.0,Import Eletrônicos BR,Ricardo Nunes
+54,Mouse sem Fio v7,Eletrônicos,1703.96,2655.84,45,13.3,Nexus Componentes,Ricardo Nunes
+55,Teclado Compacto v7,Eletrônicos,1203.6,1691.79,43,14.6,Nexus Componentes,Ricardo Nunes
+56,Hub USB v7,Eletrônicos,1505.16,2343.94,36,2.0,Import Eletrônicos BR,Ricardo Nunes
+57,Fone Bluetooth v8,Eletrônicos,434.2,645.25,31,7.9,Import Eletrônicos BR,Ricardo Nunes
+58,Carregador Turbo v8,Eletrônicos,1369.75,2285.4,35,5.3,Nexus Componentes,Ricardo Nunes
+59,Cabo USB-C v8,Eletrônicos,1387.93,1973.77,40,14.0,Import Eletrônicos BR,Ricardo Nunes
+60,Caixa de Som v8,Eletrônicos,1637.12,2452.54,29,4.7,Nexus Componentes,Ricardo Nunes
+61,Adaptador HDMI v8,Eletrônicos,1138.67,1654.41,25,11.7,Import Eletrônicos BR,Ricardo Nunes
+62,Mouse sem Fio v8,Eletrônicos,1296.93,1819.91,38,58.0,TechSupply Distribuidora,Ricardo Nunes
+63,Teclado Compacto v8,Eletrônicos,1496.83,2575.76,35,17.3,Nexus Componentes,Ricardo Nunes
+64,Hub USB v8,Eletrônicos,1377.98,2004.91,36,10.3,Import Eletrônicos BR,Ricardo Nunes
+65,Fone Bluetooth v9,Eletrônicos,1362.1,2510.52,42,62.1,Import Eletrônicos BR,Ricardo Nunes
+66,Carregador Turbo v9,Eletrônicos,1181.47,2063.48,28,64.7,Nexus Componentes,Ricardo Nunes
+67,Cabo USB-C v9,Eletrônicos,1526.86,2713.86,43,16.7,TechSupply Distribuidora,Ricardo Nunes
+68,Caixa de Som v9,Eletrônicos,1381.52,2440.77,37,61.1,Nexus Componentes,Ricardo Nunes
+69,Adaptador HDMI v9,Eletrônicos,718.03,1135.11,39,66.9,TechSupply Distribuidora,Ricardo Nunes
+70,Mouse sem Fio v9,Eletrônicos,734.28,1212.6,26,4.4,Import Eletrônicos BR,Ricardo Nunes
+71,Organizador Multiuso,Casa e Utilidades,251.73,634.22,22,10.8,CasaForte Suprimentos,Camila Torres
+72,Jogo de Panelas,Casa e Utilidades,297.99,520.88,23,5.7,Lar & Cia Distribuidora,Camila Torres
+73,Luminária de Mesa,Casa e Utilidades,277.36,478.0,24,61.8,Lar & Cia Distribuidora,Camila Torres
+74,Cortina Blackout,Casa e Utilidades,65.39,142.22,16,16.3,CasaForte Suprimentos,Camila Torres
+75,Tapete Antiderrapante,Casa e Utilidades,69.31,174.27,30,10.4,CasaForte Suprimentos,Camila Torres
+76,Suporte de Prateleira,Casa e Utilidades,149.92,244.75,19,3.9,CasaForte Suprimentos,Camila Torres
+77,Organizador Multiuso v2,Casa e Utilidades,220.13,452.37,30,61.8,Lar & Cia Distribuidora,Camila Torres
+78,Jogo de Panelas v2,Casa e Utilidades,276.15,509.93,16,11.1,CasaForte Suprimentos,Camila Torres
+79,Luminária de Mesa v2,Casa e Utilidades,50.6,82.63,35,59.1,CasaForte Suprimentos,Camila Torres
+80,Cortina Blackout v2,Casa e Utilidades,260.24,542.4,25,8.1,Lar & Cia Distribuidora,Camila Torres
+81,Tapete Antiderrapante v2,Casa e Utilidades,90.77,193.06,31,10.0,Lar & Cia Distribuidora,Camila Torres
+82,Suporte de Prateleira v2,Casa e Utilidades,167.82,334.9,20,22.3,Lar & Cia Distribuidora,Camila Torres
+83,Organizador Multiuso v3,Casa e Utilidades,66.12,114.8,22,19.8,Lar & Cia Distribuidora,Camila Torres
+84,Jogo de Panelas v3,Casa e Utilidades,80.74,207.49,17,27.3,Lar & Cia Distribuidora,Camila Torres
+85,Luminária de Mesa v3,Casa e Utilidades,156.75,394.22,31,25.5,Lar & Cia Distribuidora,Camila Torres
+86,Cortina Blackout v3,Casa e Utilidades,33.92,62.3,15,4.2,Lar & Cia Distribuidora,Camila Torres
+87,Tapete Antiderrapante v3,Casa e Utilidades,231.87,563.21,35,4.3,CasaForte Suprimentos,Camila Torres
+88,Suporte de Prateleira v3,Casa e Utilidades,209.22,488.67,30,8.4,Lar & Cia Distribuidora,Camila Torres
+89,Organizador Multiuso v4,Casa e Utilidades,230.61,407.22,23,3.7,Lar & Cia Distribuidora,Camila Torres
+90,Jogo de Panelas v4,Casa e Utilidades,281.94,494.84,34,16.7,Lar & Cia Distribuidora,Camila Torres
+91,Luminária de Mesa v4,Casa e Utilidades,290.15,631.19,24,19.9,Lar & Cia Distribuidora,Camila Torres
+92,Cortina Blackout v4,Casa e Utilidades,215.31,483.09,31,4.0,Lar & Cia Distribuidora,Camila Torres
+93,Tapete Antiderrapante v4,Casa e Utilidades,133.3,305.54,19,51.8,Lar & Cia Distribuidora,Camila Torres
+94,Suporte de Prateleira v4,Casa e Utilidades,74.58,160.47,32,10.0,Lar & Cia Distribuidora,Camila Torres
+95,Organizador Multiuso v5,Casa e Utilidades,222.43,359.32,28,7.0,Lar & Cia Distribuidora,Camila Torres
+96,Jogo de Panelas v5,Casa e Utilidades,220.33,467.83,35,36.0,CasaForte Suprimentos,Camila Torres
+97,Luminária de Mesa v5,Casa e Utilidades,175.4,378.53,15,8.2,Lar & Cia Distribuidora,Camila Torres
+98,Cortina Blackout v5,Casa e Utilidades,194.86,419.09,34,5.9,Lar & Cia Distribuidora,Camila Torres
+99,Tapete Antiderrapante v5,Casa e Utilidades,78.33,140.65,20,32.6,Lar & Cia Distribuidora,Camila Torres
+100,Suporte de Prateleira v5,Casa e Utilidades,228.83,527.98,33,5.1,CasaForte Suprimentos,Camila Torres
+101,Organizador Multiuso v6,Casa e Utilidades,147.76,328.08,15,19.8,CasaForte Suprimentos,Camila Torres
+102,Jogo de Panelas v6,Casa e Utilidades,130.75,282.2,32,11.5,CasaForte Suprimentos,Camila Torres
+103,Luminária de Mesa v6,Casa e Utilidades,123.42,255.06,16,14.2,Lar & Cia Distribuidora,Camila Torres
+104,Cortina Blackout v6,Casa e Utilidades,250.64,496.51,30,2.4,CasaForte Suprimentos,Camila Torres
+105,Tapete Antiderrapante v6,Casa e Utilidades,142.48,329.54,33,14.6,CasaForte Suprimentos,Camila Torres
+106,Suporte de Prateleira v6,Casa e Utilidades,180.17,388.78,15,6.4,Lar & Cia Distribuidora,Camila Torres
+107,Organizador Multiuso v7,Casa e Utilidades,181.33,366.4,17,24.1,Lar & Cia Distribuidora,Camila Torres
+108,Jogo de Panelas v7,Casa e Utilidades,137.76,358.05,18,2.7,CasaForte Suprimentos,Camila Torres
+109,Luminária de Mesa v7,Casa e Utilidades,120.91,263.76,31,17.2,Lar & Cia Distribuidora,Camila Torres
+110,Cortina Blackout v7,Casa e Utilidades,91.07,226.25,34,90.8,Lar & Cia Distribuidora,Camila Torres
+111,Tapete Antiderrapante v7,Casa e Utilidades,35.89,88.52,19,4.9,Lar & Cia Distribuidora,Camila Torres
+112,Suporte de Prateleira v7,Casa e Utilidades,134.77,327.23,21,5.1,CasaForte Suprimentos,Camila Torres
+113,Organizador Multiuso v8,Casa e Utilidades,233.85,481.28,32,22.8,Lar & Cia Distribuidora,Camila Torres
+114,Jogo de Panelas v8,Casa e Utilidades,105.22,242.69,22,10.1,CasaForte Suprimentos,Camila Torres
+115,Luminária de Mesa v8,Casa e Utilidades,223.86,541.17,25,9.0,CasaForte Suprimentos,Camila Torres
+116,Cortina Blackout v8,Casa e Utilidades,85.16,191.04,24,13.1,Lar & Cia Distribuidora,Camila Torres
+117,Tapete Antiderrapante v8,Casa e Utilidades,88.57,183.92,18,13.0,CasaForte Suprimentos,Camila Torres
+118,Suporte de Prateleira v8,Casa e Utilidades,289.18,546.3,26,6.3,CasaForte Suprimentos,Camila Torres
+119,Organizador Multiuso v9,Casa e Utilidades,34.23,69.24,35,4.7,Lar & Cia Distribuidora,Camila Torres
+120,Jogo de Panelas v9,Casa e Utilidades,54.03,103.81,31,11.2,Lar & Cia Distribuidora,Camila Torres
+121,Luminária de Mesa v9,Casa e Utilidades,278.11,627.52,27,17.0,Lar & Cia Distribuidora,Camila Torres
+122,Cortina Blackout v9,Casa e Utilidades,112.99,209.82,28,3.5,CasaForte Suprimentos,Camila Torres
+123,Tapete Antiderrapante v9,Casa e Utilidades,55.39,113.07,19,15.7,Lar & Cia Distribuidora,Camila Torres
+124,Suporte de Prateleira v9,Casa e Utilidades,64.51,121.49,28,5.1,Lar & Cia Distribuidora,Camila Torres
+125,Organizador Multiuso v10,Casa e Utilidades,67.37,118.91,35,17.0,Lar & Cia Distribuidora,Camila Torres
+126,Jogo de Panelas v10,Casa e Utilidades,61.43,114.85,24,8.7,Lar & Cia Distribuidora,Camila Torres
+127,Luminária de Mesa v10,Casa e Utilidades,190.88,382.96,32,17.9,Lar & Cia Distribuidora,Camila Torres
+128,Cortina Blackout v10,Casa e Utilidades,278.29,693.91,23,25.5,Lar & Cia Distribuidora,Camila Torres
+129,Tapete Antiderrapante v10,Casa e Utilidades,204.04,448.96,22,43.4,CasaForte Suprimentos,Camila Torres
+130,Suporte de Prateleira v10,Casa e Utilidades,267.57,458.71,31,34.6,CasaForte Suprimentos,Camila Torres
+131,Organizador Multiuso v11,Casa e Utilidades,251.82,633.35,34,3.7,Lar & Cia Distribuidora,Camila Torres
+132,Jogo de Panelas v11,Casa e Utilidades,208.35,452.15,35,17.7,CasaForte Suprimentos,Camila Torres
+133,Luminária de Mesa v11,Casa e Utilidades,110.68,233.85,20,3.8,Lar & Cia Distribuidora,Camila Torres
+134,Cortina Blackout v11,Casa e Utilidades,135.0,330.95,15,15.0,CasaForte Suprimentos,Camila Torres
+135,Tapete Antiderrapante v11,Casa e Utilidades,37.09,64.25,26,24.1,CasaForte Suprimentos,Camila Torres
+136,Suporte de Prateleira v11,Casa e Utilidades,279.48,524.98,18,19.3,CasaForte Suprimentos,Camila Torres
+137,Organizador Multiuso v12,Casa e Utilidades,258.25,517.34,22,18.3,Lar & Cia Distribuidora,Camila Torres
+138,Jogo de Panelas v12,Casa e Utilidades,55.61,133.44,15,5.7,Lar & Cia Distribuidora,Camila Torres
+139,Luminária de Mesa v12,Casa e Utilidades,91.26,231.73,30,7.4,CasaForte Suprimentos,Camila Torres
+140,Cortina Blackout v12,Casa e Utilidades,247.29,424.74,20,11.9,CasaForte Suprimentos,Camila Torres
+141,Shampoo 400ml,Beleza e Higiene,86.11,242.48,18,18.4,BelezaPura Distribuidora,Juliana Prado
+142,Creme Hidratante,Beleza e Higiene,94.35,205.24,11,12.9,BelezaPura Distribuidora,Juliana Prado
+143,Escova de Cabelo,Beleza e Higiene,130.45,280.67,21,16.4,Cosmetic Brasil,Juliana Prado
+144,Kit Manicure,Beleza e Higiene,61.71,164.76,22,5.1,Cosmetic Brasil,Juliana Prado
+145,Sabonete Líquido,Beleza e Higiene,11.76,34.76,18,3.0,Cosmetic Brasil,Juliana Prado
+146,Protetor Solar,Beleza e Higiene,47.57,112.41,21,2.9,BelezaPura Distribuidora,Juliana Prado
+147,Shampoo 400ml v2,Beleza e Higiene,48.9,105.95,18,37.7,BelezaPura Distribuidora,Juliana Prado
+148,Creme Hidratante v2,Beleza e Higiene,32.56,61.07,11,5.7,Cosmetic Brasil,Juliana Prado
+149,Escova de Cabelo v2,Beleza e Higiene,112.91,328.23,19,5.3,Cosmetic Brasil,Juliana Prado
+150,Kit Manicure v2,Beleza e Higiene,18.67,36.4,14,16.7,BelezaPura Distribuidora,Juliana Prado
+151,Sabonete Líquido v2,Beleza e Higiene,122.25,229.82,23,126.3,BelezaPura Distribuidora,Juliana Prado
+152,Protetor Solar v2,Beleza e Higiene,8.81,21.37,19,62.4,Cosmetic Brasil,Juliana Prado
+153,Shampoo 400ml v3,Beleza e Higiene,18.4,38.97,14,5.9,BelezaPura Distribuidora,Juliana Prado
+154,Creme Hidratante v3,Beleza e Higiene,145.54,317.84,23,6.3,Cosmetic Brasil,Juliana Prado
+155,Escova de Cabelo v3,Beleza e Higiene,29.78,56.53,11,22.2,Cosmetic Brasil,Juliana Prado
+156,Kit Manicure v3,Beleza e Higiene,99.89,218.59,19,41.8,Cosmetic Brasil,Juliana Prado
+157,Sabonete Líquido v3,Beleza e Higiene,91.68,253.34,25,27.1,Cosmetic Brasil,Juliana Prado
+158,Protetor Solar v3,Beleza e Higiene,77.71,155.35,18,169.4,BelezaPura Distribuidora,Juliana Prado
+159,Shampoo 400ml v4,Beleza e Higiene,27.18,66.7,23,10.7,BelezaPura Distribuidora,Juliana Prado
+160,Creme Hidratante v4,Beleza e Higiene,60.86,149.11,21,26.3,Cosmetic Brasil,Juliana Prado
+161,Escova de Cabelo v4,Beleza e Higiene,23.2,64.53,20,26.7,BelezaPura Distribuidora,Juliana Prado
+162,Kit Manicure v4,Beleza e Higiene,32.66,92.07,24,11.1,BelezaPura Distribuidora,Juliana Prado
+163,Sabonete Líquido v4,Beleza e Higiene,55.2,112.11,17,19.5,Cosmetic Brasil,Juliana Prado
+164,Protetor Solar v4,Beleza e Higiene,32.32,77.06,17,9.6,Cosmetic Brasil,Juliana Prado
+165,Shampoo 400ml v5,Beleza e Higiene,70.15,138.15,24,97.5,Cosmetic Brasil,Juliana Prado
+166,Creme Hidratante v5,Beleza e Higiene,24.52,67.92,15,4.0,Cosmetic Brasil,Juliana Prado
+167,Escova de Cabelo v5,Beleza e Higiene,9.81,27.91,18,3.0,Cosmetic Brasil,Juliana Prado
+168,Kit Manicure v5,Beleza e Higiene,80.12,160.12,12,12.5,BelezaPura Distribuidora,Juliana Prado
+169,Sabonete Líquido v5,Beleza e Higiene,15.44,31.8,25,85.2,Cosmetic Brasil,Juliana Prado
+170,Protetor Solar v5,Beleza e Higiene,91.33,195.18,12,6.8,Cosmetic Brasil,Juliana Prado
+171,Shampoo 400ml v6,Beleza e Higiene,115.24,242.81,13,14.8,BelezaPura Distribuidora,Juliana Prado
+172,Creme Hidratante v6,Beleza e Higiene,133.97,388.74,16,9.3,Cosmetic Brasil,Juliana Prado
+173,Escova de Cabelo v6,Beleza e Higiene,43.94,86.45,25,27.3,BelezaPura Distribuidora,Juliana Prado
+174,Kit Manicure v6,Beleza e Higiene,28.72,76.25,17,17.6,BelezaPura Distribuidora,Juliana Prado
+175,Sabonete Líquido v6,Beleza e Higiene,146.12,385.01,13,8.0,BelezaPura Distribuidora,Juliana Prado
+176,Protetor Solar v6,Beleza e Higiene,21.16,46.51,12,7.9,Cosmetic Brasil,Juliana Prado
+177,Shampoo 400ml v7,Beleza e Higiene,138.39,350.67,23,28.5,BelezaPura Distribuidora,Juliana Prado
+178,Creme Hidratante v7,Beleza e Higiene,88.09,236.49,11,5.4,BelezaPura Distribuidora,Juliana Prado
+179,Escova de Cabelo v7,Beleza e Higiene,30.25,83.96,15,19.5,BelezaPura Distribuidora,Juliana Prado
+180,Kit Manicure v7,Beleza e Higiene,148.86,315.47,16,2.9,BelezaPura Distribuidora,Juliana Prado
+181,Sabonete Líquido v7,Beleza e Higiene,142.29,319.79,16,7.1,BelezaPura Distribuidora,Juliana Prado
+182,Protetor Solar v7,Beleza e Higiene,115.44,273.07,25,27.0,Cosmetic Brasil,Juliana Prado
+183,Shampoo 400ml v8,Beleza e Higiene,69.46,136.68,12,14.0,BelezaPura Distribuidora,Juliana Prado
+184,Creme Hidratante v8,Beleza e Higiene,103.41,285.7,10,20.3,BelezaPura Distribuidora,Juliana Prado
+185,Escova de Cabelo v8,Beleza e Higiene,47.46,102.74,18,3.5,Cosmetic Brasil,Juliana Prado
+186,Kit Manicure v8,Beleza e Higiene,98.35,199.05,22,2.4,BelezaPura Distribuidora,Juliana Prado
+187,Sabonete Líquido v8,Beleza e Higiene,115.42,248.8,17,7.1,Cosmetic Brasil,Juliana Prado
+188,Protetor Solar v8,Beleza e Higiene,90.07,189.52,20,35.8,Cosmetic Brasil,Juliana Prado
+189,Shampoo 400ml v9,Beleza e Higiene,91.77,182.17,13,29.5,Cosmetic Brasil,Juliana Prado
+190,Creme Hidratante v9,Beleza e Higiene,36.74,77.31,21,5.1,BelezaPura Distribuidora,Juliana Prado
+191,Escova de Cabelo v9,Beleza e Higiene,48.7,123.03,10,8.9,BelezaPura Distribuidora,Juliana Prado
+192,Kit Manicure v9,Beleza e Higiene,82.01,206.79,25,8.5,BelezaPura Distribuidora,Juliana Prado
+193,Sabonete Líquido v9,Beleza e Higiene,54.56,98.49,16,25.3,Cosmetic Brasil,Juliana Prado
+194,Protetor Solar v9,Beleza e Higiene,36.75,80.85,10,57.3,BelezaPura Distribuidora,Juliana Prado
+195,Shampoo 400ml v10,Beleza e Higiene,139.62,324.23,24,7.4,Cosmetic Brasil,Juliana Prado
+196,Creme Hidratante v10,Beleza e Higiene,42.79,126.35,13,8.2,BelezaPura Distribuidora,Juliana Prado
+197,Escova de Cabelo v10,Beleza e Higiene,21.23,46.32,16,2.4,Cosmetic Brasil,Juliana Prado
+198,Kit Manicure v10,Beleza e Higiene,25.92,66.35,10,50.2,Cosmetic Brasil,Juliana Prado
+199,Sabonete Líquido v10,Beleza e Higiene,136.2,299.99,18,109.5,BelezaPura Distribuidora,Juliana Prado
+200,Protetor Solar v10,Beleza e Higiene,104.05,255.61,15,80.4,Cosmetic Brasil,Juliana Prado
+201,Shampoo 400ml v11,Beleza e Higiene,44.96,112.42,21,8.7,Cosmetic Brasil,Juliana Prado
+202,Creme Hidratante v11,Beleza e Higiene,81.67,148.49,25,11.8,Cosmetic Brasil,Juliana Prado
+203,Escova de Cabelo v11,Beleza e Higiene,26.33,69.29,22,10.6,Cosmetic Brasil,Juliana Prado
+204,Kit Manicure v11,Beleza e Higiene,33.14,61.06,22,4.7,Cosmetic Brasil,Juliana Prado
+205,Sabonete Líquido v11,Beleza e Higiene,42.67,121.15,25,28.2,BelezaPura Distribuidora,Juliana Prado
+206,Garrafa Térmica,Esporte e Lazer,30.51,56.57,28,3.6,Vida Ativa Distribuidora,Marcelo Duarte
+207,Faixa Elástica,Esporte e Lazer,364.24,799.54,38,6.9,Vida Ativa Distribuidora,Marcelo Duarte
+208,Bola de Treino,Esporte e Lazer,658.91,1254.04,38,21.9,Vida Ativa Distribuidora,Marcelo Duarte
+209,Luva de Academia,Esporte e Lazer,693.54,1361.65,35,15.6,SportMax Suprimentos,Marcelo Duarte
+210,Corda de Pular,Esporte e Lazer,318.89,721.02,21,6.6,SportMax Suprimentos,Marcelo Duarte
+211,Mochila Esportiva,Esporte e Lazer,127.41,232.65,34,3.4,SportMax Suprimentos,Marcelo Duarte
+212,Garrafa Térmica v2,Esporte e Lazer,413.84,690.3,37,47.5,Vida Ativa Distribuidora,Marcelo Duarte
+213,Faixa Elástica v2,Esporte e Lazer,496.48,821.91,26,44.3,SportMax Suprimentos,Marcelo Duarte
+214,Bola de Treino v2,Esporte e Lazer,63.44,116.92,29,7.1,Vida Ativa Distribuidora,Marcelo Duarte
+215,Luva de Academia v2,Esporte e Lazer,195.54,296.18,36,14.4,Vida Ativa Distribuidora,Marcelo Duarte
+216,Corda de Pular v2,Esporte e Lazer,224.69,455.1,31,41.0,Vida Ativa Distribuidora,Marcelo Duarte
+217,Mochila Esportiva v2,Esporte e Lazer,673.05,1275.02,35,130.4,SportMax Suprimentos,Marcelo Duarte
+218,Garrafa Térmica v3,Esporte e Lazer,567.1,981.0,29,86.1,Vida Ativa Distribuidora,Marcelo Duarte
+219,Faixa Elástica v3,Esporte e Lazer,431.76,967.44,32,29.7,Vida Ativa Distribuidora,Marcelo Duarte
+220,Bola de Treino v3,Esporte e Lazer,280.87,500.01,21,25.9,Vida Ativa Distribuidora,Marcelo Duarte
+221,Luva de Academia v3,Esporte e Lazer,445.62,703.22,32,4.8,Vida Ativa Distribuidora,Marcelo Duarte
+222,Corda de Pular v3,Esporte e Lazer,625.24,1341.32,34,19.6,SportMax Suprimentos,Marcelo Duarte
+223,Mochila Esportiva v3,Esporte e Lazer,161.84,355.28,25,22.1,Vida Ativa Distribuidora,Marcelo Duarte
+224,Garrafa Térmica v4,Esporte e Lazer,375.64,650.79,38,13.7,Vida Ativa Distribuidora,Marcelo Duarte
+225,Faixa Elástica v4,Esporte e Lazer,565.79,1266.19,35,10.6,Vida Ativa Distribuidora,Marcelo Duarte
+226,Bola de Treino v4,Esporte e Lazer,115.75,191.09,22,37.6,SportMax Suprimentos,Marcelo Duarte
+227,Luva de Academia v4,Esporte e Lazer,314.73,523.86,40,19.9,Vida Ativa Distribuidora,Marcelo Duarte
+228,Corda de Pular v4,Esporte e Lazer,337.8,751.11,33,79.6,SportMax Suprimentos,Marcelo Duarte
+229,Mochila Esportiva v4,Esporte e Lazer,233.82,518.04,29,14.3,Vida Ativa Distribuidora,Marcelo Duarte
+230,Garrafa Térmica v5,Esporte e Lazer,479.11,754.83,28,10.7,Vida Ativa Distribuidora,Marcelo Duarte
+231,Faixa Elástica v5,Esporte e Lazer,44.65,77.72,28,10.8,SportMax Suprimentos,Marcelo Duarte
+232,Bola de Treino v5,Esporte e Lazer,169.02,265.21,40,4.6,Vida Ativa Distribuidora,Marcelo Duarte
+233,Luva de Academia v5,Esporte e Lazer,239.87,380.65,37,25.8,SportMax Suprimentos,Marcelo Duarte
+234,Corda de Pular v5,Esporte e Lazer,117.98,228.12,37,12.7,Vida Ativa Distribuidora,Marcelo Duarte
+235,Mochila Esportiva v5,Esporte e Lazer,608.11,1101.92,37,5.1,Vida Ativa Distribuidora,Marcelo Duarte
+236,Garrafa Térmica v6,Esporte e Lazer,542.35,1130.8,30,12.9,SportMax Suprimentos,Marcelo Duarte
+237,Faixa Elástica v6,Esporte e Lazer,510.96,939.66,36,9.5,SportMax Suprimentos,Marcelo Duarte
+238,Bola de Treino v6,Esporte e Lazer,456.75,947.79,28,15.2,Vida Ativa Distribuidora,Marcelo Duarte
+239,Luva de Academia v6,Esporte e Lazer,341.33,638.94,39,9.0,SportMax Suprimentos,Marcelo Duarte
+240,Corda de Pular v6,Esporte e Lazer,494.31,903.34,25,32.6,Vida Ativa Distribuidora,Marcelo Duarte
+241,Mochila Esportiva v6,Esporte e Lazer,45.27,103.92,28,6.7,Vida Ativa Distribuidora,Marcelo Duarte
+242,Garrafa Térmica v7,Esporte e Lazer,58.39,113.22,32,21.8,SportMax Suprimentos,Marcelo Duarte
+243,Faixa Elástica v7,Esporte e Lazer,230.67,457.13,23,42.9,Vida Ativa Distribuidora,Marcelo Duarte
+244,Bola de Treino v7,Esporte e Lazer,409.54,616.24,37,2.7,Vida Ativa Distribuidora,Marcelo Duarte
+245,Luva de Academia v7,Esporte e Lazer,105.22,231.05,35,10.7,SportMax Suprimentos,Marcelo Duarte
+246,Corda de Pular v7,Esporte e Lazer,220.26,488.06,33,42.0,Vida Ativa Distribuidora,Marcelo Duarte
+247,Mochila Esportiva v7,Esporte e Lazer,531.26,987.79,24,16.8,SportMax Suprimentos,Marcelo Duarte
+248,Garrafa Térmica v8,Esporte e Lazer,395.79,829.17,23,19.1,SportMax Suprimentos,Marcelo Duarte
+249,Faixa Elástica v8,Esporte e Lazer,424.84,971.58,20,18.2,SportMax Suprimentos,Marcelo Duarte
+250,Bola de Treino v8,Esporte e Lazer,614.62,1208.12,29,16.8,Vida Ativa Distribuidora,Marcelo Duarte
+251,Luva de Academia v8,Esporte e Lazer,611.74,945.65,22,28.4,SportMax Suprimentos,Marcelo Duarte
+252,Corda de Pular v8,Esporte e Lazer,244.23,481.88,35,12.8,Vida Ativa Distribuidora,Marcelo Duarte
+253,Mochila Esportiva v8,Esporte e Lazer,33.58,55.57,29,22.3,SportMax Suprimentos,Marcelo Duarte
+254,Garrafa Térmica v9,Esporte e Lazer,370.59,781.26,27,9.9,Vida Ativa Distribuidora,Marcelo Duarte
+255,Faixa Elástica v9,Esporte e Lazer,83.8,156.69,28,6.4,Vida Ativa Distribuidora,Marcelo Duarte
+256,Bola de Treino v9,Esporte e Lazer,322.05,582.17,38,6.6,SportMax Suprimentos,Marcelo Duarte
+257,Luva de Academia v9,Esporte e Lazer,667.15,1181.17,29,2.0,Vida Ativa Distribuidora,Marcelo Duarte
+258,Corda de Pular v9,Esporte e Lazer,501.65,941.45,28,3.5,Vida Ativa Distribuidora,Marcelo Duarte
+259,Mochila Esportiva v9,Esporte e Lazer,675.38,1165.71,21,8.1,SportMax Suprimentos,Marcelo Duarte
+260,Garrafa Térmica v10,Esporte e Lazer,596.99,1186.53,22,15.5,Vida Ativa Distribuidora,Marcelo Duarte
+261,Faixa Elástica v10,Esporte e Lazer,555.76,862.95,29,14.2,SportMax Suprimentos,Marcelo Duarte
+262,Bola de Treino v10,Esporte e Lazer,111.31,245.83,40,139.9,SportMax Suprimentos,Marcelo Duarte
+263,Luva de Academia v10,Esporte e Lazer,361.5,613.63,38,11.4,SportMax Suprimentos,Marcelo Duarte
+264,Corda de Pular v10,Esporte e Lazer,565.63,921.3,28,5.9,SportMax Suprimentos,Marcelo Duarte
+265,Mochila Esportiva v10,Esporte e Lazer,692.9,1087.52,40,4.9,Vida Ativa Distribuidora,Marcelo Duarte
+266,Caderno Universitário,Papelaria,25.77,67.59,14,7.4,Papel & Cia,Fernanda Lima
+267,Caneta Gel (cx),Papelaria,10.38,22.51,17,2.0,EscritorioTotal Distribuidora,Fernanda Lima
+268,Marcador de Texto,Papelaria,81.31,248.95,8,6.0,Papel & Cia,Fernanda Lima
+269,Agenda Anual,Papelaria,3.06,7.36,19,11.6,EscritorioTotal Distribuidora,Fernanda Lima
+270,Pasta Organizadora,Papelaria,64.12,198.27,20,25.6,Papel & Cia,Fernanda Lima
+271,Post-it Colorido,Papelaria,78.08,233.79,20,42.0,EscritorioTotal Distribuidora,Fernanda Lima
+272,Caderno Universitário v2,Papelaria,14.91,35.78,12,30.7,EscritorioTotal Distribuidora,Fernanda Lima
+273,Caneta Gel (cx) v2,Papelaria,48.39,151.57,18,2.4,Papel & Cia,Fernanda Lima
+274,Marcador de Texto v2,Papelaria,14.01,43.3,10,36.2,EscritorioTotal Distribuidora,Fernanda Lima
+275,Agenda Anual v2,Papelaria,80.44,215.38,12,10.5,Papel & Cia,Fernanda Lima
+276,Pasta Organizadora v2,Papelaria,46.49,91.37,16,13.0,EscritorioTotal Distribuidora,Fernanda Lima
+277,Post-it Colorido v2,Papelaria,60.19,162.61,16,49.7,Papel & Cia,Fernanda Lima
+278,Caderno Universitário v3,Papelaria,13.72,35.58,7,47.5,Papel & Cia,Fernanda Lima
+279,Caneta Gel (cx) v3,Papelaria,17.93,43.62,12,25.5,Papel & Cia,Fernanda Lima
+280,Marcador de Texto v3,Papelaria,67.06,157.7,14,52.6,EscritorioTotal Distribuidora,Fernanda Lima
+281,Agenda Anual v3,Papelaria,87.61,168.4,13,9.2,Papel & Cia,Fernanda Lima
+282,Pasta Organizadora v3,Papelaria,48.47,130.81,17,57.1,Papel & Cia,Fernanda Lima
+283,Post-it Colorido v3,Papelaria,37.14,105.09,13,18.9,Papel & Cia,Fernanda Lima
+284,Caderno Universitário v4,Papelaria,45.93,104.06,13,5.0,EscritorioTotal Distribuidora,Fernanda Lima
+285,Caneta Gel (cx) v4,Papelaria,41.3,94.22,17,102.3,Papel & Cia,Fernanda Lima
+286,Marcador de Texto v4,Papelaria,56.87,174.76,18,20.6,EscritorioTotal Distribuidora,Fernanda Lima
+287,Agenda Anual v4,Papelaria,41.59,114.18,17,16.1,EscritorioTotal Distribuidora,Fernanda Lima
+288,Pasta Organizadora v4,Papelaria,60.92,178.78,20,12.3,Papel & Cia,Fernanda Lima
+289,Post-it Colorido v4,Papelaria,31.38,88.51,10,11.9,Papel & Cia,Fernanda Lima
+290,Caderno Universitário v5,Papelaria,20.5,40.58,10,18.7,Papel & Cia,Fernanda Lima
+291,Caneta Gel (cx) v5,Papelaria,60.91,141.18,7,54.5,Papel & Cia,Fernanda Lima
+292,Marcador de Texto v5,Papelaria,53.13,143.58,16,15.9,Papel & Cia,Fernanda Lima
+293,Agenda Anual v5,Papelaria,66.15,165.6,8,5.8,Papel & Cia,Fernanda Lima
+294,Pasta Organizadora v5,Papelaria,50.19,135.99,17,36.7,EscritorioTotal Distribuidora,Fernanda Lima
+295,Post-it Colorido v5,Papelaria,7.97,23.14,12,7.9,EscritorioTotal Distribuidora,Fernanda Lima
+296,Caderno Universitário v6,Papelaria,31.02,78.63,10,17.4,EscritorioTotal Distribuidora,Fernanda Lima
+297,Caneta Gel (cx) v6,Papelaria,58.5,162.73,20,29.2,EscritorioTotal Distribuidora,Fernanda Lima
+298,Marcador de Texto v6,Papelaria,55.86,139.5,12,25.1,Papel & Cia,Fernanda Lima
+299,Agenda Anual v6,Papelaria,46.39,101.41,8,63.7,EscritorioTotal Distribuidora,Fernanda Lima
+300,Pasta Organizadora v6,Papelaria,80.74,190.63,12,56.3,EscritorioTotal Distribuidora,Fernanda Lima
+301,Post-it Colorido v6,Papelaria,14.05,42.98,11,32.6,EscritorioTotal Distribuidora,Fernanda Lima
+302,Caderno Universitário v7,Papelaria,13.25,30.67,8,23.2,EscritorioTotal Distribuidora,Fernanda Lima
+303,Caneta Gel (cx) v7,Papelaria,88.81,210.63,17,17.8,Papel & Cia,Fernanda Lima
+304,Marcador de Texto v7,Papelaria,40.65,92.46,18,6.3,EscritorioTotal Distribuidora,Fernanda Lima
+305,Agenda Anual v7,Papelaria,14.66,33.43,8,3.8,EscritorioTotal Distribuidora,Fernanda Lima
+306,Pasta Organizadora v7,Papelaria,78.84,250.67,18,2.6,Papel & Cia,Fernanda Lima
+307,Post-it Colorido v7,Papelaria,22.25,52.99,17,6.8,EscritorioTotal Distribuidora,Fernanda Lima
+308,Caderno Universitário v8,Papelaria,37.38,72.1,15,74.4,Papel & Cia,Fernanda Lima
+309,Caneta Gel (cx) v8,Papelaria,72.4,159.55,10,18.3,Papel & Cia,Fernanda Lima
+310,Marcador de Texto v8,Papelaria,19.41,47.05,16,24.0,EscritorioTotal Distribuidora,Fernanda Lima
+311,Agenda Anual v8,Papelaria,10.83,27.09,16,9.9,Papel & Cia,Fernanda Lima
+312,Pasta Organizadora v8,Papelaria,85.24,255.01,10,10.1,EscritorioTotal Distribuidora,Fernanda Lima
+313,Post-it Colorido v8,Papelaria,74.6,212.35,9,4.4,Papel & Cia,Fernanda Lima
+314,Caderno Universitário v9,Papelaria,28.91,80.2,17,15.6,Papel & Cia,Fernanda Lima
+315,Caneta Gel (cx) v9,Papelaria,31.44,66.09,12,227.9,EscritorioTotal Distribuidora,Fernanda Lima
+316,Marcador de Texto v9,Papelaria,77.1,214.8,13,58.4,Papel & Cia,Fernanda Lima
+317,Agenda Anual v9,Papelaria,21.95,56.2,14,11.3,Papel & Cia,Fernanda Lima
+318,Pasta Organizadora v9,Papelaria,10.48,30.24,8,5.0,Papel & Cia,Fernanda Lima
+319,Post-it Colorido v9,Papelaria,72.39,179.05,15,12.9,EscritorioTotal Distribuidora,Fernanda Lima
+320,Caderno Universitário v10,Papelaria,29.75,68.34,11,33.5,EscritorioTotal Distribuidora,Fernanda Lima
+321,Furadeira Compacta,Ferramentas,221.4,434.8,30,68.9,FerroForte Distribuidora,Ricardo Nunes
+322,Kit Chaves de Fenda,Ferramentas,589.41,976.47,23,4.3,ToolPro Suprimentos,Ricardo Nunes
+323,Trena 5m,Ferramentas,111.23,179.02,45,6.6,ToolPro Suprimentos,Ricardo Nunes
+324,Nível a Laser,Ferramentas,891.76,1634.18,30,9.6,FerroForte Distribuidora,Ricardo Nunes
+325,Parafusadeira,Ferramentas,160.25,228.12,45,7.5,FerroForte Distribuidora,Ricardo Nunes
+326,Serra Manual,Ferramentas,109.58,196.29,44,3.2,FerroForte Distribuidora,Ricardo Nunes
+327,Furadeira Compacta v2,Ferramentas,649.36,1009.11,31,3.3,FerroForte Distribuidora,Ricardo Nunes
+328,Kit Chaves de Fenda v2,Ferramentas,422.33,762.55,40,74.2,FerroForte Distribuidora,Ricardo Nunes
+329,Trena 5m v2,Ferramentas,80.81,137.12,30,60.3,ToolPro Suprimentos,Ricardo Nunes
+330,Nível a Laser v2,Ferramentas,238.34,470.92,26,65.2,FerroForte Distribuidora,Ricardo Nunes
+331,Parafusadeira v2,Ferramentas,634.96,1009.2,43,3.1,ToolPro Suprimentos,Ricardo Nunes
+332,Serra Manual v2,Ferramentas,390.87,728.08,30,44.7,ToolPro Suprimentos,Ricardo Nunes
+333,Furadeira Compacta v3,Ferramentas,441.54,797.3,33,2.0,FerroForte Distribuidora,Ricardo Nunes
+334,Kit Chaves de Fenda v3,Ferramentas,179.06,283.88,36,22.9,FerroForte Distribuidora,Ricardo Nunes
+335,Trena 5m v3,Ferramentas,894.12,1618.24,42,8.3,FerroForte Distribuidora,Ricardo Nunes
+336,Nível a Laser v3,Ferramentas,833.42,1464.28,20,5.4,FerroForte Distribuidora,Ricardo Nunes
+337,Parafusadeira v3,Ferramentas,577.43,1107.81,27,31.3,FerroForte Distribuidora,Ricardo Nunes
+338,Serra Manual v3,Ferramentas,140.97,269.35,28,5.4,FerroForte Distribuidora,Ricardo Nunes
+339,Furadeira Compacta v4,Ferramentas,720.22,1294.04,33,9.0,FerroForte Distribuidora,Ricardo Nunes
+340,Kit Chaves de Fenda v4,Ferramentas,625.22,1044.75,21,22.4,FerroForte Distribuidora,Ricardo Nunes
+341,Trena 5m v4,Ferramentas,430.52,788.03,36,27.6,FerroForte Distribuidora,Ricardo Nunes
+342,Nível a Laser v4,Ferramentas,75.46,114.28,33,73.5,ToolPro Suprimentos,Ricardo Nunes
+343,Parafusadeira v4,Ferramentas,303.09,490.26,36,20.4,ToolPro Suprimentos,Ricardo Nunes
+344,Serra Manual v4,Ferramentas,730.87,1257.37,41,11.6,ToolPro Suprimentos,Ricardo Nunes
+345,Furadeira Compacta v5,Ferramentas,497.24,762.24,44,44.0,FerroForte Distribuidora,Ricardo Nunes
+346,Kit Chaves de Fenda v5,Ferramentas,41.56,80.32,42,23.6,ToolPro Suprimentos,Ricardo Nunes
+347,Trena 5m v5,Ferramentas,775.18,1456.58,36,2.0,FerroForte Distribuidora,Ricardo Nunes
+348,Nível a Laser v5,Ferramentas,425.82,663.55,42,55.0,FerroForte Distribuidora,Ricardo Nunes
+349,Parafusadeira v5,Ferramentas,695.09,1319.99,26,8.8,FerroForte Distribuidora,Ricardo Nunes
+350,Serra Manual v5,Ferramentas,427.69,844.17,23,5.3,ToolPro Suprimentos,Ricardo Nunes
+351,Furadeira Compacta v6,Ferramentas,662.18,1196.12,42,2.0,ToolPro Suprimentos,Ricardo Nunes
+352,Kit Chaves de Fenda v6,Ferramentas,753.0,1178.94,27,65.5,FerroForte Distribuidora,Ricardo Nunes
+353,Trena 5m v6,Ferramentas,304.39,558.37,20,65.7,ToolPro Suprimentos,Ricardo Nunes
+354,Nível a Laser v6,Ferramentas,772.29,1372.68,20,47.7,FerroForte Distribuidora,Ricardo Nunes
+355,Parafusadeira v6,Ferramentas,790.09,1466.75,36,7.4,FerroForte Distribuidora,Ricardo Nunes
+356,Serra Manual v6,Ferramentas,353.78,565.58,33,4.2,FerroForte Distribuidora,Ricardo Nunes
+357,Furadeira Compacta v7,Ferramentas,414.87,652.28,31,6.8,ToolPro Suprimentos,Ricardo Nunes
+358,Kit Chaves de Fenda v7,Ferramentas,564.75,959.17,29,30.6,FerroForte Distribuidora,Ricardo Nunes
+359,Trena 5m v7,Ferramentas,471.6,789.94,25,13.8,FerroForte Distribuidora,Ricardo Nunes
+360,Nível a Laser v7,Ferramentas,733.9,1322.05,38,28.6,ToolPro Suprimentos,Ricardo Nunes
+361,Parafusadeira v7,Ferramentas,635.34,986.48,34,2.0,ToolPro Suprimentos,Ricardo Nunes
+362,Serra Manual v7,Ferramentas,37.49,67.26,26,2.5,FerroForte Distribuidora,Ricardo Nunes
+363,Furadeira Compacta v8,Ferramentas,133.4,238.07,23,25.8,FerroForte Distribuidora,Ricardo Nunes
+364,Kit Chaves de Fenda v8,Ferramentas,255.64,428.76,41,6.6,ToolPro Suprimentos,Ricardo Nunes
+365,Trena 5m v8,Ferramentas,322.68,578.59,45,16.9,ToolPro Suprimentos,Ricardo Nunes
+366,Nível a Laser v8,Ferramentas,642.22,1182.19,33,4.8,FerroForte Distribuidora,Ricardo Nunes
+367,Parafusadeira v8,Ferramentas,852.61,1488.76,40,5.4,FerroForte Distribuidora,Ricardo Nunes
+368,Serra Manual v8,Ferramentas,475.64,736.66,27,15.4,ToolPro Suprimentos,Ricardo Nunes
+369,Furadeira Compacta v9,Ferramentas,707.21,1175.71,34,5.4,ToolPro Suprimentos,Ricardo Nunes
+370,Kit Chaves de Fenda v9,Ferramentas,30.92,61.41,21,5.8,ToolPro Suprimentos,Ricardo Nunes
+371,Trena 5m v9,Ferramentas,335.22,480.05,43,4.7,FerroForte Distribuidora,Ricardo Nunes
+372,Nível a Laser v9,Ferramentas,387.84,629.92,43,8.9,FerroForte Distribuidora,Ricardo Nunes
+373,Parafusadeira v9,Ferramentas,708.16,1314.22,38,16.3,ToolPro Suprimentos,Ricardo Nunes
+374,Serra Manual v9,Ferramentas,472.85,861.39,37,17.8,FerroForte Distribuidora,Ricardo Nunes
+375,Furadeira Compacta v10,Ferramentas,759.83,1074.5,43,10.6,FerroForte Distribuidora,Ricardo Nunes
+376,Kit Chaves de Fenda v10,Ferramentas,220.23,314.55,26,8.7,FerroForte Distribuidora,Ricardo Nunes
+377,Trena 5m v10,Ferramentas,155.01,295.11,45,5.3,FerroForte Distribuidora,Ricardo Nunes
+378,Nível a Laser v10,Ferramentas,795.92,1210.43,25,7.6,FerroForte Distribuidora,Ricardo Nunes
+379,Parafusadeira v10,Ferramentas,244.35,355.7,28,61.8,ToolPro Suprimentos,Ricardo Nunes
+380,Serra Manual v10,Ferramentas,707.57,1187.21,35,3.1,ToolPro Suprimentos,Ricardo Nunes
+381,Ração Premium 3kg,Pet,119.1,245.96,21,8.0,PetLife Distribuidora,Camila Torres
+382,Brinquedo Mordedor,Pet,69.56,167.26,12,3.3,PetLife Distribuidora,Camila Torres
+383,Coleira Ajustável,Pet,136.34,270.13,14,4.9,PetLife Distribuidora,Camila Torres
+384,Areia Sanitária,Pet,171.84,442.49,13,5.0,AmigoFiel Suprimentos,Camila Torres
+385,Petisco Natural,Pet,118.39,245.56,17,46.4,AmigoFiel Suprimentos,Camila Torres
+386,Cama Pet,Pet,59.19,135.89,13,37.8,PetLife Distribuidora,Camila Torres
+387,Ração Premium 3kg v2,Pet,234.87,485.83,24,46.8,AmigoFiel Suprimentos,Camila Torres
+388,Brinquedo Mordedor v2,Pet,34.72,71.34,19,14.7,AmigoFiel Suprimentos,Camila Torres
+389,Coleira Ajustável v2,Pet,226.95,554.86,25,25.8,PetLife Distribuidora,Camila Torres
+390,Areia Sanitária v2,Pet,25.16,64.52,13,12.1,PetLife Distribuidora,Camila Torres
+391,Petisco Natural v2,Pet,58.79,100.67,25,26.3,PetLife Distribuidora,Camila Torres
+392,Cama Pet v2,Pet,175.03,355.84,17,26.9,AmigoFiel Suprimentos,Camila Torres
+393,Ração Premium 3kg v3,Pet,88.35,217.56,24,126.8,PetLife Distribuidora,Camila Torres
+394,Brinquedo Mordedor v3,Pet,226.14,576.34,24,4.8,AmigoFiel Suprimentos,Camila Torres
+395,Coleira Ajustável v3,Pet,218.27,501.65,24,43.5,PetLife Distribuidora,Camila Torres
+396,Areia Sanitária v3,Pet,230.61,463.04,13,5.7,AmigoFiel Suprimentos,Camila Torres
+397,Petisco Natural v3,Pet,92.2,238.84,12,6.9,AmigoFiel Suprimentos,Camila Torres
+398,Cama Pet v3,Pet,11.61,22.82,13,29.9,AmigoFiel Suprimentos,Camila Torres
+399,Ração Premium 3kg v4,Pet,232.79,570.59,12,53.3,PetLife Distribuidora,Camila Torres
+400,Brinquedo Mordedor v4,Pet,176.49,348.77,12,15.5,PetLife Distribuidora,Camila Torres
+401,Coleira Ajustável v4,Pet,80.06,148.76,10,15.0,AmigoFiel Suprimentos,Camila Torres
+402,Areia Sanitária v4,Pet,176.37,377.65,24,20.2,PetLife Distribuidora,Camila Torres
+403,Petisco Natural v4,Pet,241.64,485.05,14,5.2,PetLife Distribuidora,Camila Torres
+404,Cama Pet v4,Pet,204.15,368.02,19,37.5,PetLife Distribuidora,Camila Torres
+405,Ração Premium 3kg v5,Pet,210.99,543.84,19,4.2,PetLife Distribuidora,Camila Torres
+406,Brinquedo Mordedor v5,Pet,135.17,255.83,21,28.6,PetLife Distribuidora,Camila Torres
+407,Coleira Ajustável v5,Pet,182.72,438.64,23,2.9,AmigoFiel Suprimentos,Camila Torres
+408,Areia Sanitária v5,Pet,80.13,196.25,10,16.4,AmigoFiel Suprimentos,Camila Torres
+409,Petisco Natural v5,Pet,89.88,190.24,25,41.4,PetLife Distribuidora,Camila Torres
+410,Cama Pet v5,Pet,197.68,419.44,23,18.5,AmigoFiel Suprimentos,Camila Torres
+411,Ração Premium 3kg v6,Pet,189.98,432.35,21,19.3,AmigoFiel Suprimentos,Camila Torres
+412,Brinquedo Mordedor v6,Pet,138.84,249.86,15,41.6,PetLife Distribuidora,Camila Torres
+413,Coleira Ajustável v6,Pet,18.99,48.42,20,13.7,PetLife Distribuidora,Camila Torres
+414,Areia Sanitária v6,Pet,113.91,266.76,18,8.7,AmigoFiel Suprimentos,Camila Torres
+415,Petisco Natural v6,Pet,21.92,53.49,23,24.3,AmigoFiel Suprimentos,Camila Torres
+416,Cama Pet v6,Pet,198.44,493.28,21,4.1,PetLife Distribuidora,Camila Torres
+417,Ração Premium 3kg v7,Pet,90.16,153.74,18,37.8,PetLife Distribuidora,Camila Torres
+418,Brinquedo Mordedor v7,Pet,193.73,403.78,13,37.4,PetLife Distribuidora,Camila Torres
+419,Coleira Ajustável v7,Pet,96.48,229.43,19,31.4,PetLife Distribuidora,Camila Torres
+420,Areia Sanitária v7,Pet,143.69,360.32,17,17.0,AmigoFiel Suprimentos,Camila Torres
+421,Petisco Natural v7,Pet,174.93,311.04,14,12.1,PetLife Distribuidora,Camila Torres
+422,Cama Pet v7,Pet,161.35,407.34,25,102.7,AmigoFiel Suprimentos,Camila Torres
+423,Ração Premium 3kg v8,Pet,188.29,475.46,21,116.2,PetLife Distribuidora,Camila Torres
+424,Brinquedo Mordedor v8,Pet,147.19,323.72,20,19.2,AmigoFiel Suprimentos,Camila Torres
+425,Coleira Ajustável v8,Pet,186.93,473.2,23,18.2,AmigoFiel Suprimentos,Camila Torres
+426,Areia Sanitária v8,Pet,190.43,374.49,11,2.0,AmigoFiel Suprimentos,Camila Torres
+427,Petisco Natural v8,Pet,18.44,36.18,14,59.1,PetLife Distribuidora,Camila Torres
+428,Cama Pet v8,Pet,207.54,398.5,17,8.0,PetLife Distribuidora,Camila Torres
+429,Ração Premium 3kg v9,Pet,166.94,416.02,14,13.4,AmigoFiel Suprimentos,Camila Torres
+430,Brinquedo Mordedor v9,Pet,162.4,332.52,24,10.2,PetLife Distribuidora,Camila Torres
+431,Coleira Ajustável v9,Pet,125.01,315.59,12,7.6,PetLife Distribuidora,Camila Torres
+432,Areia Sanitária v9,Pet,83.33,185.56,12,50.9,PetLife Distribuidora,Camila Torres
+433,Petisco Natural v9,Pet,191.02,452.2,21,12.3,PetLife Distribuidora,Camila Torres
+434,Cama Pet v9,Pet,228.94,568.48,12,13.2,AmigoFiel Suprimentos,Camila Torres
+435,Ração Premium 3kg v10,Pet,116.86,217.21,15,82.9,AmigoFiel Suprimentos,Camila Torres
+436,Café em Grãos 500g,Alimentos Não Perecíveis,25.93,40.06,12,47.2,Mercado Sul Distribuidora,Fernanda Lima
+437,Barra de Cereal (cx),Alimentos Não Perecíveis,40.83,89.12,11,12.2,Empório Atacado,Fernanda Lima
+438,Azeite Extra Virgem,Alimentos Não Perecíveis,29.44,60.62,17,6.4,Mercado Sul Distribuidora,Fernanda Lima
+439,Macarrão Tipo 1,Alimentos Não Perecíveis,58.89,113.02,16,8.9,Empório Atacado,Fernanda Lima
+440,Molho de Tomate,Alimentos Não Perecíveis,50.71,76.72,13,4.8,Empório Atacado,Fernanda Lima
+441,Chá em Sachês,Alimentos Não Perecíveis,19.15,41.4,14,10.5,Empório Atacado,Fernanda Lima
+442,Café em Grãos 500g v2,Alimentos Não Perecíveis,43.67,89.16,7,11.5,Mercado Sul Distribuidora,Fernanda Lima
+443,Barra de Cereal (cx) v2,Alimentos Não Perecíveis,51.88,82.25,16,63.3,Mercado Sul Distribuidora,Fernanda Lima
+444,Azeite Extra Virgem v2,Alimentos Não Perecíveis,56.82,114.22,7,7.1,Mercado Sul Distribuidora,Fernanda Lima
+445,Macarrão Tipo 1 v2,Alimentos Não Perecíveis,43.14,83.63,15,4.0,Empório Atacado,Fernanda Lima
+446,Molho de Tomate v2,Alimentos Não Perecíveis,48.05,93.41,11,25.3,Mercado Sul Distribuidora,Fernanda Lima
+447,Chá em Sachês v2,Alimentos Não Perecíveis,54.55,96.42,7,77.3,Empório Atacado,Fernanda Lima
+448,Café em Grãos 500g v3,Alimentos Não Perecíveis,49.99,96.87,18,27.5,Empório Atacado,Fernanda Lima
+449,Barra de Cereal (cx) v3,Alimentos Não Perecíveis,38.25,66.92,16,12.3,Mercado Sul Distribuidora,Fernanda Lima
+450,Azeite Extra Virgem v3,Alimentos Não Perecíveis,19.44,39.57,7,201.0,Empório Atacado,Fernanda Lima
+451,Macarrão Tipo 1 v3,Alimentos Não Perecíveis,59.83,102.85,14,3.8,Mercado Sul Distribuidora,Fernanda Lima
+452,Molho de Tomate v3,Alimentos Não Perecíveis,27.13,55.69,13,11.4,Empório Atacado,Fernanda Lima
+453,Chá em Sachês v3,Alimentos Não Perecíveis,59.46,112.46,12,3.4,Empório Atacado,Fernanda Lima
+454,Café em Grãos 500g v4,Alimentos Não Perecíveis,22.78,47.75,11,12.5,Mercado Sul Distribuidora,Fernanda Lima
+455,Barra de Cereal (cx) v4,Alimentos Não Perecíveis,41.71,63.12,8,49.9,Mercado Sul Distribuidora,Fernanda Lima
+456,Azeite Extra Virgem v4,Alimentos Não Perecíveis,22.24,46.77,7,4.7,Empório Atacado,Fernanda Lima
+457,Macarrão Tipo 1 v4,Alimentos Não Perecíveis,11.33,22.12,8,7.3,Mercado Sul Distribuidora,Fernanda Lima
+458,Molho de Tomate v4,Alimentos Não Perecíveis,32.51,63.83,8,2.9,Mercado Sul Distribuidora,Fernanda Lima
+459,Chá em Sachês v4,Alimentos Não Perecíveis,15.88,31.58,18,19.1,Empório Atacado,Fernanda Lima
+460,Café em Grãos 500g v5,Alimentos Não Perecíveis,11.29,17.77,8,15.7,Mercado Sul Distribuidora,Fernanda Lima
+461,Barra de Cereal (cx) v5,Alimentos Não Perecíveis,25.39,45.01,9,14.9,Empório Atacado,Fernanda Lima
+462,Azeite Extra Virgem v5,Alimentos Não Perecíveis,56.35,86.13,9,7.7,Empório Atacado,Fernanda Lima
+463,Macarrão Tipo 1 v5,Alimentos Não Perecíveis,24.05,48.29,17,22.8,Empório Atacado,Fernanda Lima
+464,Molho de Tomate v5,Alimentos Não Perecíveis,39.26,82.99,16,86.1,Empório Atacado,Fernanda Lima
+465,Chá em Sachês v5,Alimentos Não Perecíveis,6.25,13.07,15,22.6,Empório Atacado,Fernanda Lima
+466,Café em Grãos 500g v6,Alimentos Não Perecíveis,43.04,68.36,16,9.4,Empório Atacado,Fernanda Lima
+467,Barra de Cereal (cx) v6,Alimentos Não Perecíveis,23.45,43.45,15,15.0,Mercado Sul Distribuidora,Fernanda Lima
+468,Azeite Extra Virgem v6,Alimentos Não Perecíveis,8.63,13.68,18,3.4,Mercado Sul Distribuidora,Fernanda Lima
+469,Macarrão Tipo 1 v6,Alimentos Não Perecíveis,50.93,97.0,11,9.4,Mercado Sul Distribuidora,Fernanda Lima
+470,Molho de Tomate v6,Alimentos Não Perecíveis,23.16,42.79,13,5.3,Empório Atacado,Fernanda Lima
+471,Chá em Sachês v6,Alimentos Não Perecíveis,16.89,25.63,9,7.6,Empório Atacado,Fernanda Lima
+472,Café em Grãos 500g v7,Alimentos Não Perecíveis,44.43,89.97,8,30.1,Mercado Sul Distribuidora,Fernanda Lima
+473,Barra de Cereal (cx) v7,Alimentos Não Perecíveis,30.59,64.36,15,11.7,Mercado Sul Distribuidora,Fernanda Lima
+474,Azeite Extra Virgem v7,Alimentos Não Perecíveis,13.25,25.69,13,24.4,Empório Atacado,Fernanda Lima
+475,Macarrão Tipo 1 v7,Alimentos Não Perecíveis,19.22,38.19,7,10.0,Empório Atacado,Fernanda Lima
+476,Molho de Tomate v7,Alimentos Não Perecíveis,46.44,81.85,10,4.7,Empório Atacado,Fernanda Lima
+477,Chá em Sachês v7,Alimentos Não Perecíveis,44.51,89.71,11,35.0,Mercado Sul Distribuidora,Fernanda Lima
+478,Café em Grãos 500g v8,Alimentos Não Perecíveis,59.36,126.27,11,21.6,Mercado Sul Distribuidora,Fernanda Lima
+479,Barra de Cereal (cx) v8,Alimentos Não Perecíveis,34.92,70.3,13,6.0,Mercado Sul Distribuidora,Fernanda Lima
+480,Azeite Extra Virgem v8,Alimentos Não Perecíveis,12.83,21.42,8,28.9,Empório Atacado,Fernanda Lima
+481,Macarrão Tipo 1 v8,Alimentos Não Perecíveis,13.19,28.65,10,2.0,Empório Atacado,Fernanda Lima
+482,Molho de Tomate v8,Alimentos Não Perecíveis,31.7,55.6,11,162.2,Mercado Sul Distribuidora,Fernanda Lima
+483,Chá em Sachês v8,Alimentos Não Perecíveis,39.62,80.88,14,25.7,Empório Atacado,Fernanda Lima
+484,Café em Grãos 500g v9,Alimentos Não Perecíveis,21.33,46.03,17,5.3,Mercado Sul Distribuidora,Fernanda Lima
+485,Barra de Cereal (cx) v9,Alimentos Não Perecíveis,52.34,104.29,7,6.7,Empório Atacado,Fernanda Lima
+486,Azeite Extra Virgem v9,Alimentos Não Perecíveis,32.87,57.75,15,3.7,Mercado Sul Distribuidora,Fernanda Lima
+487,Macarrão Tipo 1 v9,Alimentos Não Perecíveis,13.83,28.22,18,61.5,Mercado Sul Distribuidora,Fernanda Lima
+488,Molho de Tomate v9,Alimentos Não Perecíveis,36.53,61.95,10,80.9,Mercado Sul Distribuidora,Fernanda Lima
+489,Chá em Sachês v9,Alimentos Não Perecíveis,22.86,46.68,11,5.1,Mercado Sul Distribuidora,Fernanda Lima
+490,Café em Grãos 500g v10,Alimentos Não Perecíveis,7.73,13.19,7,22.1,Mercado Sul Distribuidora,Fernanda Lima
+491,Barra de Cereal (cx) v10,Alimentos Não Perecíveis,51.77,83.8,9,6.6,Mercado Sul Distribuidora,Fernanda Lima
+492,Azeite Extra Virgem v10,Alimentos Não Perecíveis,31.45,67.49,16,13.5,Mercado Sul Distribuidora,Fernanda Lima
+493,Macarrão Tipo 1 v10,Alimentos Não Perecíveis,8.48,18.07,17,15.8,Empório Atacado,Fernanda Lima
+494,Molho de Tomate v10,Alimentos Não Perecíveis,34.91,69.38,18,2.7,Empório Atacado,Fernanda Lima
+495,Chá em Sachês v10,Alimentos Não Perecíveis,18.63,31.82,9,14.3,Empório Atacado,Fernanda Lima
+496,Café em Grãos 500g v11,Alimentos Não Perecíveis,5.45,10.95,7,6.8,Mercado Sul Distribuidora,Fernanda Lima
+497,Barra de Cereal (cx) v11,Alimentos Não Perecíveis,37.74,62.45,8,4.3,Mercado Sul Distribuidora,Fernanda Lima
+498,Azeite Extra Virgem v11,Alimentos Não Perecíveis,32.04,69.82,15,175.8,Empório Atacado,Fernanda Lima
+499,Macarrão Tipo 1 v11,Alimentos Não Perecíveis,42.53,71.98,10,10.2,Mercado Sul Distribuidora,Fernanda Lima
+500,Molho de Tomate v11,Alimentos Não Perecíveis,20.87,45.66,18,2.0,Mercado Sul Distribuidora,Fernanda Lima

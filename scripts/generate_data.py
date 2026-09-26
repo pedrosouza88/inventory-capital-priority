@@ -85,6 +85,42 @@ for categoria, (n_skus, faixa_custo, faixa_markup, faixa_lead) in categorias_con
 produtos = pd.DataFrame(linhas_produto)
 
 # ---------------------------------------------------------------
+# 1b) FORNECEDOR E COMPRADOR RESPONSÁVEL
+# ---------------------------------------------------------------
+# feito depois do laço principal (com um gerador de números aleatórios à parte)
+# para não alterar a sequência de sorteios já usada nos atributos acima.
+rng_compras = np.random.default_rng(101)
+
+fornecedores_por_categoria = {
+    "Eletrônicos": ["TechSupply Distribuidora", "Import Eletrônicos BR", "Nexus Componentes"],
+    "Casa e Utilidades": ["Lar & Cia Distribuidora", "CasaForte Suprimentos"],
+    "Beleza e Higiene": ["BelezaPura Distribuidora", "Cosmetic Brasil"],
+    "Esporte e Lazer": ["Vida Ativa Distribuidora", "SportMax Suprimentos"],
+    "Papelaria": ["Papel & Cia", "EscritorioTotal Distribuidora"],
+    "Ferramentas": ["FerroForte Distribuidora", "ToolPro Suprimentos"],
+    "Pet": ["PetLife Distribuidora", "AmigoFiel Suprimentos"],
+    "Alimentos Não Perecíveis": ["Empório Atacado", "Mercado Sul Distribuidora"],
+}
+
+# cada categoria tem um comprador principal; alguns compradores cuidam de mais
+# de uma categoria, como costuma acontecer em times de compras enxutos
+categoria_comprador = {
+    "Eletrônicos": "Ricardo Nunes",
+    "Casa e Utilidades": "Camila Torres",
+    "Beleza e Higiene": "Juliana Prado",
+    "Esporte e Lazer": "Marcelo Duarte",
+    "Papelaria": "Fernanda Lima",
+    "Ferramentas": "Ricardo Nunes",
+    "Pet": "Camila Torres",
+    "Alimentos Não Perecíveis": "Fernanda Lima",
+}
+
+produtos["fornecedor"] = produtos["categoria"].apply(
+    lambda cat: rng_compras.choice(fornecedores_por_categoria[cat])
+)
+produtos["comprador"] = produtos["categoria"].map(categoria_comprador)
+
+# ---------------------------------------------------------------
 # 2) HISTÓRICO MENSAL DE ESTOQUE (60 meses)
 # ---------------------------------------------------------------
 N_MESES = 60

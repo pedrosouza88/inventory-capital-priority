@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Priorização de Capital em Estoque — Compras</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="masthead">
+    <div>
+      <h1>Priorização de Capital em Estoque</h1>
+      <div class="sub">Onde o excesso de estoque está concentrado — por fornecedor e por comprador responsável.</div>
+    </div>
+    <button class="theme-toggle" id="themeToggle">Modo escuro</button>
+  </div>
+
+  <div class="nav">
+    <a href="index.html">Executivo</a>
+    <a href="compras.html" class="active">Compras</a>
+    <a href="operacao.html">Operação</a>
+  </div>
+
+  <div class="headline" id="headline"></div>
+
+  <div class="grid-half">
+    <div class="card">
+      <h2>Capital liberável por fornecedor</h2>
+      <div class="hint">Onde a conversa de renegociação de compra tem mais impacto</div>
+      <div id="barFornecedor"></div>
+    </div>
+    <div class="card">
+      <h2>Capital liberável por comprador</h2>
+      <div class="hint">Quem está com mais estoque parado sob sua responsabilidade</div>
+      <div id="barComprador"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Detalhe por fornecedor</h2>
+    <div class="overflow-x" id="tabelaFornecedor"></div>
+  </div>
+
+  <div class="card">
+    <h2>Detalhe por comprador</h2>
+    <div class="overflow-x" id="tabelaComprador"></div>
+  </div>
+
+  <footer>Dados fictícios, usados apenas para fins de demonstração metodológica.</footer>
+</div>
+
+<script src="data.js"></script>
+<script>
+const DATA = DASHBOARD_DATA;
+
+function fmtMoeda(v){ return v.toLocaleString('pt-BR', {style:'currency', currency:'BRL', maximumFractionDigits:0}); }
+function fmtMoedaCompact(v){
+  if(Math.abs(v) >= 1000000) return 'R$ ' + (v/1000000).toFixed(1) + 'M';
+  if(Math.abs(v) >= 1000) return 'R$ ' + (v/1000).toFixed(0) + 'k';
+  return fmtMoeda(v);
+}
+
+const topFornecedor = DATA.porFornecedor[0];
+const topComprador = DATA.porComprador[0];
+document.getElementById('headline').innerHTML =
+  `<b>${topFornecedor[0]}</b> concentra o maior capital liberável entre fornecedores (${fmtMoeda(topFornecedor[1])}), ` +
+  `e <b>${topComprador[0]}</b> entre compradores (${fmtMoeda(topComprador[1])}).`;
+
+function renderBars(containerId, dados){
+  const max = dados.length ? Math.max(...dados.map(r=>r[1])) : 1;
+  document.getElementById(containerId).innerHTML = dados.length ? dados.map(([nome, capital])=>`
+    <div class="bar-row">
+      <div class="name">${nome}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${(capital/max*100).toFixed(1)}%"></div></div>
+      <div class="bar-val">${fmtMoedaCompact(capital)}</div>
+    </div>`).join('') : '<div class="empty">Sem oportunidades de liberação de capital</div>';
+}
+renderBars('barFornecedor', DATA.porFornecedor.map(r=>[r[0], r[1]]));
+renderBars('barComprador', DATA.porComprador.map(r=>[r[0], r[1]]));
+
+function renderTabela(containerId, dados, coluna){
+  document.getElementById(containerId).innerHTML = dados.length ? `
+    <table>
+      <thead><tr>
+        <th>${coluna}</th><th style="text-align:right">Capital liberável</th>
+        <th style="text-align:right">Lucro em risco</th><th style="text-align:right">Capital investido total</th>
+        <th style="text-align:right">SKUs excesso</th><th style="text-align:right">SKUs risco</th><th style="text-align:right">Total SKUs</th>
+      </tr></thead>
+      <tbody>${dados.map(([nome, capLib, lucroRisco, capInv, nExc, nRisco, nSkus])=>`
+        <tr>
+          <td>${nome}</td>
+          <td class="num">${fmtMoeda(capLib)}</td>
+          <td class="num">${fmtMoeda(lucroRisco)}</td>
+          <td class="num">${fmtMoeda(capInv)}</td>
+          <td class="num">${nExc}</td>
+          <td class="num">${nRisco}</td>
+          <td class="num">${nSkus}</td>
+        </tr>`).join('')}
+      </tbody>
+    </table>` : '<div class="empty">Sem dados</div>';
+}
+renderTabela('tabelaFornecedor', DATA.porFornecedor, 'Fornecedor');
+renderTabela('tabelaComprador', DATA.porComprador, 'Comprador');
+
+const themeBtn = document.getElementById('themeToggle');
+themeBtn.addEventListener('click', ()=>{
+  const cur = document.documentElement.getAttribute('data-theme');
+  const next = cur === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  themeBtn.textContent = next === 'dark' ? 'Modo claro' : 'Modo escuro';
+});
+</script>
+</body>
+</html>

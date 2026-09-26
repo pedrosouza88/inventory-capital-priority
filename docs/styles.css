@@ -1,0 +1,128 @@
+:root{
+  --bg:#EEF0F4; --panel:#FFFFFF; --ink:#1A1D27; --ink-soft:#5B6072;
+  --line:#D8DBE3; --accent:#B4571E; --accent-soft:#FCEBDD;
+  --pos:#1E8E5A; --pos-soft:#E3F3EA;
+  --neg:#D64545; --neg-soft:#FBE4E4;
+  --warn:#C7920A; --warn-soft:#FBF0D6;
+  --mono:'IBM Plex Mono', ui-monospace, monospace;
+  --head:'Space Grotesk', system-ui, sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#141210; --panel:#1E1B18; --ink:#F2EFEA; --ink-soft:#A79E92;
+    --line:#332E28; --accent:#E08A3F; --accent-soft:#3A281B;
+    --pos-soft:#1C3327; --neg-soft:#3A1F1F; --warn-soft:#3A2E0F;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#141210; --panel:#1E1B18; --ink:#F2EFEA; --ink-soft:#A79E92;
+  --line:#332E28; --accent:#E08A3F; --accent-soft:#3A281B;
+  --pos-soft:#1C3327; --neg-soft:#3A1F1F; --warn-soft:#3A2E0F;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--mono);font-size:14px;line-height:1.5}
+h1,h2,h3{font-family:var(--head);margin:0;letter-spacing:-0.01em}
+.wrap{max-width:1180px;margin:0 auto;padding:20px 20px 64px}
+
+/* --- topo e navegação --- */
+.masthead{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;
+  padding-bottom:14px;flex-wrap:wrap}
+.masthead h1{font-size:22px;font-weight:700}
+.masthead .sub{color:var(--ink-soft);font-size:13px;margin-top:4px;max-width:600px}
+.theme-toggle{background:var(--panel);border:1px solid var(--line);color:var(--ink);
+  font-family:var(--mono);font-size:12px;padding:7px 12px;border-radius:6px;cursor:pointer;flex-shrink:0}
+
+.nav{display:flex;gap:4px;border-bottom:2px dashed var(--line);margin-bottom:20px;padding-bottom:0}
+.nav a{font-family:var(--mono);font-size:12.5px;text-decoration:none;color:var(--ink-soft);
+  padding:8px 14px;border-radius:6px 6px 0 0;border:1px solid transparent}
+.nav a.active{color:var(--accent);border-color:var(--line);border-bottom-color:var(--bg);
+  background:var(--panel);margin-bottom:-2px;font-weight:600}
+.nav a:hover:not(.active){color:var(--ink)}
+
+.headline{margin:0 0 20px;padding:16px 20px;background:var(--accent-soft);border:1px solid var(--accent);
+  border-radius:10px;font-size:13.5px}
+.headline b{font-family:var(--head);font-size:15px}
+
+/* --- filtros --- */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px;align-items:flex-end}
+.filters select, .filters input[type=text]{
+  font-family:var(--mono);font-size:13px;background:var(--panel);color:var(--ink);
+  border:1px solid var(--line);border-radius:6px;padding:8px 10px;
+}
+.filters input[type=text]{min-width:200px}
+.filters label{display:flex;flex-direction:column;gap:4px;font-size:11px;color:var(--ink-soft)}
+.filters button{font-family:var(--mono);font-size:12px;background:none;border:1px solid var(--line);
+  color:var(--ink-soft);border-radius:6px;padding:0 12px;cursor:pointer;height:37px}
+.filters button:hover{border-color:var(--accent);color:var(--accent)}
+
+/* --- kpis --- */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);
+  border-radius:10px;overflow:hidden;margin-bottom:20px;background:var(--panel)}
+.kpi{padding:16px 18px;border-right:1px dashed var(--line)}
+.kpi:last-child{border-right:none}
+.kpi .label{font-size:11px;color:var(--ink-soft)}
+.kpi .value{font-family:var(--head);font-size:21px;font-weight:700;margin-top:6px}
+.kpi.warn .value{color:var(--warn)}
+.kpi.neg .value{color:var(--neg)}
+
+/* --- semáforo de urgência --- */
+.urgencia-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+.urgencia-card{border-radius:10px;padding:16px 18px;border:1px solid var(--line)}
+.urgencia-card.urgente{background:var(--neg-soft);border-color:var(--neg)}
+.urgencia-card.atencao{background:var(--warn-soft);border-color:var(--warn)}
+.urgencia-card.ok{background:var(--pos-soft);border-color:var(--pos)}
+.urgencia-card .n{font-family:var(--head);font-size:26px;font-weight:700}
+.urgencia-card.urgente .n{color:var(--neg)}
+.urgencia-card.atencao .n{color:var(--warn)}
+.urgencia-card.ok .n{color:var(--pos)}
+.urgencia-card .desc{font-size:12px;color:var(--ink-soft);margin-top:2px}
+
+/* --- cards e grids --- */
+.grid{display:grid;grid-template-columns:3fr 2fr;gap:16px;margin-bottom:16px}
+.grid-half{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px}
+.card h2{font-size:14px;font-weight:600;margin-bottom:4px}
+.card .hint{font-size:11px;color:var(--ink-soft);margin-bottom:14px}
+.card .empty{color:var(--ink-soft);font-size:12px;padding:24px 0;text-align:center}
+
+/* --- tabelas --- */
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{text-align:left;color:var(--ink-soft);font-weight:500;padding:7px 8px;border-bottom:1px solid var(--line);
+  white-space:nowrap;cursor:default}
+td{padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tbody tr:hover{background:var(--accent-soft)}
+.status-tag{display:inline-block;padding:2px 7px;border-radius:4px;font-size:10.5px;white-space:nowrap}
+.status-tag.excesso{background:var(--accent-soft);color:var(--accent)}
+.status-tag.risco{background:var(--neg-soft);color:var(--neg)}
+.status-tag.saudavel{background:var(--pos-soft);color:var(--pos)}
+.status-tag.urgente{background:var(--neg-soft);color:var(--neg);font-weight:600}
+.status-tag.atencao{background:var(--warn-soft);color:var(--warn);font-weight:600}
+.status-tag.ok{background:var(--pos-soft);color:var(--pos)}
+
+/* --- barras horizontais --- */
+.bar-row{display:flex;align-items:center;gap:8px;margin-bottom:9px}
+.bar-row .name{flex:0 0 150px;font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar-track{flex:1;background:var(--accent-soft);border-radius:4px;height:9px;overflow:hidden}
+.bar-fill{background:var(--accent);height:100%;border-radius:4px}
+.bar-val{flex:0 0 100px;text-align:right;font-size:12px;color:var(--ink-soft)}
+
+canvas{max-width:100%}
+.overflow-x{overflow-x:auto}
+footer{color:var(--ink-soft);font-size:11px;margin-top:28px;text-align:center}
+
+/* --- tooltip customizado (página Operação) --- */
+.info-icon{display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--line);
+  color:var(--ink-soft);font-size:10px;text-align:center;line-height:14px;cursor:help;margin-left:4px}
+.row-detail{background:var(--bg);font-size:11.5px;color:var(--ink-soft)}
+.row-detail td{padding:10px 14px}
+.row-detail b{color:var(--ink)}
+
+@media (max-width:860px){
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .kpi:nth-child(odd){border-right:1px dashed var(--line)}
+  .grid,.grid-half{grid-template-columns:1fr}
+  .urgencia-row{grid-template-columns:1fr}
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Priorização de Capital em Estoque — Operação</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.table-scroll{max-height:640px;overflow-y:auto;overflow-x:auto}
+.table-scroll thead th{position:sticky;top:0;background:var(--panel);z-index:1}
+.count-label{font-size:11px;color:var(--ink-soft);margin-bottom:10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="masthead">
+    <div>
+      <h1>Priorização de Capital em Estoque</h1>
+      <div class="sub">Catálogo completo dos 500 SKUs — busque, filtre e priorize por SKU.</div>
+    </div>
+    <button class="theme-toggle" id="themeToggle">Modo escuro</button>
+  </div>
+
+  <div class="nav">
+    <a href="index.html">Executivo</a>
+    <a href="compras.html">Compras</a>
+    <a href="operacao.html" class="active">Operação</a>
+  </div>
+
+  <div class="filters">
+    <label>Buscar produto ou SKU
+      <input type="text" id="fBusca" placeholder="ex: fone bluetooth, ou 123">
+    </label>
+    <label>Categoria
+      <select id="fCategoria"><option value="">Todas</option></select>
+    </label>
+    <label>Fornecedor
+      <select id="fFornecedor"><option value="">Todos</option></select>
+    </label>
+    <label>Comprador
+      <select id="fComprador"><option value="">Todos</option></select>
+    </label>
+    <label>Cobertura
+      <select id="fCobertura"><option value="">Todas as faixas</option></select>
+    </label>
+    <label>Prioridade
+      <select id="fUrgencia"><option value="">Todas</option></select>
+    </label>
+    <button id="fReset">Limpar filtros</button>
+  </div>
+
+  <div class="card">
+    <div class="count-label" id="contagem"></div>
+    <div class="table-scroll overflow-x" id="tabelaCatalogo"></div>
+  </div>
+
+  <footer>Dados fictícios, usados apenas para fins de demonstração metodológica. Passe o mouse sobre o nome do produto para ver detalhes.</footer>
+</div>
+
+<script src="data.js"></script>
+<script>
+const DATA = DASHBOARD_DATA;
+const [SKU_ID,NOME,CAT,FORN,COMP,STA,URG,ESTOQUE,GIRO,COBERTURA,COB_ALVO,FAIXA,MARGEM,CAP_LIB,LUCRO_RISCO,ULT_COMPRA] =
+  DATA.catalogoColunas.map((_,i)=>i);
+
+function fmtMoeda(v){ return v.toLocaleString('pt-BR', {style:'currency', currency:'BRL', maximumFractionDigits:0}); }
+
+function fillSelect(id, arr){
+  const el = document.getElementById(id);
+  arr.forEach((nome,i)=>{
+    const opt = document.createElement('option');
+    opt.value = i; opt.textContent = nome;
+    el.appendChild(opt);
+  });
+}
+fillSelect('fCategoria', DATA.categorias);
+fillSelect('fFornecedor', DATA.fornecedores);
+fillSelect('fComprador', DATA.compradores);
+fillSelect('fCobertura', DATA.faixasCobertura);
+fillSelect('fUrgencia', DATA.urgencia);
+
+function tagClassStatus(idx){
+  return idx === 1 ? 'excesso' : (idx === 2 ? 'risco' : 'saudavel');
+}
+function tagClassUrgencia(idx){
+  return idx === 2 ? 'urgente' : (idx === 1 ? 'atencao' : 'ok');
+}
+
+function render(){
+  const busca = document.getElementById('fBusca').value.trim().toLowerCase();
+  const fCat = document.getElementById('fCategoria').value;
+  const fForn = document.getElementById('fFornecedor').value;
+  const fComp = document.getElementById('fComprador').value;
+  const fCob = document.getElementById('fCobertura').value;
+  const fUrg = document.getElementById('fUrgencia').value;
+
+  let linhas = DATA.catalogo.filter(r=>{
+    if(busca){
+      const nomeMatch = r[NOME].toLowerCase().includes(busca);
+      const skuMatch = String(r[SKU_ID]).includes(busca);
+      if(!nomeMatch && !skuMatch) return false;
+    }
+    if(fCat !== "" && r[CAT] != fCat) return false;
+    if(fForn !== "" && r[FORN] != fForn) return false;
+    if(fComp !== "" && r[COMP] != fComp) return false;
+    if(fCob !== "" && r[FAIXA] != fCob) return false;
+    if(fUrg !== "" && r[URG] != fUrg) return false;
+    return true;
+  });
+
+  // prioridade: Urgente > Atenção > OK, depois pelo valor financeiro da ação
+  linhas = linhas.slice().sort((a,b)=>{
+    if(b[URG] !== a[URG]) return b[URG] - a[URG];
+    const valorA = a[CAP_LIB] + a[LUCRO_RISCO];
+    const valorB = b[CAP_LIB] + b[LUCRO_RISCO];
+    return valorB - valorA;
+  });
+
+  document.getElementById('contagem').textContent =
+    `${linhas.length.toLocaleString('pt-BR')} de ${DATA.catalogo.length} SKUs`;
+
+  document.getElementById('tabelaCatalogo').innerHTML = linhas.length ? `
+    <table>
+      <thead><tr>
+        <th>Produto</th><th>Categoria</th><th>Status</th><th>Prioridade</th>
+        <th style="text-align:right">Cobertura</th><th style="text-align:right">Giro</th>
+        <th style="text-align:right">Valor</th><th>Fornecedor</th><th>Comprador</th>
+      </tr></thead>
+      <tbody>${linhas.map(r=>{
+        const valor = r[CAP_LIB] + r[LUCRO_RISCO];
+        const tooltip = [
+          `Estoque atual: ${r[ESTOQUE]} un.`,
+          `Cobertura atual: ${r[COBERTURA].toFixed(0)} dias (alvo: ${r[COB_ALVO].toFixed(0)} dias)`,
+          `Margem unitária: ${fmtMoeda(r[MARGEM])}`,
+          `Última compra registrada: ${r[ULT_COMPRA]}`,
+        ].join('\n');
+        return `<tr>
+          <td title="${tooltip}">${r[NOME]}<span class="info-icon" title="${tooltip}">i</span></td>
+          <td>${DATA.categorias[r[CAT]]}</td>
+          <td><span class="status-tag ${tagClassStatus(r[STA])}">${DATA.status[r[STA]]}</span></td>
+          <td><span class="status-tag ${tagClassUrgencia(r[URG])}">${DATA.urgencia[r[URG]]}</span></td>
+          <td class="num">${r[COBERTURA].toFixed(0)}d</td>
+          <td class="num">${r[GIRO].toFixed(1)}x</td>
+          <td class="num">${valor > 0 ? fmtMoeda(valor) : '—'}</td>
+          <td>${DATA.fornecedores[r[FORN]]}</td>
+          <td>${DATA.compradores[r[COMP]]}</td>
+        </tr>`;
+      }).join('')}</tbody>
+    </table>` : '<div class="empty">Nenhum SKU encontrado para os filtros selecionados</div>';
+}
+
+['fCategoria','fFornecedor','fComprador','fCobertura','fUrgencia'].forEach(id=>{
+  document.getElementById(id).addEventListener('change', render);
+});
+document.getElementById('fBusca').addEventListener('input', render);
+document.getElementById('fReset').addEventListener('click', ()=>{
+  document.getElementById('fBusca').value = '';
+  ['fCategoria','fFornecedor','fComprador','fCobertura','fUrgencia'].forEach(id=>document.getElementById(id).value='');
+  render();
+});
+
+const themeBtn = document.getElementById('themeToggle');
+themeBtn.addEventListener('click', ()=>{
+  const cur = document.documentElement.getAttribute('data-theme');
+  const next = cur === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  themeBtn.textContent = next === 'dark' ? 'Modo claro' : 'Modo escuro';
+});
+
+render();
+</script>
+</body>
+</html>

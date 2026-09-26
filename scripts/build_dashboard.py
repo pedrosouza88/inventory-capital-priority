@@ -1,3 +1,15 @@
+"""
+Monta o painel de 3 páginas a partir da análise (analise_estoque.csv +
+tendencia_mensal.csv):
+
+  docs/index.html     Executivo   — KPIs, Pareto, tendência, categoria %
+  docs/compras.html   Compras     — excesso por fornecedor e por comprador
+  docs/operacao.html  Operação    — catálogo completo com busca e filtros
+
+Os três consomem o mesmo docs/data.js (uma fonte de dados só), e
+compartilham docs/styles.css.
+"""
+
 import os
 import json
 import numpy as np
@@ -9,66 +21,17 @@ DOCS_DIR = os.path.join(BASE_DIR, "..", "docs")
 os.makedirs(DOCS_DIR, exist_ok=True)
 
 df = pd.read_csv(os.path.join(DATA_DIR, "analise_estoque.csv"))
+tendencia = pd.read_csv(os.path.join(DATA_DIR, "tendencia_mensal.csv"))
 
 categorias = sorted(df["categoria"].unique().tolist())
+fornecedores = sorted(df["fornecedor"].unique().tolist())
+compradores = sorted(df["comprador"].unique().tolist())
 status_list = ["Saudável", "Excesso de estoque", "Risco de ruptura"]
+urgencia_list = ["OK", "Atenção", "Urgente"]
 
-cat_idx = {c: i for i, c in enumerate(categorias)}
-sta_idx = {c: i for i, c in enumerate(status_list)}
-
-def linha_sku(r):
-    giro = min(r["giro_anual"], 20)  # limita outliers extremos pro gráfico ficar legível
-    cobertura = min(r["dias_cobertura_atual"], 400) if np.isfinite(r["dias_cobertura_atual"]) else 400
-    return [
-        cat_idx[r["categoria"]],
-        round(float(giro), 2),
-        round(float(cobertura), 1),
-        sta_idx[r["status"]],
-        round(float(r["capital_investido_atual"]), 2),
-        round(float(r["capital_liberavel"]), 2),
-        round(float(r["lucro_em_risco"]), 2),
-    ]
-
-skus = df.apply(linha_sku, axis=1).tolist()
-
-capital_liberavel_por_categoria = (
-    df.groupby("categoria")["capital_liberavel"].sum().sort_values(ascending=False)
-)
-cap_por_categoria_json = [
-    [cat, round(float(v), 2)] for cat, v in capital_liberavel_por_categoria.items() if v > 0
-]
-
-def acao_recomendada(row):
-    if row["status"] == "Excesso de estoque":
-        return f"Reduzir reposição / considerar promoção — R$ {row['capital_liberavel']:,.0f} parados".replace(",", ".")
-    if row["status"] == "Risco de ruptura":
-        return f"Repor com urgência — até R$ {row['lucro_em_risco']:,.0f} em lucro sob risco".replace(",", ".")
-    return "Manter política atual"
-
-df["acao_recomendada"] = df.apply(acao_recomendada, axis=1)
-df["valor_oportunidade"] = df["capital_liberavel"] + df["lucro_em_risco"]
-
-# o valor em risco de ruptura costuma ser bem menor em R$ do que o capital parado
-# em excesso, então um ranking único faz os riscos de ruptura desaparecerem da tabela.
-# Aqui pegamos o top de cada tipo separadamente, pra manter as duas histórias visíveis.
-top_excesso = df[df["status"] == "Excesso de estoque"].sort_values(
-    "valor_oportunidade", ascending=False
-).head(15)
-top_risco = df[df["status"] == "Risco de ruptura"].sort_values(
-    "valor_oportunidade", ascending=False
-).head(10)
-top_oportunidades = pd.concat([top_risco, top_excesso]).sort_values(
-    "valor_oportunidade", ascending=False
-)
-
-top_oportunidades_json = [
-    [
-        r["produto_nome"], r["categoria"], r["status"],
-        round(float(r["valor_oportunidade"]), 2), r["acao_recomendada"],
-    ]
-    for _, r in top_oportunidades.iterrows()
-]
-
+# ---------------------------------------------------------------
+# KPIs gerais
+# ---------------------------------------------------------------
 kpis = {
     "capitalLiberavel": round(float(df["capital_liberavel"].sum()), 2),
     "lucroRisco": round(float(df["lucro_em_risco"].sum()), 2),
@@ -76,26 +39,156 @@ kpis = {
     "nExcesso": int((df["status"] == "Excesso de estoque").sum()),
     "nRisco": int((df["status"] == "Risco de ruptura").sum()),
     "nSaudavel": int((df["status"] == "Saudável").sum()),
+    "nUrgente": int((df["urgencia"] == "Urgente").sum()),
+    "nAtencao": int((df["urgencia"] == "Atenção").sum()),
+    "nOk": int((df["urgencia"] == "OK").sum()),
     "nTotal": int(len(df)),
 }
 
+# ---------------------------------------------------------------
+# Pareto de capital liberável (quantos SKUs concentram o excesso)
+# ---------------------------------------------------------------
+pareto_df = df[df["capital_liberavel"] > 0].sort_values("capital_liberavel", ascending=False).reset_index(drop=True)
+total_liberavel = pareto_df["capital_liberavel"].sum()
+pareto_df["cum_pct"] = pareto_df["capital_liberavel"].cumsum() / total_liberavel * 100
+pareto_top = pareto_df.head(30)
+pareto_json = [
+    [r["produto_nome"], round(float(r["capital_liberavel"]), 2), round(float(r["cum_pct"]), 1)]
+    for _, r in pareto_top.iterrows()
+]
+# leitura rápida: quantos SKUs (do total com excesso) somam até 80%
+n_skus_80pct = int((pareto_df["cum_pct"] <= 80).sum()) + 1
+n_skus_80pct = min(n_skus_80pct, len(pareto_df))
+
+# ---------------------------------------------------------------
+# Participação por categoria
+# ---------------------------------------------------------------
+cap_categoria = df.groupby("categoria")["capital_liberavel"].sum().sort_values(ascending=False)
+cap_categoria = cap_categoria[cap_categoria > 0]
+total_cat = cap_categoria.sum()
+categoria_json = [
+    [cat, round(float(v), 2), round(float(v / total_cat * 100), 1)]
+    for cat, v in cap_categoria.items()
+]
+
+# ---------------------------------------------------------------
+# Tendência 6 meses
+# ---------------------------------------------------------------
+tendencia_json = [
+    [
+        r["mes"], round(float(r["capital_liberavel_total"]), 2),
+        round(float(r["lucro_risco_total"]), 2), int(r["n_excesso"]), int(r["n_risco"]),
+    ]
+    for _, r in tendencia.iterrows()
+]
+
+# ---------------------------------------------------------------
+# Por fornecedor e por comprador (página Compras)
+# ---------------------------------------------------------------
+def agrega_por(coluna):
+    g = df.groupby(coluna).agg(
+        capital_liberavel=("capital_liberavel", "sum"),
+        lucro_em_risco=("lucro_em_risco", "sum"),
+        capital_investido=("capital_investido_atual", "sum"),
+        n_excesso=("status", lambda s: (s == "Excesso de estoque").sum()),
+        n_risco=("status", lambda s: (s == "Risco de ruptura").sum()),
+        n_skus=("sku_id", "count"),
+    ).reset_index().sort_values("capital_liberavel", ascending=False)
+    return [
+        [
+            r[coluna], round(float(r["capital_liberavel"]), 2), round(float(r["lucro_em_risco"]), 2),
+            round(float(r["capital_investido"]), 2), int(r["n_excesso"]), int(r["n_risco"]), int(r["n_skus"]),
+        ]
+        for _, r in g.iterrows()
+    ]
+
+por_fornecedor_json = agrega_por("fornecedor")
+por_comprador_json = agrega_por("comprador")
+
+# ---------------------------------------------------------------
+# Catálogo completo (página Operação) — usado por busca e filtros
+# ---------------------------------------------------------------
+cat_idx = {c: i for i, c in enumerate(categorias)}
+forn_idx = {c: i for i, c in enumerate(fornecedores)}
+comp_idx = {c: i for i, c in enumerate(compradores)}
+sta_idx = {c: i for i, c in enumerate(status_list)}
+urg_idx = {c: i for i, c in enumerate(urgencia_list)}
+
+def faixa_cobertura(dias):
+    if not np.isfinite(dias):
+        return 3  # 180+
+    if dias <= 30:
+        return 0
+    if dias <= 90:
+        return 1
+    if dias <= 180:
+        return 2
+    return 3
+
+def linha_catalogo(r):
+    return [
+        r["sku_id"], r["produto_nome"], cat_idx[r["categoria"]], forn_idx[r["fornecedor"]],
+        comp_idx[r["comprador"]], sta_idx[r["status"]], urg_idx[r["urgencia"]],
+        round(float(r["estoque_atual"]), 1), round(min(float(r["giro_anual"]), 30), 2),
+        round(min(float(r["dias_cobertura_atual"]), 999), 1), round(float(r["cobertura_alvo_dias"]), 0),
+        faixa_cobertura(r["dias_cobertura_atual"]), round(float(r["margem_unitaria"]), 2),
+        round(float(r["capital_liberavel"]), 2), round(float(r["lucro_em_risco"]), 2),
+        r["ultima_compra_mes"],
+    ]
+
+catalogo_json = df.apply(linha_catalogo, axis=1).tolist()
+
+# ---------------------------------------------------------------
+# Monta o payload compartilhado
+# ---------------------------------------------------------------
 payload = {
-    "skus": skus,
     "categorias": categorias,
+    "fornecedores": fornecedores,
+    "compradores": compradores,
     "status": status_list,
-    "capPorCategoria": cap_por_categoria_json,
-    "topOportunidades": top_oportunidades_json,
+    "urgencia": urgencia_list,
+    "faixasCobertura": ["0–30 dias", "30–90 dias", "90–180 dias", "180+ dias"],
     "kpis": kpis,
+    "pareto": pareto_json,
+    "nSkus80pct": n_skus_80pct,
+    "nSkusComExcesso": int(len(pareto_df)),
+    "categoriaParticipacao": categoria_json,
+    "tendencia": tendencia_json,
+    "porFornecedor": por_fornecedor_json,
+    "porComprador": por_comprador_json,
+    "catalogo": catalogo_json,
+    "catalogoColunas": [
+        "sku_id", "produto_nome", "categoriaIdx", "fornecedorIdx", "compradorIdx",
+        "statusIdx", "urgenciaIdx", "estoqueAtual", "giroAnual", "diasCobertura",
+        "coberturaAlvo", "faixaCoberturaIdx", "margemUnitaria", "capitalLiberavel",
+        "lucroEmRisco", "ultimaCompraMes",
+    ],
 }
 
-data_json = json.dumps(payload, separators=(",", ":"))
+data_js = "const DASHBOARD_DATA = " + json.dumps(payload, separators=(",", ":")) + ";"
+with open(os.path.join(DOCS_DIR, "data.js"), "w", encoding="utf-8") as f:
+    f.write(data_js)
 
-with open(os.path.join(BASE_DIR, "dashboard_template.html"), "r", encoding="utf-8") as f:
-    template = f.read()
+print("data.js gerado:", round(len(data_js) / 1_000_000, 3), "MB")
+print(f"Pareto: {n_skus_80pct} SKUs concentram 80% dos R$ {total_liberavel:,.0f} liberáveis".replace(",", "."))
 
-html = template.replace("__DATA_JSON__", data_json)
+# ---------------------------------------------------------------
+# Copia o CSS compartilhado
+# ---------------------------------------------------------------
+with open(os.path.join(BASE_DIR, "styles.css"), "r", encoding="utf-8") as f:
+    css = f.read()
+with open(os.path.join(DOCS_DIR, "styles.css"), "w", encoding="utf-8") as f:
+    f.write(css)
 
-with open(os.path.join(DOCS_DIR, "index.html"), "w", encoding="utf-8") as f:
-    f.write(html)
+# ---------------------------------------------------------------
+# Monta as 3 páginas HTML a partir dos templates
+# ---------------------------------------------------------------
+paginas = ["template_executivo.html", "template_compras.html", "template_operacao.html"]
+saidas = ["index.html", "compras.html", "operacao.html"]
 
-print("index.html gerado em docs/, tamanho:", round(len(html) / 1_000_000, 2), "MB")
+for template_nome, saida_nome in zip(paginas, saidas):
+    with open(os.path.join(BASE_DIR, template_nome), "r", encoding="utf-8") as f:
+        html = f.read()
+    with open(os.path.join(DOCS_DIR, saida_nome), "w", encoding="utf-8") as f:
+        f.write(html)
+    print(f"{saida_nome} gerado")
