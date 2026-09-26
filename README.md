@@ -2,10 +2,10 @@
 
 A maioria dos painéis de estoque mostra o que já aconteceu. Este vai um passo além: a partir do histórico de vendas e reposição, aponta **onde há capital parado em excesso de estoque** e **onde há risco real de perder venda por ruptura** — com o valor de cada oportunidade em reais, e uma recomendação de ação, não só um gráfico bonito.
 
-**Demo:** _(depois de ativar o GitHub Pages, cole aqui o link — algo como `https://seuusuario.github.io/inventory-capital-priority/`)_
+[**Demo:** https://pedrosouza88.github.io/inventory-capital-priority/index.html
 
-<!-- Tire um print do painel aberto no navegador, salve como docs/preview.png e descomente a linha abaixo -->
-<!-- ![preview do painel](docs/preview.png) -->
+
+![preview do painel](docs/preview.png)
 
 ## Três páginas, três públicos
 
