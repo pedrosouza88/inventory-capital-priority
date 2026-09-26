@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Priorização de Capital em Estoque</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{
+  --bg:#EEF0F4; --panel:#FFFFFF; --ink:#1A1D27; --ink-soft:#5B6072;
+  --line:#D8DBE3; --accent:#B4571E; --accent-soft:#FCEBDD;
+  --pos:#1E8E5A; --neg:#D64545; --warn:#C7920A;
+  --mono:'IBM Plex Mono', ui-monospace, monospace;
+  --head:'Space Grotesk', system-ui, sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#141210; --panel:#1E1B18; --ink:#F2EFEA; --ink-soft:#A79E92;
+    --line:#332E28; --accent:#E08A3F; --accent-soft:#3A281B;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#141210; --panel:#1E1B18; --ink:#F2EFEA; --ink-soft:#A79E92;
+  --line:#332E28; --accent:#E08A3F; --accent-soft:#3A281B;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--mono);font-size:14px;line-height:1.5}
+h1,h2,h3{font-family:var(--head);margin:0;letter-spacing:-0.01em}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 20px 64px}
+
+.masthead{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;
+  border-bottom:2px dashed var(--line);padding-bottom:20px;margin-bottom:8px;flex-wrap:wrap}
+.masthead h1{font-size:24px;font-weight:700}
+.masthead .sub{color:var(--ink-soft);font-size:13px;margin-top:4px;max-width:640px}
+.theme-toggle{background:var(--panel);border:1px solid var(--line);color:var(--ink);
+  font-family:var(--mono);font-size:12px;padding:7px 12px;border-radius:6px;cursor:pointer}
+
+.headline{margin:20px 0 24px;padding:18px 20px;background:var(--accent-soft);border:1px solid var(--accent);
+  border-radius:10px;font-size:13.5px}
+.headline b{font-family:var(--head);font-size:15px}
+
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.filters select{
+  font-family:var(--mono);font-size:13px;background:var(--panel);color:var(--ink);
+  border:1px solid var(--line);border-radius:6px;padding:8px 10px;
+}
+.filters label{display:flex;flex-direction:column;gap:4px;font-size:11px;color:var(--ink-soft)}
+.filters button{font-family:var(--mono);font-size:12px;background:none;border:1px solid var(--line);
+  color:var(--ink-soft);border-radius:6px;padding:0 12px;cursor:pointer;align-self:flex-end;height:37px}
+.filters button:hover{border-color:var(--accent);color:var(--accent)}
+
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);
+  border-radius:10px;overflow:hidden;margin-bottom:24px;background:var(--panel)}
+.kpi{padding:18px 20px;border-right:1px dashed var(--line)}
+.kpi:last-child{border-right:none}
+.kpi .label{font-size:11px;color:var(--ink-soft)}
+.kpi .value{font-family:var(--head);font-size:22px;font-weight:700;margin-top:6px}
+.kpi.warn .value{color:var(--warn)}
+.kpi.neg .value{color:var(--neg)}
+
+.grid{display:grid;grid-template-columns:3fr 2fr;gap:16px;margin-bottom:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px}
+.card h2{font-size:14px;font-weight:600;margin-bottom:4px}
+.card .hint{font-size:11px;color:var(--ink-soft);margin-bottom:14px}
+.card .empty{color:var(--ink-soft);font-size:12px;padding:24px 0;text-align:center}
+
+.legend-manual{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px;font-size:11px;color:var(--ink-soft)}
+.legend-manual span{display:inline-flex;align-items:center;gap:5px}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block}
+
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{text-align:left;color:var(--ink-soft);font-weight:500;padding:7px 8px;border-bottom:1px solid var(--line)}
+td{padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.status-tag{display:inline-block;padding:2px 7px;border-radius:4px;font-size:10.5px}
+.status-tag.excesso{background:var(--accent-soft);color:var(--accent)}
+.status-tag.risco{background:#FBE4E4;color:var(--neg)}
+.status-tag.saudavel{background:#E3F3EA;color:var(--pos)}
+:root[data-theme="dark"] .status-tag.risco{background:#3A1F1F}
+:root[data-theme="dark"] .status-tag.saudavel{background:#1C3327}
+
+.bar-row{display:flex;align-items:center;gap:8px;margin-bottom:9px}
+.bar-row .name{flex:0 0 150px;font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar-track{flex:1;background:var(--accent-soft);border-radius:4px;height:9px;overflow:hidden}
+.bar-fill{background:var(--accent);height:100%;border-radius:4px}
+.bar-val{flex:0 0 84px;text-align:right;font-size:12px;color:var(--ink-soft)}
+
+canvas{max-width:100%}
+.overflow-x{overflow-x:auto}
+footer{color:var(--ink-soft);font-size:11px;margin-top:28px;text-align:center}
+
+@media (max-width:860px){
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .kpi:nth-child(odd){border-right:1px dashed var(--line)}
+  .grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="masthead">
+    <div>
+      <h1>Priorização de Capital em Estoque</h1>
+      <div class="sub">Onde há dinheiro parado em estoque excedente, e onde há risco real de perder venda por falta de produto — com o valor de cada oportunidade em reais.</div>
+    </div>
+    <button class="theme-toggle" id="themeToggle">Modo escuro</button>
+  </div>
+
+  <div class="headline" id="headline"></div>
+
+  <div class="filters">
+    <label>Categoria
+      <select id="fCategoria"><option value="">Todas</option></select>
+    </label>
+    <label>Status
+      <select id="fStatus"><option value="">Todos</option></select>
+    </label>
+    <button id="fReset">Limpar filtros</button>
+  </div>
+
+  <div class="kpis">
+    <div class="kpi warn"><div class="label">Capital liberável (excesso)</div><div class="value" id="kpiCapital">—</div></div>
+    <div class="kpi neg"><div class="label">Lucro em risco (ruptura)</div><div class="value" id="kpiLucro">—</div></div>
+    <div class="kpi"><div class="label">SKUs com excesso</div><div class="value" id="kpiExcesso">—</div></div>
+    <div class="kpi"><div class="label">SKUs em risco</div><div class="value" id="kpiRisco">—</div></div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Giro anual x dias de cobertura</h2>
+      <div class="hint">Cada ponto é um SKU. Tamanho da bolha = capital investido nele hoje.</div>
+      <canvas id="chartScatter" height="230"></canvas>
+      <div class="legend-manual">
+        <span><span class="dot" style="background:#1E8E5A"></span>Saudável</span>
+        <span><span class="dot" style="background:#B4571E"></span>Excesso de estoque</span>
+        <span><span class="dot" style="background:#D64545"></span>Risco de ruptura</span>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Capital liberável por categoria</h2>
+      <div class="hint">Onde concentrar a revisão de compras primeiro</div>
+      <div id="barCategoria"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Top oportunidades priorizadas</h2>
+    <div class="hint">Ordenado pelo valor financeiro de cada ação — comece pelo topo</div>
+    <div class="overflow-x" id="tabelaTop"></div>
+  </div>
+
+  <footer>Dados fictícios, usados apenas para fins de demonstração metodológica.</footer>
+</div>
+
+<script>
+const DATA = {"skus":[[3,8.97,47.3,0,9755.2,0.0,0.0],[3,3.2,137.0,0,395784.99,0.0,0.0],[3,9.18,47.3,0,22117.51,0.0,0.0],[3,2.43,177.6,1,20352.65,12788.72,0.0],[3,8.28,52.3,0,21823.47,0.0,0.0],[3,6.87,64.4,0,3288.69,0.0,0.0],[3,6.77,63.5,0,10597.57,0.0,0.0],[3,9.39,47.0,0,781.04,0.0,0.0],[3,6.61,66.7,0,12864.72,0.0,0.0],[3,6.24,71.2,0,16872.87,0.0,0.0],[3,11.93,39.5,0,9319.69,0.0,0.0],[3,6.51,64.3,0,5990.82,0.0,0.0],[3,11.85,39.5,0,3297.02,0.0,0.0],[3,4.25,102.7,0,69215.78,0.0,0.0],[3,5.58,81.0,0,9671.1,0.0,0.0],[3,10.42,38.5,0,14649.77,0.0,0.0],[3,11.91,34.8,2,33514.87,0.0,4308.21],[3,6.85,65.8,0,38371.27,0.0,0.0],[3,7.63,57.0,0,40356.9,0.0,0.0],[3,8.5,54.2,0,17766.46,0.0,0.0],[3,7.86,54.0,0,2044.76,0.0,0.0],[3,5.64,75.4,0,12989.44,0.0,0.0],[3,7.43,60.3,0,3012.13,0.0,0.0],[3,2.94,147.5,0,60463.83,0.0,0.0],[3,8.19,55.0,0,34802.95,0.0,0.0],[3,2.35,184.1,0,146857.88,0.0,0.0],[3,6.54,65.6,0,10995.09,0.0,0.0],[3,7.17,60.4,0,6047.41,0.0,0.0],[3,12.0,37.3,0,567.6,0.0,0.0],[3,11.99,36.0,0,10999.04,0.0,0.0],[3,11.91,37.7,0,4750.32,0.0,0.0],[3,12.21,33.2,2,6491.62,0.0,892.85],[3,10.43,41.6,0,54648.7,0.0,0.0],[3,3.4,125.8,1,51095.97,29153.41,0.0],[3,6.96,60.5,0,21839.09,0.0,0.0],[3,11.89,36.5,2,22099.24,0.0,4216.14],[3,5.68,76.6,0,212455.84,0.0,0.0],[3,8.46,52.1,0,4828.56,0.0,0.0],[3,6.06,72.5,0,65023.56,0.0,0.0],[3,6.59,64.2,0,12504.69,0.0,0.0],[3,11.93,37.5,2,8740.97,0.0,1754.08],[3,6.62,67.0,0,3853.94,0.0,0.0],[3,9.18,48.1,2,5959.37,0.0,390.09],[3,8.57,50.5,0,7849.35,0.0,0.0],[3,9.74,45.5,0,22343.77,0.0,0.0],[3,2.24,189.5,0,57070.93,0.0,0.0],[3,6.68,65.6,0,9517.86,0.0,0.0],[3,6.73,63.1,0,17391.23,0.0,0.0],[3,11.94,36.7,0,6557.42,0.0,0.0],[3,6.51,67.0,0,11210.91,0.0,0.0],[3,3.02,143.3,1,22724.25,14479.99,0.0],[3,12.05,33.2,2,1384.39,0.0,337.21],[3,5.55,79.5,0,94397.1,0.0,0.0],[3,7.09,62.4,0,49926.03,0.0,0.0],[3,2.34,184.0,1,114943.8,61232.24,0.0],[3,8.67,47.3,0,4816.51,0.0,0.0],[3,6.68,66.0,0,8119.54,0.0,0.0],[3,8.06,55.9,0,14519.35,0.0,0.0],[3,7.79,55.4,0,36086.18,0.0,0.0],[3,3.28,134.3,1,34215.81,19439.57,0.0],[3,7.01,60.0,0,28352.88,0.0,0.0],[3,3.56,122.6,0,313986.75,0.0,0.0],[3,9.04,48.5,0,41462.19,0.0,0.0],[3,9.65,42.1,0,21358.69,0.0,0.0],[3,2.99,143.8,0,425928.67,0.0,0.0],[3,12.11,33.6,0,48794.71,0.0,0.0],[3,5.45,76.5,0,65807.67,0.0,0.0],[3,8.7,49.5,0,146717.42,0.0,0.0],[3,5.45,81.5,0,132476.54,0.0,0.0],[3,6.45,68.3,0,7930.22,0.0,0.0],[2,3.26,131.7,1,12712.36,8463.99,0.0],[2,2.17,198.8,1,11442.82,8795.2,0.0],[2,5.66,77.2,0,44821.38,0.0,0.0],[2,3.58,122.1,1,4008.41,2957.58,0.0],[2,6.4,67.4,0,1531.75,0.0,0.0],[2,10.17,41.0,0,839.55,0.0,0.0],[2,11.98,38.5,0,6559.87,0.0,0.0],[2,9.34,48.6,0,5219.23,0.0,0.0],[2,6.11,73.7,0,7615.3,0.0,0.0],[2,2.11,203.8,1,13818.74,10428.49,0.0],[2,7.92,52.7,0,1706.48,0.0,0.0],[2,12.15,35.4,0,1476.82,0.0,0.0],[2,12.12,32.6,0,733.93,0.0,0.0],[2,7.62,58.5,0,4577.96,0.0,0.0],[2,7.65,56.4,0,7743.45,0.0,0.0],[2,12.07,35.7,0,57.66,0.0,0.0],[2,3.31,128.7,0,3941.79,0.0,0.0],[2,9.06,48.3,0,3180.14,0.0,0.0],[2,6.27,67.5,0,2052.43,0.0,0.0],[2,8.47,52.1,0,8458.2,0.0,0.0],[2,2.71,162.9,1,32496.8,22923.28,0.0],[2,6.91,62.9,0,2088.51,0.0,0.0],[2,2.55,171.0,1,42082.81,32730.56,0.0],[2,5.7,77.4,0,1804.84,0.0,0.0],[2,6.88,61.8,0,3647.85,0.0,0.0],[2,8.55,49.6,0,12977.44,0.0,0.0],[2,7.13,58.3,0,2946.72,0.0,0.0],[2,9.72,48.4,0,1987.57,0.0,0.0],[2,6.21,69.9,0,6336.9,0.0,0.0],[2,3.51,122.4,0,5057.14,0.0,0.0],[2,8.02,56.5,0,6590.1,0.0,0.0],[2,2.67,160.4,1,8041.12,4833.77,0.0],[2,7.09,59.7,0,3949.44,0.0,0.0],[2,3.65,118.4,0,2456.27,0.0,0.0],[2,11.94,37.9,0,1467.54,0.0,0.0],[2,2.5,173.9,1,7296.88,6038.16,0.0],[2,9.89,40.5,0,5965.76,0.0,0.0],[2,7.03,62.5,0,840.34,0.0,0.0],[2,6.92,61.0,0,4413.22,0.0,0.0],[2,3.01,143.6,1,42183.62,22209.0,0.0],[2,8.35,48.3,0,283.53,0.0,0.0],[2,7.21,62.1,0,1442.04,0.0,0.0],[2,7.44,58.1,0,11435.26,0.0,0.0],[2,6.02,75.3,0,2935.64,0.0,0.0],[2,2.54,171.0,1,12177.98,8617.69,0.0],[2,6.25,69.5,0,2384.48,0.0,0.0],[2,9.83,44.1,0,1735.97,0.0,0.0],[2,9.85,43.7,0,2833.96,0.0,0.0],[2,6.85,62.9,0,379.95,0.0,0.0],[2,7.3,58.2,0,1123.82,0.0,0.0],[2,3.08,140.5,1,23472.48,14453.49,0.0],[2,8.62,49.8,0,689.24,0.0,0.0],[2,7.97,52.5,0,1578.62,0.0,0.0],[2,8.92,48.3,0,554.79,0.0,0.0],[2,6.44,69.1,0,2849.75,0.0,0.0],[2,6.12,73.0,0,1345.32,0.0,0.0],[2,8.48,54.4,0,7234.35,0.0,0.0],[2,7.67,57.8,0,13163.12,0.0,0.0],[2,12.0,33.2,0,4692.92,0.0,0.0],[2,7.15,58.5,0,19933.96,0.0,0.0],[2,2.68,162.3,1,5263.04,3058.06,0.0],[2,7.96,53.6,0,7104.74,0.0,0.0],[2,2.43,179.4,1,2600.98,2021.2,0.0],[2,6.32,66.2,1,4563.0,2494.73,0.0],[2,6.7,64.4,0,2054.79,0.0,0.0],[2,3.7,118.5,1,23532.22,16381.82,0.0],[2,9.91,43.7,0,7205.17,0.0,0.0],[2,7.87,56.5,0,672.88,0.0,0.0],[2,7.7,57.8,0,1232.01,0.0,0.0],[2,8.38,53.0,0,4921.07,0.0,0.0],[1,3.75,117.2,1,6621.86,4586.93,0.0],[1,8.62,53.4,1,2415.36,1419.59,0.0],[1,2.76,156.4,1,11636.14,8510.92,0.0],[1,6.16,70.6,0,833.08,0.0,0.0],[1,3.13,137.7,1,178.75,132.01,0.0],[1,6.46,65.6,0,313.96,0.0,0.0],[1,5.59,78.7,1,5070.93,2751.54,0.0],[1,5.85,77.3,1,481.89,344.71,0.0],[1,6.36,69.5,0,1546.87,0.0,0.0],[1,6.4,66.9,1,769.2,447.38,0.0],[1,11.91,34.4,0,11467.05,0.0,0.0],[1,2.41,178.1,1,3298.46,2594.6,0.0],[1,9.48,45.7,0,180.32,0.0,0.0],[1,5.95,72.5,0,2255.87,0.0,0.0],[1,6.3,68.3,1,1500.91,1017.35,0.0],[1,2.52,174.3,1,26970.3,21091.46,0.0],[1,6.34,66.9,0,6014.21,0.0,0.0],[1,3.98,110.1,1,54187.18,36466.75,0.0],[1,10.19,41.7,0,426.73,0.0,0.0],[1,7.57,57.9,0,3414.25,0.0,0.0],[1,5.4,80.8,1,1686.64,851.95,0.0],[1,6.05,69.2,0,875.29,0.0,0.0],[1,5.88,76.0,1,2732.4,1510.68,0.0],[1,2.29,189.2,1,1929.5,1582.68,0.0],[1,3.09,137.3,1,30971.22,20140.83,0.0],[1,2.47,176.7,1,598.29,496.71,0.0],[1,2.82,152.8,1,166.77,127.49,0.0],[1,6.2,72.2,1,2355.53,1572.15,0.0],[1,7.81,55.5,0,2567.67,0.0,0.0],[1,6.13,68.5,1,1552.61,1008.53,0.0],[1,6.41,66.6,1,3952.73,2408.64,0.0],[1,2.97,147.2,1,6457.35,5053.79,0.0],[1,11.98,35.2,0,966.68,0.0,0.0],[1,6.95,61.1,0,1082.74,0.0,0.0],[1,5.97,74.6,1,3024.68,1970.3,0.0],[1,9.68,46.2,0,289.89,0.0,0.0],[1,7.42,59.7,0,8192.69,0.0,0.0],[1,11.87,35.4,0,378.79,0.0,0.0],[1,11.81,38.5,0,402.33,0.0,0.0],[1,12.14,31.3,0,223.29,0.0,0.0],[1,6.36,68.1,1,2233.95,1184.83,0.0],[1,6.06,73.1,0,8346.31,0.0,0.0],[1,6.16,71.3,1,2458.88,1630.84,0.0],[1,8.36,53.6,1,3908.9,2449.26,0.0],[1,9.45,45.7,0,251.54,0.0,0.0],[1,3.64,120.0,1,973.66,616.8,0.0],[1,8.73,48.5,0,1385.04,0.0,0.0],[1,7.94,55.3,0,6683.19,0.0,0.0],[1,12.08,32.9,0,963.58,0.0,0.0],[1,11.94,38.9,0,77.15,0.0,0.0],[1,9.25,45.2,1,662.32,369.05,0.0],[1,5.2,86.3,0,1902.63,0.0,0.0],[1,9.51,47.0,0,2242.42,0.0,0.0],[1,6.77,62.2,1,4542.3,3081.76,0.0],[1,5.85,73.3,0,2569.01,0.0,0.0],[1,9.86,40.3,0,513.48,0.0,0.0],[1,6.64,67.7,1,125.26,66.07,0.0],[1,9.96,39.9,0,1785.89,0.0,0.0],[1,3.43,126.0,1,62624.76,44730.1,0.0],[1,7.27,57.4,0,17105.82,0.0,0.0],[1,7.13,62.5,0,908.19,0.0,0.0],[1,7.08,60.6,0,2123.42,0.0,0.0],[1,9.53,47.1,0,452.88,0.0,0.0],[1,12.0,33.8,0,69.59,0.0,0.0],[1,6.37,65.7,0,2701.01,0.0,0.0],[4,2.81,155.4,1,585.79,374.68,0.0],[4,7.63,59.3,0,5135.78,0.0,0.0],[4,6.91,63.7,0,31957.14,0.0,0.0],[4,7.27,58.3,0,21915.86,0.0,0.0],[4,8.98,47.5,0,3635.35,0.0,0.0],[4,2.68,162.8,1,2369.83,1380.01,0.0],[4,6.48,68.2,0,45481.02,0.0,0.0],[4,7.06,61.1,0,46818.06,0.0,0.0],[4,6.51,67.3,0,1065.79,0.0,0.0],[4,5.86,71.8,0,6843.9,0.0,0.0],[4,11.64,40.5,0,7279.96,0.0,0.0],[4,7.4,60.3,0,186098.32,0.0,0.0],[4,6.91,62.7,0,103382.33,0.0,0.0],[4,9.35,47.5,0,19299.67,0.0,0.0],[4,6.21,70.0,0,17722.9,0.0,0.0],[4,12.07,34.3,0,757.55,0.0,0.0],[4,12.03,35.6,0,6752.59,0.0,0.0],[4,7.78,55.7,0,7153.33,0.0,0.0],[4,6.75,65.2,0,11982.92,0.0,0.0],[4,8.22,53.1,0,11485.54,0.0,0.0],[4,7.53,57.9,0,8692.82,0.0,0.0],[4,7.8,57.1,0,13501.92,0.0,0.0],[4,2.44,177.8,1,172244.22,108322.28,0.0],[4,11.86,38.6,0,2548.64,0.0,0.0],[4,12.18,31.8,0,3641.24,0.0,0.0],[4,8.39,55.4,0,875.14,0.0,0.0],[4,6.9,63.5,0,1774.71,0.0,0.0],[4,7.62,59.3,0,13120.89,0.0,0.0],[4,9.64,45.4,0,2336.0,0.0,0.0],[4,7.93,55.0,0,5777.04,0.0,0.0],[4,11.96,35.3,0,3145.63,0.0,0.0],[4,9.75,46.6,0,8022.07,0.0,0.0],[4,11.81,37.8,0,5206.95,0.0,0.0],[4,10.24,39.8,0,4334.89,0.0,0.0],[4,12.05,35.1,0,13000.35,0.0,0.0],[4,10.05,41.0,0,448.17,0.0,0.0],[4,6.66,63.2,0,2931.18,0.0,0.0],[4,6.16,70.9,0,25281.43,0.0,0.0],[4,11.87,39.4,0,778.13,0.0,0.0],[4,2.55,168.2,1,6186.94,3612.07,0.0],[4,6.88,64.5,0,20109.74,0.0,0.0],[4,8.17,55.2,0,16787.82,0.0,0.0],[4,6.57,68.0,0,17216.87,0.0,0.0],[4,7.78,52.7,0,14147.17,0.0,0.0],[4,2.25,192.0,1,66686.27,46537.85,0.0],[4,7.43,62.0,0,39518.4,0.0,0.0],[4,11.96,35.6,0,1343.26,0.0,0.0],[4,9.26,49.1,0,1195.45,0.0,0.0],[4,9.14,44.1,0,5558.85,0.0,0.0],[4,7.01,61.5,0,1106.16,0.0,0.0],[4,8.99,45.6,0,3252.7,0.0,0.0],[4,12.12,35.1,0,667.15,0.0,0.0],[4,7.54,59.8,0,3712.21,0.0,0.0],[4,6.66,63.6,0,12562.07,0.0,0.0],[4,9.03,50.5,0,15999.33,0.0,0.0],[4,8.16,53.9,0,15283.4,0.0,0.0],[4,6.55,67.3,0,38001.23,0.0,0.0],[4,12.0,33.6,2,3181.2,0.0,293.3],[4,10.94,41.1,0,4864.42,0.0,0.0],[4,5.81,74.9,0,8661.25,0.0,0.0],[6,12.15,34.3,0,121.12,0.0,0.0],[6,6.27,70.5,1,52.94,27.41,0.0],[6,9.86,43.5,1,739.92,467.97,0.0],[6,6.15,70.5,0,80.48,0.0,0.0],[6,4.05,106.2,1,6110.64,3808.64,0.0],[6,2.92,148.8,1,15904.9,11629.96,0.0],[6,5.84,74.2,1,1075.01,727.27,0.0],[6,6.43,68.2,0,275.82,0.0,0.0],[6,7.06,61.0,1,1082.97,727.85,0.0],[6,5.83,72.7,1,2123.62,1422.8,0.0],[6,3.1,141.1,1,2668.53,2063.26,0.0],[6,12.16,32.8,0,1119.53,0.0,0.0],[6,12.12,32.2,1,227.75,128.82,0.0],[6,11.88,36.8,0,172.13,0.0,0.0],[6,2.2,196.0,1,22498.63,19284.45,0.0],[6,8.88,50.6,0,1515.65,0.0,0.0],[6,3.54,121.7,1,11676.42,8414.33,0.0],[6,5.82,72.8,1,1849.57,1189.23,0.0],[6,8.57,51.2,0,408.78,0.0,0.0],[6,5.88,72.3,1,9912.0,5253.13,0.0],[6,8.1,50.6,0,2144.0,0.0,0.0],[6,11.9,38.9,0,582.26,0.0,0.0],[6,11.95,38.5,0,645.75,0.0,0.0],[6,2.92,149.9,1,1763.56,1528.33,0.0],[6,2.75,157.8,1,2185.3,1908.41,0.0],[6,2.99,143.2,1,16817.25,15172.51,0.0],[6,5.49,80.9,1,2247.4,1358.19,0.0],[6,9.71,47.8,1,608.58,405.02,0.0],[6,11.89,38.1,0,737.79,0.0,0.0],[6,8.35,52.5,1,117.16,63.65,0.0],[6,2.41,179.3,1,3446.32,3061.84,0.0],[6,6.1,70.5,0,4323.15,0.0,0.0],[6,5.24,81.8,1,3686.76,2605.07,0.0],[6,3.23,134.6,1,14594.29,12858.88,0.0],[6,7.1,58.4,1,8897.55,5239.69,0.0],[6,7.62,54.5,1,859.86,512.65,0.0],[6,3.12,141.2,1,1540.98,1366.32,0.0],[6,6.92,61.7,0,3357.02,0.0,0.0],[6,2.33,190.3,1,1682.91,1364.57,0.0],[6,9.74,43.9,1,83.56,53.1,0.0],[6,9.6,46.1,0,346.9,0.0,0.0],[6,6.34,66.0,0,349.32,0.0,0.0],[6,5.53,80.3,1,7319.0,4583.71,0.0],[6,7.16,58.8,1,2917.72,1925.94,0.0],[6,6.05,69.2,1,1151.01,618.72,0.0],[6,2.26,193.0,1,709.36,591.72,0.0],[6,8.28,50.3,1,1500.22,903.31,0.0],[6,2.14,200.9,1,2200.7,2003.51,0.0],[6,6.2,67.0,0,1011.85,0.0,0.0],[6,6.34,66.0,1,15660.26,9965.3,0.0],[6,12.2,32.5,0,2174.22,0.0,0.0],[6,12.06,35.0,0,129.5,0.0,0.0],[6,8.92,50.3,1,98.51,67.18,0.0],[6,7.68,58.9,0,2034.16,0.0,0.0],[6,8.21,54.5,1,1877.22,1120.16,0.0],[5,11.99,33.8,0,6664.14,0.0,0.0],[5,6.59,63.5,0,4951.04,0.0,0.0],[5,8.07,53.3,0,1334.76,0.0,0.0],[5,7.04,62.7,0,20064.6,0.0,0.0],[5,7.49,61.4,0,2772.32,0.0,0.0],[5,10.99,40.4,2,525.98,0.0,37.44],[5,7.47,58.7,0,4805.26,0.0,0.0],[5,2.51,173.8,1,190682.0,102911.41,0.0],[5,7.37,56.0,0,9955.79,0.0,0.0],[5,11.94,33.5,0,9795.77,0.0,0.0],[5,7.16,60.4,0,4190.74,0.0,0.0],[5,6.43,65.2,0,43073.87,0.0,0.0],[5,8.98,47.6,0,1457.08,0.0,0.0],[5,2.62,165.4,1,24387.97,13770.35,0.0],[5,2.95,146.1,0,37642.45,0.0,0.0],[5,7.75,54.4,0,8084.17,0.0,0.0],[5,8.56,49.4,0,34299.34,0.0,0.0],[5,6.7,63.4,0,1494.28,0.0,0.0],[5,8.0,53.6,0,10803.3,0.0,0.0],[5,11.89,37.4,0,6189.68,0.0,0.0],[5,5.41,79.5,0,29404.52,0.0,0.0],[5,5.32,82.9,0,14194.03,0.0,0.0],[5,9.14,49.3,0,9607.95,0.0,0.0],[5,8.36,51.2,0,15348.27,0.0,0.0],[5,9.04,48.9,0,39381.41,0.0,0.0],[5,3.51,125.6,0,4247.43,0.0,0.0],[5,3.16,136.5,0,6899.1,0.0,0.0],[5,5.34,80.8,0,59955.46,0.0,0.0],[5,5.59,78.8,0,16334.62,0.0,0.0],[5,12.17,32.8,0,1625.22,0.0,0.0],[5,7.75,55.4,0,2714.94,0.0,0.0],[5,7.86,56.0,0,99019.5,0.0,0.0],[5,12.09,32.8,0,11932.09,0.0,0.0],[5,5.75,76.9,0,92752.03,0.0,0.0],[5,6.43,68.3,0,13826.58,0.0,0.0],[5,9.4,43.4,0,2370.33,0.0,0.0],[5,8.16,55.5,0,5351.82,0.0,0.0],[5,3.43,126.0,1,77144.85,41634.3,0.0],[5,3.32,129.5,1,30088.08,18472.51,0.0],[5,5.86,73.0,0,52547.24,0.0,0.0],[5,5.87,75.1,0,3240.23,0.0,0.0],[5,2.29,188.3,1,547.35,396.2,0.0],[5,8.16,53.4,0,6723.36,0.0,0.0],[5,9.84,43.2,0,2377.45,0.0,0.0],[5,7.92,55.8,0,10293.49,0.0,0.0],[5,9.38,45.5,0,4880.87,0.0,0.0],[5,8.49,53.2,0,8867.14,0.0,0.0],[5,7.05,62.0,0,16694.96,0.0,0.0],[5,7.15,62.6,0,8557.24,0.0,0.0],[5,6.43,69.8,0,448.34,0.0,0.0],[5,5.98,72.4,0,3855.03,0.0,0.0],[5,2.12,203.4,1,21292.42,12291.34,0.0],[5,6.98,63.6,0,26980.9,0.0,0.0],[5,7.19,60.5,0,17873.73,0.0,0.0],[5,11.96,39.0,2,4483.0,0.0,189.75],[5,7.51,59.7,0,3898.07,0.0,0.0],[5,7.72,55.9,0,1627.6,0.0,0.0],[5,3.48,122.9,1,26424.54,15674.17,0.0],[5,5.62,79.2,0,40635.4,0.0,0.0],[5,6.26,68.5,0,5377.53,0.0,0.0],[7,7.16,61.6,0,2096.16,0.0,0.0],[7,7.07,61.1,1,466.05,283.1,0.0],[7,10.05,41.5,0,940.75,0.0,0.0],[7,6.1,73.1,1,2216.74,1428.44,0.0],[7,8.35,51.3,0,9814.53,0.0,0.0],[7,6.71,66.5,1,5007.47,3048.17,0.0],[7,12.02,34.7,0,8079.53,0.0,0.0],[7,12.18,32.9,0,347.2,0.0,0.0],[7,5.4,82.3,0,15750.33,0.0,0.0],[7,9.17,46.7,0,495.65,0.0,0.0],[7,11.75,38.0,0,1316.9,0.0,0.0],[7,2.71,159.6,1,26254.5,20662.17,0.0],[7,6.63,62.9,0,26434.32,0.0,0.0],[7,6.11,73.7,0,2849.36,0.0,0.0],[7,6.29,68.0,0,23092.97,0.0,0.0],[7,7.0,64.0,1,2882.62,1711.38,0.0],[7,12.22,32.5,0,368.8,0.0,0.0],[7,6.27,68.5,1,840.56,521.75,0.0],[7,6.43,66.2,1,28353.82,18075.35,0.0],[7,9.34,48.5,1,4447.55,2247.27,0.0],[7,7.26,61.4,1,2657.99,1791.59,0.0],[7,5.67,74.9,0,9453.43,0.0,0.0],[7,6.25,68.8,1,2778.86,1648.12,0.0],[7,3.4,126.6,1,33929.73,23742.7,0.0],[7,8.5,49.2,0,1540.23,0.0,0.0],[7,5.32,81.5,0,10286.44,0.0,0.0],[7,7.88,54.8,0,1041.5,0.0,0.0],[7,3.57,122.0,1,5665.19,4736.12,0.0],[7,3.83,113.8,1,13832.53,7755.17,0.0],[7,6.45,65.3,0,7946.74,0.0,0.0],[7,7.18,60.0,0,7200.24,0.0,0.0],[7,11.81,35.6,0,4540.07,0.0,0.0],[7,3.28,131.9,1,1183.08,824.3,0.0],[7,7.76,53.8,0,1731.43,0.0,0.0],[7,7.53,56.0,0,1087.23,0.0,0.0],[7,9.77,46.9,0,1329.55,0.0,0.0],[7,9.65,45.8,0,5607.95,0.0,0.0],[7,8.4,49.5,0,11371.95,0.0,0.0],[7,5.82,76.3,1,7978.9,4007.3,0.0],[7,9.82,46.9,0,4095.16,0.0,0.0],[7,2.53,172.4,1,13347.16,11179.94,0.0],[7,5.53,80.5,0,43758.12,0.0,0.0],[7,10.42,43.6,0,34212.29,0.0,0.0],[7,2.91,149.8,1,14454.06,10595.66,0.0],[7,9.47,46.8,0,5533.13,0.0,0.0],[7,3.57,121.2,1,1542.48,1262.42,0.0],[7,9.56,46.0,0,1630.1,0.0,0.0],[7,8.72,47.0,0,2615.0,0.0,0.0],[7,4.1,106.8,1,8347.0,6158.39,0.0],[7,12.12,35.3,0,795.76,0.0,0.0],[7,2.88,152.1,1,4725.38,3979.84,0.0],[7,9.87,44.0,0,6708.06,0.0,0.0],[7,2.19,195.6,1,15931.07,12510.92,0.0],[7,7.88,52.9,1,5700.61,3112.89,0.0],[7,9.05,47.0,0,15250.23,0.0,0.0],[0,2.25,191.4,1,7898.28,6907.68,0.0],[0,12.18,31.2,0,326.64,0.0,0.0],[0,9.81,41.8,0,270.85,0.0,0.0],[0,8.52,51.0,0,924.57,0.0,0.0],[0,6.43,67.0,1,628.8,384.98,0.0],[0,10.04,43.0,0,296.82,0.0,0.0],[0,8.78,52.0,1,930.17,679.76,0.0],[0,8.34,55.7,0,6199.66,0.0,0.0],[0,8.59,50.8,1,715.93,518.48,0.0],[0,8.94,49.0,0,289.04,0.0,0.0],[0,6.5,67.2,1,2580.28,1735.18,0.0],[0,8.56,50.9,1,7140.6,5175.9,0.0],[0,6.46,67.1,0,2994.4,0.0,0.0],[0,6.53,67.3,1,1120.73,588.2,0.0],[0,5.36,80.3,1,10305.14,8509.41,0.0],[0,7.84,52.5,0,418.81,0.0,0.0],[0,2.64,164.5,1,1839.41,1548.76,0.0],[0,8.7,47.9,0,309.19,0.0,0.0],[0,2.3,190.1,1,1674.33,1480.59,0.0],[0,3.58,118.8,1,8800.81,7615.83,0.0],[0,7.7,58.0,1,193.49,146.83,0.0],[0,2.8,152.7,1,414.68,371.22,0.0],[0,8.03,51.7,1,165.8,114.5,0.0],[0,10.58,40.3,0,439.88,0.0,0.0],[0,3.11,141.3,1,823.04,729.85,0.0],[0,6.0,69.1,1,837.87,619.5,0.0],[0,12.06,37.7,1,360.64,188.35,0.0],[0,9.44,47.3,0,889.85,0.0,0.0],[0,8.4,48.2,0,5649.51,0.0,0.0],[0,3.27,131.6,1,657.5,507.55,0.0],[0,2.61,167.0,1,2298.34,1857.98,0.0],[0,5.6,74.1,1,844.2,502.47,0.0],[0,2.16,199.4,1,193.31,158.41,0.0],[0,2.45,178.1,1,2964.13,2597.9,0.0],[0,2.68,163.8,1,657.74,553.31,0.0],[0,12.04,35.6,0,99.65,0.0,0.0],[0,5.86,74.7,1,3607.72,2834.9,0.0],[0,10.37,44.1,0,596.5,0.0,0.0],[0,5.58,78.3,1,838.72,560.2,0.0],[0,8.13,54.7,1,355.57,264.53,0.0],[0,12.0,38.5,0,125.39,0.0,0.0],[0,7.67,57.9,1,2866.44,1777.23,0.0],[0,2.76,159.3,1,7313.15,6303.12,0.0],[0,2.44,178.6,1,1361.88,1163.63,0.0],[0,2.3,188.4,1,2471.06,2261.22,0.0],[0,3.7,119.0,1,98.92,82.3,0.0],[0,6.03,73.6,1,12955.79,9082.45,0.0],[0,12.03,33.2,0,764.67,0.0,0.0],[0,7.81,57.5,0,223.96,0.0,0.0],[0,8.8,50.8,1,549.57,398.0,0.0],[0,12.09,36.5,0,85.46,0.0,0.0],[0,9.79,45.6,0,1324.91,0.0,0.0],[0,7.08,58.4,1,5972.66,3926.57,0.0],[0,7.13,60.9,1,246.89,157.74,0.0],[0,11.84,38.8,1,95.08,60.8,0.0],[0,6.66,66.0,1,797.26,579.74,0.0],[0,6.41,66.2,1,1003.25,518.25,0.0],[0,6.1,72.5,1,345.98,183.66,0.0],[0,9.39,47.2,0,160.59,0.0,0.0],[0,11.94,39.2,1,163.94,88.61,0.0],[0,5.65,77.2,1,99.19,81.21,0.0],[0,3.24,133.9,1,743.48,654.64,0.0],[0,6.16,69.0,1,13194.07,7457.16,0.0],[0,12.19,31.7,0,187.13,0.0,0.0],[0,7.78,58.4,0,75.13,0.0,0.0]],"categorias":["Alimentos N\u00e3o Perec\u00edveis","Beleza e Higiene","Casa e Utilidades","Eletr\u00f4nicos","Esporte e Lazer","Ferramentas","Papelaria","Pet"],"status":["Saud\u00e1vel","Excesso de estoque","Risco de ruptura"],"capPorCategoria":[["Ferramentas",205150.28],["Beleza e Higiene",170215.7],["Casa e Utilidades",166407.02],["Esporte e Lazer",160226.89],["Pet",141282.99],["Eletr\u00f4nicos",137093.93],["Papelaria",124422.9],["Alimentos N\u00e3o Perec\u00edveis",81928.6]],"topOportunidades":[["Corda de Pular v4","Esporte e Lazer","Excesso de estoque",108322.28,"Reduzir reposi\u00e7\u00e3o / considerar promo\u00e7\u00e3o \u2014 R$ 108.322 parados"],["Kit Chaves de Fenda v2","Ferramentas","Excesso de estoque",102911.41,"Reduzir reposi\u00e7\u00e3o / considerar promo\u00e7\u00e3o \u2014 R$ 102.911 parados"],["Teclado Compacto v7","Eletr\u00f4nicos","Excesso de estoque",61232.24,"Reduzir reposi\u00e7\u00e3o / considerar promo\u00e7\u00e3o \u2014 R$ 61.232 parados"],["Bola de Treino v8","Esporte e Lazer","Excesso de estoque",46537.85,"Reduzir reposi\u00e7\u00e3o / considerar promo\u00e7\u00e3o \u2014 R$ 46.538 parados"],["Sabonete L\u00edquido v10","Beleza e Higiene","Excesso de estoque",44730.1,"Reduzir reposi\u00e7\u00e3o / considerar promo\u00e7\u00e3o \u2014 R$ 44.730 parados"],["Kit Chaves de Fenda v7","Ferramentas","Excesso de estoque",41634.3,"Reduzir reposi\u00e7\u00e3o / considerar promo\u00e7\u00e3o \u2014 R$ 41.634 parados"],["Protetor Solar v3","Beleza e Higiene","Excesso de estoque",36466.75,"Reduzir reposi\u00e7\u00e3o / considerar promo\u00e7\u00e3o \u2014 R$ 36.467 parados"],["Tapete Antiderrapante v4","Casa e Utilidades","Excesso de estoque",32730.56,"Reduzir reposi\u00e7\u00e3o / considerar promo\u00e7\u00e3o \u2014 R$ 32.731 parados"],["Carregador Turbo v5","Eletr\u00f4nicos","Excesso de estoque",29153.41,"Reduzir reposi\u00e7\u00e3o / considerar promo\u00e7\u00e3o \u2014 R$ 29.153 parados"],["Cama Pet v4","Pet","Excesso de estoque",23742.7,"Reduzir reposi\u00e7\u00e3o / considerar promo\u00e7\u00e3o \u2014 R$ 23.743 parados"],["Lumin\u00e1ria de Mesa v4","Casa e Utilidades","Excesso de estoque",22923.28,"Reduzir reposi\u00e7\u00e3o / considerar promo\u00e7\u00e3o \u2014 R$ 22.923 parados"],["Cortina Blackout v7","Casa e Utilidades","Excesso de estoque",22209.0,"Reduzir reposi\u00e7\u00e3o / considerar promo\u00e7\u00e3o \u2014 R$ 22.209 parados"],["Kit Manicure v3","Beleza e Higiene","Excesso de estoque",21091.46,"Reduzir reposi\u00e7\u00e3o / considerar promo\u00e7\u00e3o \u2014 R$ 21.091 parados"],["Cama Pet v2","Pet","Excesso de estoque",20662.17,"Reduzir reposi\u00e7\u00e3o / considerar promo\u00e7\u00e3o \u2014 R$ 20.662 parados"],["Shampoo 400ml v5","Beleza e Higiene","Excesso de estoque",20140.83,"Reduzir reposi\u00e7\u00e3o / considerar promo\u00e7\u00e3o \u2014 R$ 20.141 parados"],["Fone Bluetooth v3","Eletr\u00f4nicos","Risco de ruptura",4308.21,"Repor com urg\u00eancia \u2014 at\u00e9 R$ 4.308 em lucro sob risco"],["Caixa de Som v5","Eletr\u00f4nicos","Risco de ruptura",4216.14,"Repor com urg\u00eancia \u2014 at\u00e9 R$ 4.216 em lucro sob risco"],["Fone Bluetooth v6","Eletr\u00f4nicos","Risco de ruptura",1754.08,"Repor com urg\u00eancia \u2014 at\u00e9 R$ 1.754 em lucro sob risco"],["Hub USB v4","Eletr\u00f4nicos","Risco de ruptura",892.85,"Repor com urg\u00eancia \u2014 at\u00e9 R$ 893 em lucro sob risco"],["Cabo USB-C v6","Eletr\u00f4nicos","Risco de ruptura",390.09,"Repor com urg\u00eancia \u2014 at\u00e9 R$ 390 em lucro sob risco"],["Caixa de Som v7","Eletr\u00f4nicos","Risco de ruptura",337.21,"Repor com urg\u00eancia \u2014 at\u00e9 R$ 337 em lucro sob risco"],["Luva de Academia v10","Esporte e Lazer","Risco de ruptura",293.3,"Repor com urg\u00eancia \u2014 at\u00e9 R$ 293 em lucro sob risco"],["Furadeira Compacta v10","Ferramentas","Risco de ruptura",189.75,"Repor com urg\u00eancia \u2014 at\u00e9 R$ 190 em lucro sob risco"],["Serra Manual","Ferramentas","Risco de ruptura",37.44,"Repor com urg\u00eancia \u2014 at\u00e9 R$ 37 em lucro sob risco"]],"kpis":{"capitalLiberavel":1186728.31,"lucroRisco":12419.07,"capitalTotalInvestido":7248968.69,"nExcesso":163,"nRisco":9,"nSaudavel":328,"nTotal":500}};
+// skus: [catIdx, giroAnual, diasCobertura, statusIdx, capitalInvestido, capitalLiberavel, lucroRisco]
+
+function fmtMoeda(v){ return v.toLocaleString('pt-BR', {style:'currency', currency:'BRL', maximumFractionDigits:0}); }
+function fmtMoedaCompact(v){
+  if(Math.abs(v) >= 1000000) return 'R$ ' + (v/1000000).toFixed(1) + 'M';
+  if(Math.abs(v) >= 1000) return 'R$ ' + (v/1000).toFixed(0) + 'k';
+  return fmtMoeda(v);
+}
+
+function fillSelect(id, arr){
+  const el = document.getElementById(id);
+  arr.forEach((nome,i)=>{
+    const opt = document.createElement('option');
+    opt.value = i; opt.textContent = nome;
+    el.appendChild(opt);
+  });
+}
+fillSelect('fCategoria', DATA.categorias);
+fillSelect('fStatus', DATA.status);
+
+document.getElementById('headline').innerHTML =
+  `<b>${fmtMoeda(DATA.kpis.capitalLiberavel)}</b> parados em estoque excedente e <b>${fmtMoeda(DATA.kpis.lucroRisco)}</b> ` +
+  `em lucro sob risco de ruptura, entre ${DATA.kpis.nTotal} SKUs analisados ` +
+  `(${DATA.kpis.nExcesso} com excesso, ${DATA.kpis.nRisco} em risco, ${DATA.kpis.nSaudavel} saudáveis).`;
+
+document.getElementById('kpiCapital').textContent = fmtMoedaCompact(DATA.kpis.capitalLiberavel);
+document.getElementById('kpiLucro').textContent = fmtMoedaCompact(DATA.kpis.lucroRisco);
+document.getElementById('kpiExcesso').textContent = DATA.kpis.nExcesso;
+document.getElementById('kpiRisco').textContent = DATA.kpis.nRisco;
+
+const CORES_STATUS = ['#1E8E5A', '#B4571E', '#D64545']; // Saudável, Excesso, Risco
+
+let scatterChart = null;
+
+function render(){
+  const fCat = document.getElementById('fCategoria').value;
+  const fSta = document.getElementById('fStatus').value;
+
+  const filtrados = DATA.skus.filter(r=>{
+    if(fCat !== "" && r[0] != fCat) return false;
+    if(fSta !== "" && r[3] != fSta) return false;
+    return true;
+  });
+
+  // --- scatter: giro x cobertura, bolha = capital investido ---
+  const porStatus = [[], [], []];
+  filtrados.forEach(r=>{
+    const capital = r[4];
+    const raio = Math.max(3, Math.min(22, Math.sqrt(capital) / 12));
+    porStatus[r[3]].push({ x: r[1], y: r[2], r: raio });
+  });
+
+  try{
+    if(scatterChart) scatterChart.destroy();
+    if(typeof Chart === 'undefined') throw new Error('Chart.js indisponível');
+    scatterChart = new Chart(document.getElementById('chartScatter'), {
+      type: 'bubble',
+      data: {
+        datasets: DATA.status.map((nome, i)=>({
+          label: nome,
+          data: porStatus[i],
+          backgroundColor: CORES_STATUS[i] + 'B3',
+          borderColor: CORES_STATUS[i],
+          borderWidth: 1,
+        })),
+      },
+      options: {
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => `Giro: ${ctx.raw.x.toFixed(1)}x/ano · Cobertura: ${ctx.raw.y.toFixed(0)} dias`,
+            }
+          }
+        },
+        scales: {
+          x: { title: { display: true, text: 'Giro anual (x)' } },
+          y: { title: { display: true, text: 'Dias de cobertura atual' } },
+        }
+      }
+    });
+  } catch(err){
+    document.getElementById('chartScatter').replaceWith(
+      Object.assign(document.createElement('div'), {
+        className: 'empty',
+        textContent: 'Não foi possível carregar o gráfico (biblioteca externa bloqueada nesta rede).',
+      })
+    );
+  }
+
+  // --- capital liberável por categoria (barras html, não filtrado por categoria pra manter visão geral) ---
+  const capCat = fSta === "" || fSta == DATA.status.indexOf('Excesso de estoque')
+    ? DATA.capPorCategoria
+    : DATA.capPorCategoria; // mantém visão geral independente do filtro de status
+  const maxCat = capCat.length ? capCat[0][1] : 1;
+  document.getElementById('barCategoria').innerHTML = capCat.length ? capCat.map(([nome,v])=>`
+    <div class="bar-row">
+      <div class="name">${nome}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${(v/maxCat*100).toFixed(1)}%"></div></div>
+      <div class="bar-val">${fmtMoedaCompact(v)}</div>
+    </div>`).join('') : '<div class="empty">Sem oportunidades de liberação de capital</div>';
+
+  // --- tabela top oportunidades (filtra pelos mesmos critérios quando aplicável) ---
+  const statusNomeParaIdx = {};
+  DATA.status.forEach((s,i)=>statusNomeParaIdx[s]=i);
+  const topFiltrado = DATA.topOportunidades.filter(row=>{
+    const [nome, categoria, status, valor, acao] = row;
+    if(fCat !== "" && DATA.categorias[fCat] !== categoria) return false;
+    if(fSta !== "" && statusNomeParaIdx[status] != fSta) return false;
+    return true;
+  });
+
+  document.getElementById('tabelaTop').innerHTML = topFiltrado.length ? `
+    <table>
+      <thead><tr><th>Produto</th><th>Categoria</th><th>Status</th><th style="text-align:right">Valor</th><th>Ação recomendada</th></tr></thead>
+      <tbody>${topFiltrado.map(([nome,cat,status,valor,acao])=>{
+        const tagClass = status === 'Excesso de estoque' ? 'excesso' : (status === 'Risco de ruptura' ? 'risco' : 'saudavel');
+        return `<tr><td>${nome}</td><td>${cat}</td><td><span class="status-tag ${tagClass}">${status}</span></td><td class="num">${fmtMoeda(valor)}</td><td>${acao}</td></tr>`;
+      }).join('')}</tbody>
+    </table>` : '<div class="empty">Nenhuma oportunidade para os filtros selecionados</div>';
+}
+
+['fCategoria','fStatus'].forEach(id=>{
+  document.getElementById(id).addEventListener('change', render);
+});
+document.getElementById('fReset').addEventListener('click', ()=>{
+  document.getElementById('fCategoria').value = '';
+  document.getElementById('fStatus').value = '';
+  render();
+});
+
+const themeBtn = document.getElementById('themeToggle');
+themeBtn.addEventListener('click', ()=>{
+  const cur = document.documentElement.getAttribute('data-theme');
+  const next = cur === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  themeBtn.textContent = next === 'dark' ? 'Modo claro' : 'Modo escuro';
+  render();
+});
+
+render();
+</script>
+</body>
+</html>

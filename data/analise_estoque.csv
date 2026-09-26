@@ -1,0 +1,501 @@
+sku_id,produto_nome,categoria,custo_unitario,preco_venda,margem_unitaria,lead_time_dias,vendas_12m,vendas_media_diaria,estoque_atual,giro_anual,dias_cobertura_atual,cobertura_alvo_dias,status,capital_investido_atual,capital_liberavel,lucro_em_risco
+1,Fone Bluetooth,Eletrônicos,1147.67,2115.69,968.02,42,65.6,0.18,8.5,8.97,47.29,84,Saudável,9755.2,0.0,0.0
+2,Carregador Turbo,Eletrônicos,1579.98,2137.55,557.57,49,667.2,1.83,250.5,3.2,137.04,98,Saudável,395784.99,0.0,0.0
+3,Cabo USB-C,Eletrônicos,874.21,1325.89,451.68,35,195.2,0.53,25.3,9.18,47.31,70,Saudável,22117.51,0.0,0.0
+4,Caixa de Som,Eletrônicos,937.91,1551.7,613.79,33,44.6,0.12,21.7,2.43,177.59,66,Excesso de estoque,20352.65,12788.72,0.0
+5,Adaptador HDMI,Eletrônicos,1142.59,2163.98,1021.39,39,133.3,0.37,19.1,8.28,52.3,78,Saudável,21823.47,0.0,0.0
+6,Mouse sem Fio,Eletrônicos,136.46,186.9,50.44,31,136.6,0.37,24.1,6.87,64.4,62,Saudável,3288.69,0.0,0.0
+7,Teclado Compacto,Eletrônicos,1655.87,2808.48,1152.61,38,36.8,0.1,6.4,6.77,63.48,76,Saudável,10597.57,0.0,0.0
+8,Hub USB,Eletrônicos,80.52,117.22,36.7,40,75.4,0.21,9.7,9.39,46.96,80,Saudável,781.04,0.0,0.0
+9,Fone Bluetooth v2,Eletrônicos,702.99,950.48,247.49,44,100.1,0.27,18.3,6.61,66.73,88,Saudável,12864.72,0.0,0.0
+10,Carregador Turbo v2,Eletrônicos,1591.78,2595.21,1003.43,50,54.3,0.15,10.6,6.24,71.25,100,Saudável,16872.87,0.0,0.0
+11,Cabo USB-C v2,Eletrônicos,1350.68,1891.39,540.71,32,63.7,0.17,6.9,11.93,39.54,64,Saudável,9319.69,0.0,0.0
+12,Caixa de Som v2,Eletrônicos,688.6,1156.16,467.56,41,49.4,0.14,8.7,6.51,64.28,82,Saudável,5990.82,0.0,0.0
+13,Adaptador HDMI v2,Eletrônicos,622.08,891.2,269.12,36,49.0,0.13,5.3,11.85,39.48,72,Saudável,3297.02,0.0,0.0
+14,Mouse sem Fio v2,Eletrônicos,1086.59,1828.49,741.9,50,226.5,0.62,63.7,4.25,102.65,100,Saudável,69215.78,0.0,0.0
+15,Teclado Compacto v2,Eletrônicos,322.37,513.27,190.9,36,135.1,0.37,30.0,5.58,81.05,72,Saudável,9671.1,0.0,0.0
+16,Hub USB v2,Eletrônicos,1744.02,2560.66,816.64,32,79.6,0.22,8.4,10.42,38.52,64,Saudável,14649.77,0.0,0.0
+17,Fone Bluetooth v3,Eletrônicos,1580.89,2709.99,1129.1,41,222.7,0.61,21.2,11.91,34.75,82,Risco de ruptura,33514.87,0.0,4308.21
+18,Carregador Turbo v3,Eletrônicos,1632.82,2715.94,1083.12,29,130.4,0.36,23.5,6.85,65.78,58,Saudável,38371.27,0.0,0.0
+19,Cabo USB-C v3,Eletrônicos,1674.56,2769.35,1094.79,26,154.3,0.42,24.1,7.63,57.01,52,Saudável,40356.9,0.0,0.0
+20,Caixa de Som v3,Eletrônicos,1051.27,1636.78,585.51,30,113.8,0.31,16.9,8.5,54.2,60,Saudável,17766.46,0.0,0.0
+21,Adaptador HDMI v3,Eletrônicos,126.22,231.22,105.0,42,109.6,0.3,16.2,7.86,53.95,84,Saudável,2044.76,0.0,0.0
+22,Mouse sem Fio v3,Eletrônicos,1367.31,1864.82,497.51,39,46.0,0.13,9.5,5.64,75.38,78,Saudável,12989.44,0.0,0.0
+23,Teclado Compacto v3,Eletrônicos,273.83,515.33,241.5,28,66.6,0.18,11.0,7.43,60.29,56,Saudável,3012.13,0.0,0.0
+24,Hub USB v3,Eletrônicos,1578.69,2430.1,851.41,45,94.8,0.26,38.3,2.94,147.46,90,Saudável,60463.83,0.0,0.0
+25,Fone Bluetooth v4,Eletrônicos,678.42,1109.56,431.14,41,340.6,0.93,51.3,8.19,54.98,82,Saudável,34802.95,0.0,0.0
+26,Carregador Turbo v4,Eletrônicos,1684.15,2278.4,594.25,48,172.9,0.47,87.2,2.35,184.08,96,Saudável,146857.88,0.0,0.0
+27,Cabo USB-C v4,Eletrônicos,297.97,470.91,172.94,51,205.3,0.56,36.9,6.54,65.6,102,Saudável,10995.09,0.0,0.0
+28,Caixa de Som v4,Eletrônicos,1439.86,2350.07,910.21,50,25.4,0.07,4.2,7.17,60.35,100,Saudável,6047.41,0.0,0.0
+29,Adaptador HDMI v4,Eletrônicos,405.43,628.3,222.87,28,13.7,0.04,1.4,12.0,37.3,56,Saudável,567.6,0.0,0.0
+30,Mouse sem Fio v4,Eletrônicos,1057.6,1625.57,567.97,30,105.4,0.29,10.4,11.99,36.02,60,Saudável,10999.04,0.0,0.0
+31,Teclado Compacto v4,Eletrônicos,833.39,1574.45,741.06,29,55.2,0.15,5.7,11.91,37.69,58,Saudável,4750.32,0.0,0.0
+32,Hub USB v4,Eletrônicos,1352.42,2257.67,905.25,40,52.8,0.14,4.8,12.21,33.18,80,Risco de ruptura,6491.62,0.0,892.85
+33,Fone Bluetooth v5,Eletrônicos,776.26,1441.92,665.66,27,617.7,1.69,70.4,10.43,41.6,54,Saudável,54648.7,0.0,0.0
+34,Carregador Turbo v5,Eletrônicos,1714.63,2551.45,836.82,27,86.5,0.24,29.8,3.4,125.75,54,Excesso de estoque,51095.97,29153.41,0.0
+35,Cabo USB-C v5,Eletrônicos,1307.73,2218.29,910.56,53,100.8,0.28,16.7,6.96,60.47,106,Saudável,21839.09,0.0,0.0
+36,Caixa de Som v5,Eletrônicos,413.07,569.16,156.09,55,534.3,1.46,53.5,11.89,36.55,110,Risco de ruptura,22099.24,0.0,4216.14
+37,Adaptador HDMI v5,Eletrônicos,1521.89,2148.64,626.75,48,664.9,1.82,139.6,5.68,76.63,96,Saudável,212455.84,0.0,0.0
+38,Mouse sem Fio v5,Eletrônicos,1207.14,1833.24,626.1,43,28.0,0.08,4.0,8.46,52.14,86,Saudável,4828.56,0.0,0.0
+39,Teclado Compacto v5,Eletrônicos,1152.9,1959.21,806.31,27,283.8,0.78,56.4,6.06,72.54,54,Saudável,65023.56,0.0,0.0
+40,Hub USB v5,Eletrônicos,1389.41,2498.68,1109.27,30,51.2,0.14,9.0,6.59,64.16,60,Saudável,12504.69,0.0,0.0
+41,Fone Bluetooth v6,Eletrônicos,1649.24,2953.99,1304.75,47,51.6,0.14,5.3,11.93,37.49,94,Risco de ruptura,8740.97,0.0,1754.08
+42,Carregador Turbo v6,Eletrônicos,141.17,192.93,51.76,52,148.7,0.41,27.3,6.62,67.01,104,Saudável,3853.94,0.0,0.0
+43,Cabo USB-C v6,Eletrônicos,492.51,715.68,223.17,55,91.9,0.25,12.1,9.18,48.06,110,Risco de ruptura,5959.37,0.0,390.09
+44,Caixa de Som v6,Eletrônicos,348.86,601.03,252.17,42,162.7,0.45,22.5,8.57,50.48,84,Saudável,7849.35,0.0,0.0
+45,Adaptador HDMI v6,Eletrônicos,1692.71,2786.4,1093.69,44,106.0,0.29,13.2,9.74,45.45,88,Saudável,22343.77,0.0,0.0
+46,Mouse sem Fio v6,Eletrônicos,392.78,654.34,261.56,50,279.8,0.77,145.3,2.24,189.54,100,Saudável,57070.93,0.0,0.0
+47,Teclado Compacto v6,Eletrônicos,1730.52,3149.04,1418.52,25,30.6,0.08,5.5,6.68,65.6,50,Saudável,9517.86,0.0,0.0
+48,Hub USB v6,Eletrônicos,256.13,434.05,177.92,26,392.6,1.08,67.9,6.73,63.13,52,Saudável,17391.23,0.0,0.0
+49,Fone Bluetooth v7,Eletrônicos,1561.29,2792.24,1230.95,34,41.8,0.11,4.2,11.94,36.67,68,Saudável,6557.42,0.0,0.0
+50,Carregador Turbo v7,Eletrônicos,403.27,671.65,268.38,29,151.5,0.42,27.8,6.51,66.98,58,Saudável,11210.91,0.0,0.0
+51,Cabo USB-C v7,Eletrônicos,227.47,389.81,162.34,26,254.4,0.7,99.9,3.02,143.33,52,Excesso de estoque,22724.25,14479.99,0.0
+52,Caixa de Som v7,Eletrônicos,629.27,1099.41,470.14,44,24.2,0.07,2.2,12.05,33.18,88,Risco de ruptura,1384.39,0.0,337.21
+53,Adaptador HDMI v7,Eletrônicos,341.03,465.4,124.37,40,1270.2,3.48,276.8,5.55,79.54,80,Saudável,94397.1,0.0,0.0
+54,Mouse sem Fio v7,Eletrônicos,1703.96,2655.84,951.88,45,171.5,0.47,29.3,7.09,62.36,90,Saudável,49926.03,0.0,0.0
+55,Teclado Compacto v7,Eletrônicos,1203.6,1691.79,488.19,43,189.4,0.52,95.5,2.34,184.04,86,Excesso de estoque,114943.8,61232.24,0.0
+56,Hub USB v7,Eletrônicos,1505.16,2343.94,838.78,36,24.7,0.07,3.2,8.67,47.29,72,Saudável,4816.51,0.0,0.0
+57,Fone Bluetooth v8,Eletrônicos,434.2,645.25,211.05,31,103.5,0.28,18.7,6.68,65.95,62,Saudável,8119.54,0.0,0.0
+58,Carregador Turbo v8,Eletrônicos,1369.75,2285.4,915.65,35,69.2,0.19,10.6,8.06,55.91,70,Saudável,14519.35,0.0,0.0
+59,Cabo USB-C v8,Eletrônicos,1387.93,1973.77,585.84,40,171.4,0.47,26.0,7.79,55.37,80,Saudável,36086.18,0.0,0.0
+60,Caixa de Som v8,Eletrônicos,1637.12,2452.54,815.42,29,56.8,0.16,20.9,3.28,134.3,58,Excesso de estoque,34215.81,19439.57,0.0
+61,Adaptador HDMI v8,Eletrônicos,1138.67,1654.41,515.74,25,151.4,0.41,24.9,7.01,60.03,50,Saudável,28352.88,0.0,0.0
+62,Mouse sem Fio v8,Eletrônicos,1296.93,1819.91,522.98,38,721.0,1.98,242.1,3.56,122.56,76,Saudável,313986.75,0.0,0.0
+63,Teclado Compacto v8,Eletrônicos,1496.83,2575.76,1078.93,35,208.7,0.57,27.7,9.04,48.45,70,Saudável,41462.19,0.0,0.0
+64,Hub USB v8,Eletrônicos,1377.98,2004.91,626.93,36,134.3,0.37,15.5,9.65,42.13,72,Saudável,21358.69,0.0,0.0
+65,Fone Bluetooth v9,Eletrônicos,1362.1,2510.52,1148.42,42,793.6,2.17,312.7,2.99,143.82,84,Saudável,425928.67,0.0,0.0
+66,Carregador Turbo v9,Eletrônicos,1181.47,2063.48,882.01,28,449.2,1.23,41.3,12.11,33.56,56,Saudável,48794.71,0.0,0.0
+67,Cabo USB-C v9,Eletrônicos,1526.86,2713.86,1187.0,43,205.5,0.56,43.1,5.45,76.55,86,Saudável,65807.67,0.0,0.0
+68,Caixa de Som v9,Eletrônicos,1381.52,2440.77,1059.25,37,783.7,2.15,106.2,8.7,49.46,74,Saudável,146717.42,0.0,0.0
+69,Adaptador HDMI v9,Eletrônicos,718.03,1135.11,417.08,39,826.2,2.26,184.5,5.45,81.51,78,Saudável,132476.54,0.0,0.0
+70,Mouse sem Fio v9,Eletrônicos,734.28,1212.6,478.32,26,57.7,0.16,10.8,6.45,68.32,52,Saudável,7930.22,0.0,0.0
+71,Organizador Multiuso,Casa e Utilidades,251.73,634.22,382.49,22,140.0,0.38,50.5,3.26,131.66,44,Excesso de estoque,12712.36,8463.99,0.0
+72,Jogo de Panelas,Casa e Utilidades,297.99,520.88,222.89,23,70.5,0.19,38.4,2.17,198.81,46,Excesso de estoque,11442.82,8795.2,0.0
+73,Luminária de Mesa,Casa e Utilidades,277.36,478.0,200.64,24,764.3,2.09,161.6,5.66,77.17,48,Saudável,44821.38,0.0,0.0
+74,Cortina Blackout,Casa e Utilidades,65.39,142.22,76.83,16,183.3,0.5,61.3,3.58,122.06,32,Excesso de estoque,4008.41,2957.58,0.0
+75,Tapete Antiderrapante,Casa e Utilidades,69.31,174.27,104.96,30,119.7,0.33,22.1,6.4,67.39,60,Saudável,1531.75,0.0,0.0
+76,Suporte de Prateleira,Casa e Utilidades,149.92,244.75,94.83,19,49.9,0.14,5.6,10.17,40.96,38,Saudável,839.55,0.0,0.0
+77,Organizador Multiuso v2,Casa e Utilidades,220.13,452.37,232.24,30,282.9,0.78,29.8,11.98,38.45,60,Saudável,6559.87,0.0,0.0
+78,Jogo de Panelas v2,Casa e Utilidades,276.15,509.93,233.78,16,141.8,0.39,18.9,9.34,48.65,32,Saudável,5219.23,0.0,0.0
+79,Luminária de Mesa v2,Casa e Utilidades,50.6,82.63,32.03,35,745.2,2.04,150.5,6.11,73.72,70,Saudável,7615.3,0.0,0.0
+80,Cortina Blackout v2,Casa e Utilidades,260.24,542.4,282.16,25,95.1,0.26,53.1,2.11,203.8,50,Excesso de estoque,13818.74,10428.49,0.0
+81,Tapete Antiderrapante v2,Casa e Utilidades,90.77,193.06,102.29,31,130.1,0.36,18.8,7.92,52.74,62,Saudável,1706.48,0.0,0.0
+82,Suporte de Prateleira v2,Casa e Utilidades,167.82,334.9,167.08,20,90.7,0.25,8.8,12.15,35.41,40,Saudável,1476.82,0.0,0.0
+83,Organizador Multiuso v3,Casa e Utilidades,66.12,114.8,48.68,22,124.1,0.34,11.1,12.12,32.65,44,Saudável,733.93,0.0,0.0
+84,Jogo de Panelas v3,Casa e Utilidades,80.74,207.49,126.75,17,353.7,0.97,56.7,7.62,58.51,34,Saudável,4577.96,0.0,0.0
+85,Luminária de Mesa v3,Casa e Utilidades,156.75,394.22,237.47,31,319.9,0.88,49.4,7.65,56.36,62,Saudável,7743.45,0.0,0.0
+86,Cortina Blackout v3,Casa e Utilidades,33.92,62.3,28.38,15,17.4,0.05,1.7,12.07,35.66,30,Saudável,57.66,0.0,0.0
+87,Tapete Antiderrapante v3,Casa e Utilidades,231.87,563.21,331.34,35,48.2,0.13,17.0,3.31,128.73,70,Saudável,3941.79,0.0,0.0
+88,Suporte de Prateleira v3,Casa e Utilidades,209.22,488.67,279.45,30,114.8,0.31,15.2,9.06,48.33,60,Saudável,3180.14,0.0,0.0
+89,Organizador Multiuso v4,Casa e Utilidades,230.61,407.22,176.61,23,48.1,0.13,8.9,6.27,67.54,46,Saudável,2052.43,0.0,0.0
+90,Jogo de Panelas v4,Casa e Utilidades,281.94,494.84,212.9,34,210.1,0.58,30.0,8.47,52.12,68,Saudável,8458.2,0.0,0.0
+91,Luminária de Mesa v4,Casa e Utilidades,290.15,631.19,341.04,24,250.9,0.69,112.0,2.71,162.93,48,Excesso de estoque,32496.8,22923.28,0.0
+92,Cortina Blackout v4,Casa e Utilidades,215.31,483.09,267.78,31,56.3,0.15,9.7,6.91,62.89,62,Saudável,2088.51,0.0,0.0
+93,Tapete Antiderrapante v4,Casa e Utilidades,133.3,305.54,172.24,19,673.9,1.85,315.7,2.55,170.99,38,Excesso de estoque,42082.81,32730.56,0.0
+94,Suporte de Prateleira v4,Casa e Utilidades,74.58,160.47,85.89,32,114.1,0.31,24.2,5.7,77.41,64,Saudável,1804.84,0.0,0.0
+95,Organizador Multiuso v5,Casa e Utilidades,222.43,359.32,136.89,28,96.9,0.27,16.4,6.88,61.78,56,Saudável,3647.85,0.0,0.0
+96,Jogo de Panelas v5,Casa e Utilidades,220.33,467.83,247.5,35,433.4,1.19,58.9,8.55,49.6,70,Saudável,12977.44,0.0,0.0
+97,Luminária de Mesa v5,Casa e Utilidades,175.4,378.53,203.13,15,105.1,0.29,16.8,7.13,58.34,30,Saudável,2946.72,0.0,0.0
+98,Cortina Blackout v5,Casa e Utilidades,194.86,419.09,224.23,34,77.0,0.21,10.2,9.72,48.35,68,Saudável,1987.57,0.0,0.0
+99,Tapete Antiderrapante v5,Casa e Utilidades,78.33,140.65,62.32,20,422.7,1.16,80.9,6.21,69.86,40,Saudável,6336.9,0.0,0.0
+100,Suporte de Prateleira v5,Casa e Utilidades,228.83,527.98,299.15,33,65.9,0.18,22.1,3.51,122.41,66,Saudável,5057.14,0.0,0.0
+101,Organizador Multiuso v6,Casa e Utilidades,147.76,328.08,180.32,15,288.2,0.79,44.6,8.02,56.49,30,Saudável,6590.1,0.0,0.0
+102,Jogo de Panelas v6,Casa e Utilidades,130.75,282.2,151.45,32,139.9,0.38,61.5,2.67,160.45,64,Excesso de estoque,8041.12,4833.77,0.0
+103,Luminária de Mesa v6,Casa e Utilidades,123.42,255.06,131.64,16,195.7,0.54,32.0,7.09,59.68,32,Saudável,3949.44,0.0,0.0
+104,Cortina Blackout v6,Casa e Utilidades,250.64,496.51,245.87,30,30.2,0.08,9.8,3.65,118.44,60,Saudável,2456.27,0.0,0.0
+105,Tapete Antiderrapante v6,Casa e Utilidades,142.48,329.54,187.06,33,99.2,0.27,10.3,11.94,37.9,66,Saudável,1467.54,0.0,0.0
+106,Suporte de Prateleira v6,Casa e Utilidades,180.17,388.78,208.61,15,85.0,0.23,40.5,2.5,173.91,30,Excesso de estoque,7296.88,6038.16,0.0
+107,Organizador Multiuso v7,Casa e Utilidades,181.33,366.4,185.07,17,296.5,0.81,32.9,9.89,40.5,34,Saudável,5965.76,0.0,0.0
+108,Jogo de Panelas v7,Casa e Utilidades,137.76,358.05,220.29,18,35.6,0.1,6.1,7.03,62.54,36,Saudável,840.34,0.0,0.0
+109,Luminária de Mesa v7,Casa e Utilidades,120.91,263.76,142.85,31,218.4,0.6,36.5,6.92,61.0,62,Saudável,4413.22,0.0,0.0
+110,Cortina Blackout v7,Casa e Utilidades,91.07,226.25,135.18,34,1177.3,3.23,463.2,3.01,143.61,68,Excesso de estoque,42183.62,22209.0,0.0
+111,Tapete Antiderrapante v7,Casa e Utilidades,35.89,88.52,52.63,19,59.7,0.16,7.9,8.35,48.3,38,Saudável,283.53,0.0,0.0
+112,Suporte de Prateleira v7,Casa e Utilidades,134.77,327.23,192.46,21,62.9,0.17,10.7,7.21,62.09,42,Saudável,1442.04,0.0,0.0
+113,Organizador Multiuso v8,Casa e Utilidades,233.85,481.28,247.43,32,307.0,0.84,48.9,7.44,58.14,64,Saudável,11435.26,0.0,0.0
+114,Jogo de Panelas v8,Casa e Utilidades,105.22,242.69,137.47,22,135.3,0.37,27.9,6.02,75.27,44,Saudável,2935.64,0.0,0.0
+115,Luminária de Mesa v8,Casa e Utilidades,223.86,541.17,317.31,25,116.1,0.32,54.4,2.54,171.02,50,Excesso de estoque,12177.98,8617.69,0.0
+116,Cortina Blackout v8,Casa e Utilidades,85.16,191.04,105.88,24,147.1,0.4,28.0,6.25,69.48,48,Saudável,2384.48,0.0,0.0
+117,Tapete Antiderrapante v8,Casa e Utilidades,88.57,183.92,95.35,18,162.3,0.44,19.6,9.83,44.08,36,Saudável,1735.97,0.0,0.0
+118,Suporte de Prateleira v8,Casa e Utilidades,289.18,546.3,257.12,26,81.9,0.22,9.8,9.85,43.68,52,Saudável,2833.96,0.0,0.0
+119,Organizador Multiuso v9,Casa e Utilidades,34.23,69.24,35.01,35,64.4,0.18,11.1,6.85,62.91,70,Saudável,379.95,0.0,0.0
+120,Jogo de Panelas v9,Casa e Utilidades,54.03,103.81,49.78,31,130.4,0.36,20.8,7.3,58.22,62,Saudável,1123.82,0.0,0.0
+121,Luminária de Mesa v9,Casa e Utilidades,278.11,627.52,349.41,27,219.2,0.6,84.4,3.08,140.54,54,Excesso de estoque,23472.48,14453.49,0.0
+122,Cortina Blackout v9,Casa e Utilidades,112.99,209.82,96.83,28,44.7,0.12,6.1,8.62,49.81,56,Saudável,689.24,0.0,0.0
+123,Tapete Antiderrapante v9,Casa e Utilidades,55.39,113.07,57.68,19,198.0,0.54,28.5,7.97,52.54,38,Saudável,1578.62,0.0,0.0
+124,Suporte de Prateleira v9,Casa e Utilidades,64.51,121.49,56.98,28,65.0,0.18,8.6,8.92,48.29,56,Saudável,554.79,0.0,0.0
+125,Organizador Multiuso v10,Casa e Utilidades,67.37,118.91,51.54,35,223.5,0.61,42.3,6.44,69.08,70,Saudável,2849.75,0.0,0.0
+126,Jogo de Panelas v10,Casa e Utilidades,61.43,114.85,53.42,24,109.5,0.3,21.9,6.12,73.0,48,Saudável,1345.32,0.0,0.0
+127,Luminária de Mesa v10,Casa e Utilidades,190.88,382.96,192.08,32,254.4,0.7,37.9,8.48,54.38,64,Saudável,7234.35,0.0,0.0
+128,Cortina Blackout v10,Casa e Utilidades,278.29,693.91,415.62,23,298.5,0.82,47.3,7.67,57.84,46,Saudável,13163.12,0.0,0.0
+129,Tapete Antiderrapante v10,Casa e Utilidades,204.04,448.96,244.92,22,252.9,0.69,23.0,12.0,33.19,44,Saudável,4692.92,0.0,0.0
+130,Suporte de Prateleira v10,Casa e Utilidades,267.57,458.71,191.14,31,465.2,1.27,74.5,7.15,58.45,62,Saudável,19933.96,0.0,0.0
+131,Organizador Multiuso v11,Casa e Utilidades,251.82,633.35,381.53,34,47.0,0.13,20.9,2.68,162.31,68,Excesso de estoque,5263.04,3058.06,0.0
+132,Jogo de Panelas v11,Casa e Utilidades,208.35,452.15,243.8,35,232.1,0.64,34.1,7.96,53.63,70,Saudável,7104.74,0.0,0.0
+133,Luminária de Mesa v11,Casa e Utilidades,110.68,233.85,123.17,20,47.8,0.13,23.5,2.43,179.45,40,Excesso de estoque,2600.98,2021.2,0.0
+134,Cortina Blackout v11,Casa e Utilidades,135.0,330.95,195.95,15,186.4,0.51,33.8,6.32,66.19,30,Excesso de estoque,4563.0,2494.73,0.0
+135,Tapete Antiderrapante v11,Casa e Utilidades,37.09,64.25,27.16,26,313.9,0.86,55.4,6.7,64.42,52,Saudável,2054.79,0.0,0.0
+136,Suporte de Prateleira v11,Casa e Utilidades,279.48,524.98,245.5,18,259.4,0.71,84.2,3.7,118.48,36,Excesso de estoque,23532.22,16381.82,0.0
+137,Organizador Multiuso v12,Casa e Utilidades,258.25,517.34,259.09,22,232.8,0.64,27.9,9.91,43.74,44,Saudável,7205.17,0.0,0.0
+138,Jogo de Panelas v12,Casa e Utilidades,55.61,133.44,77.83,15,78.2,0.21,12.1,7.87,56.48,30,Saudável,672.88,0.0,0.0
+139,Luminária de Mesa v12,Casa e Utilidades,91.26,231.73,140.47,30,85.3,0.23,13.5,7.7,57.77,60,Saudável,1232.01,0.0,0.0
+140,Cortina Blackout v12,Casa e Utilidades,247.29,424.74,177.45,20,137.1,0.38,19.9,8.38,52.98,40,Saudável,4921.07,0.0,0.0
+141,Shampoo 400ml,Beleza e Higiene,86.11,242.48,156.37,18,239.6,0.66,76.9,3.75,117.15,36,Excesso de estoque,6621.86,4586.93,0.0
+142,Creme Hidratante,Beleza e Higiene,94.35,205.24,110.89,11,175.1,0.48,25.6,8.62,53.36,22,Excesso de estoque,2415.36,1419.59,0.0
+143,Escova de Cabelo,Beleza e Higiene,130.45,280.67,150.22,21,208.2,0.57,89.2,2.76,156.38,42,Excesso de estoque,11636.14,8510.92,0.0
+144,Kit Manicure,Beleza e Higiene,61.71,164.76,103.05,22,69.8,0.19,13.5,6.16,70.59,44,Saudável,833.08,0.0,0.0
+145,Sabonete Líquido,Beleza e Higiene,11.76,34.76,23.0,18,40.3,0.11,15.2,3.13,137.67,36,Excesso de estoque,178.75,132.01,0.0
+146,Protetor Solar,Beleza e Higiene,47.57,112.41,64.84,21,36.7,0.1,6.6,6.46,65.64,42,Saudável,313.96,0.0,0.0
+147,Shampoo 400ml v2,Beleza e Higiene,48.9,105.95,57.05,18,480.9,1.32,103.7,5.59,78.71,36,Excesso de estoque,5070.93,2751.54,0.0
+148,Creme Hidratante v2,Beleza e Higiene,32.56,61.07,28.51,11,69.9,0.19,14.8,5.85,77.28,22,Excesso de estoque,481.89,344.71,0.0
+149,Escova de Cabelo v2,Beleza e Higiene,112.91,328.23,215.32,19,71.9,0.2,13.7,6.36,69.55,38,Saudável,1546.87,0.0,0.0
+150,Kit Manicure v2,Beleza e Higiene,18.67,36.4,17.73,14,224.7,0.62,41.2,6.4,66.92,28,Excesso de estoque,769.2,447.38,0.0
+151,Sabonete Líquido v2,Beleza e Higiene,122.25,229.82,107.57,23,994.6,2.72,93.8,11.91,34.42,46,Saudável,11467.05,0.0,0.0
+152,Protetor Solar v2,Beleza e Higiene,8.81,21.37,12.56,19,767.4,2.1,374.4,2.41,178.08,38,Excesso de estoque,3298.46,2594.6,0.0
+153,Shampoo 400ml v3,Beleza e Higiene,18.4,38.97,20.57,14,78.3,0.21,9.8,9.48,45.68,28,Saudável,180.32,0.0,0.0
+154,Creme Hidratante v3,Beleza e Higiene,145.54,317.84,172.3,23,78.0,0.21,15.5,5.95,72.53,46,Saudável,2255.87,0.0,0.0
+155,Escova de Cabelo v3,Beleza e Higiene,29.78,56.53,26.75,11,269.4,0.74,50.4,6.3,68.29,22,Excesso de estoque,1500.91,1017.35,0.0
+156,Kit Manicure v3,Beleza e Higiene,99.89,218.59,118.7,19,565.3,1.55,270.0,2.52,174.33,38,Excesso de estoque,26970.3,21091.46,0.0
+157,Sabonete Líquido v3,Beleza e Higiene,91.68,253.34,161.66,25,357.8,0.98,65.6,6.34,66.92,50,Saudável,6014.21,0.0,0.0
+158,Protetor Solar v3,Beleza e Higiene,77.71,155.35,77.64,18,2312.0,6.33,697.3,3.98,110.08,36,Excesso de estoque,54187.18,36466.75,0.0
+159,Shampoo 400ml v4,Beleza e Higiene,27.18,66.7,39.52,23,137.3,0.38,15.7,10.19,41.74,46,Saudável,426.73,0.0,0.0
+160,Creme Hidratante v4,Beleza e Higiene,60.86,149.11,88.25,21,353.7,0.97,56.1,7.57,57.89,42,Saudável,3414.25,0.0,0.0
+161,Escova de Cabelo v4,Beleza e Higiene,23.2,64.53,41.33,20,328.3,0.9,72.7,5.4,80.83,40,Excesso de estoque,1686.64,851.95,0.0
+162,Kit Manicure v4,Beleza e Higiene,32.66,92.07,59.41,24,141.4,0.39,26.8,6.05,69.18,48,Saudável,875.29,0.0,0.0
+163,Sabonete Líquido v4,Beleza e Higiene,55.2,112.11,56.91,17,237.6,0.65,49.5,5.88,76.04,34,Excesso de estoque,2732.4,1510.68,0.0
+164,Protetor Solar v4,Beleza e Higiene,32.32,77.06,44.74,17,115.2,0.32,59.7,2.29,189.15,34,Excesso de estoque,1929.5,1582.68,0.0
+165,Shampoo 400ml v5,Beleza e Higiene,70.15,138.15,68.0,24,1174.0,3.22,441.5,3.09,137.26,48,Excesso de estoque,30971.22,20140.83,0.0
+166,Creme Hidratante v5,Beleza e Higiene,24.52,67.92,43.4,15,50.4,0.14,24.4,2.47,176.71,30,Excesso de estoque,598.29,496.71,0.0
+167,Escova de Cabelo v5,Beleza e Higiene,9.81,27.91,18.1,18,40.6,0.11,17.0,2.82,152.83,36,Excesso de estoque,166.77,127.49,0.0
+168,Kit Manicure v5,Beleza e Higiene,80.12,160.12,80.0,12,148.7,0.41,29.4,6.2,72.17,24,Excesso de estoque,2355.53,1572.15,0.0
+169,Sabonete Líquido v5,Beleza e Higiene,15.44,31.8,16.36,25,1093.5,3.0,166.3,7.81,55.51,50,Saudável,2567.67,0.0,0.0
+170,Protetor Solar v5,Beleza e Higiene,91.33,195.18,103.85,12,90.6,0.25,17.0,6.13,68.49,24,Excesso de estoque,1552.61,1008.53,0.0
+171,Shampoo 400ml v6,Beleza e Higiene,115.24,242.81,127.57,13,188.1,0.52,34.3,6.41,66.56,26,Excesso de estoque,3952.73,2408.64,0.0
+172,Creme Hidratante v6,Beleza e Higiene,133.97,388.74,254.77,16,119.5,0.33,48.2,2.97,147.22,32,Excesso de estoque,6457.35,5053.79,0.0
+173,Escova de Cabelo v6,Beleza e Higiene,43.94,86.45,42.51,25,227.8,0.62,22.0,11.98,35.25,50,Saudável,966.68,0.0,0.0
+174,Kit Manicure v6,Beleza e Higiene,28.72,76.25,47.53,17,225.3,0.62,37.7,6.95,61.08,34,Saudável,1082.74,0.0,0.0
+175,Sabonete Líquido v6,Beleza e Higiene,146.12,385.01,238.89,13,101.3,0.28,20.7,5.97,74.59,26,Excesso de estoque,3024.68,1970.3,0.0
+176,Protetor Solar v6,Beleza e Higiene,21.16,46.51,25.35,12,108.3,0.3,13.7,9.68,46.17,24,Saudável,289.89,0.0,0.0
+177,Shampoo 400ml v7,Beleza e Higiene,138.39,350.67,212.28,23,361.8,0.99,59.2,7.42,59.72,46,Saudável,8192.69,0.0,0.0
+178,Creme Hidratante v7,Beleza e Higiene,88.09,236.49,148.4,11,44.4,0.12,4.3,11.87,35.35,22,Saudável,378.79,0.0,0.0
+179,Escova de Cabelo v7,Beleza e Higiene,30.25,83.96,53.71,15,126.1,0.35,13.3,11.81,38.5,30,Saudável,402.33,0.0,0.0
+180,Kit Manicure v7,Beleza e Higiene,148.86,315.47,166.61,16,17.5,0.05,1.5,12.14,31.29,32,Saudável,223.29,0.0,0.0
+181,Sabonete Líquido v7,Beleza e Higiene,142.29,319.79,177.5,16,84.1,0.23,15.7,6.36,68.14,32,Excesso de estoque,2233.95,1184.83,0.0
+182,Protetor Solar v7,Beleza e Higiene,115.44,273.07,157.63,25,360.9,0.99,72.3,6.06,73.12,50,Saudável,8346.31,0.0,0.0
+183,Shampoo 400ml v8,Beleza e Higiene,69.46,136.68,67.22,12,181.3,0.5,35.4,6.16,71.27,24,Excesso de estoque,2458.88,1630.84,0.0
+184,Creme Hidratante v8,Beleza e Higiene,103.41,285.7,182.29,10,257.6,0.71,37.8,8.36,53.56,20,Excesso de estoque,3908.9,2449.26,0.0
+185,Escova de Cabelo v8,Beleza e Higiene,47.46,102.74,55.28,18,42.3,0.12,5.3,9.45,45.73,36,Saudável,251.54,0.0,0.0
+186,Kit Manicure v8,Beleza e Higiene,98.35,199.05,100.7,22,30.1,0.08,9.9,3.64,120.05,44,Excesso de estoque,973.66,616.8,0.0
+187,Sabonete Líquido v8,Beleza e Higiene,115.42,248.8,133.38,17,90.4,0.25,12.0,8.73,48.45,34,Saudável,1385.04,0.0,0.0
+188,Protetor Solar v8,Beleza e Higiene,90.07,189.52,99.45,20,489.4,1.34,74.2,7.94,55.34,40,Saudável,6683.19,0.0,0.0
+189,Shampoo 400ml v9,Beleza e Higiene,91.77,182.17,90.4,13,116.4,0.32,10.5,12.08,32.93,26,Saudável,963.58,0.0,0.0
+190,Creme Hidratante v9,Beleza e Higiene,36.74,77.31,40.57,21,19.7,0.05,2.1,11.94,38.91,42,Saudável,77.15,0.0,0.0
+191,Escova de Cabelo v9,Beleza e Higiene,48.7,123.03,74.33,10,109.9,0.3,13.6,9.25,45.17,20,Excesso de estoque,662.32,369.05,0.0
+192,Kit Manicure v9,Beleza e Higiene,82.01,206.79,124.78,25,98.1,0.27,23.2,5.2,86.32,50,Saudável,1902.63,0.0,0.0
+193,Sabonete Líquido v9,Beleza e Higiene,54.56,98.49,43.93,16,319.0,0.87,41.1,9.51,47.03,32,Saudável,2242.42,0.0,0.0
+194,Protetor Solar v9,Beleza e Higiene,36.75,80.85,44.1,10,725.3,1.99,123.6,6.77,62.2,20,Excesso de estoque,4542.3,3081.76,0.0
+195,Shampoo 400ml v10,Beleza e Higiene,139.62,324.23,184.61,24,91.6,0.25,18.4,5.85,73.32,48,Saudável,2569.01,0.0,0.0
+196,Creme Hidratante v10,Beleza e Higiene,42.79,126.35,83.56,13,108.8,0.3,12.0,9.86,40.26,26,Saudável,513.48,0.0,0.0
+197,Escova de Cabelo v10,Beleza e Higiene,21.23,46.32,25.09,16,31.8,0.09,5.9,6.64,67.72,32,Excesso de estoque,125.26,66.07,0.0
+198,Kit Manicure v10,Beleza e Higiene,25.92,66.35,40.43,10,629.8,1.73,68.9,9.96,39.93,20,Saudável,1785.89,0.0,0.0
+199,Sabonete Líquido v10,Beleza e Higiene,136.2,299.99,163.79,18,1332.1,3.65,459.8,3.43,125.99,36,Excesso de estoque,62624.76,44730.1,0.0
+200,Protetor Solar v10,Beleza e Higiene,104.05,255.61,151.56,15,1045.7,2.86,164.4,7.27,57.38,30,Saudável,17105.82,0.0,0.0
+201,Shampoo 400ml v11,Beleza e Higiene,44.96,112.42,67.46,21,117.9,0.32,20.2,7.13,62.54,42,Saudável,908.19,0.0,0.0
+202,Creme Hidratante v11,Beleza e Higiene,81.67,148.49,66.82,25,156.7,0.43,26.0,7.08,60.56,50,Saudável,2123.42,0.0,0.0
+203,Escova de Cabelo v11,Beleza e Higiene,26.33,69.29,42.96,22,133.3,0.37,17.2,9.53,47.1,44,Saudável,452.88,0.0,0.0
+204,Kit Manicure v11,Beleza e Higiene,33.14,61.06,27.92,22,22.7,0.06,2.1,12.0,33.77,44,Saudável,69.59,0.0,0.0
+205,Sabonete Líquido v11,Beleza e Higiene,42.67,121.15,78.48,25,351.9,0.96,63.3,6.37,65.66,50,Saudável,2701.01,0.0,0.0
+206,Garrafa Térmica,Esporte e Lazer,30.51,56.57,26.06,28,45.1,0.12,19.2,2.81,155.39,56,Excesso de estoque,585.79,374.68,0.0
+207,Faixa Elástica,Esporte e Lazer,364.24,799.54,435.3,38,86.8,0.24,14.1,7.63,59.29,76,Saudável,5135.78,0.0,0.0
+208,Bola de Treino,Esporte e Lazer,658.91,1254.04,595.13,38,278.1,0.76,48.5,6.91,63.66,76,Saudável,31957.14,0.0,0.0
+209,Luva de Academia,Esporte e Lazer,693.54,1361.65,668.11,35,197.7,0.54,31.6,7.27,58.34,70,Saudável,21915.86,0.0,0.0
+210,Corda de Pular,Esporte e Lazer,318.89,721.02,402.13,21,87.5,0.24,11.4,8.98,47.55,42,Saudável,3635.35,0.0,0.0
+211,Mochila Esportiva,Esporte e Lazer,127.41,232.65,105.24,34,41.7,0.11,18.6,2.68,162.81,68,Excesso de estoque,2369.83,1380.01,0.0
+212,Garrafa Térmica v2,Esporte e Lazer,413.84,690.3,276.46,37,588.2,1.61,109.9,6.48,68.2,74,Saudável,45481.02,0.0,0.0
+213,Faixa Elástica v2,Esporte e Lazer,496.48,821.91,325.43,26,563.4,1.54,94.3,7.06,61.09,52,Saudável,46818.06,0.0,0.0
+214,Bola de Treino v2,Esporte e Lazer,63.44,116.92,53.48,29,91.1,0.25,16.8,6.51,67.31,58,Saudável,1065.79,0.0,0.0
+215,Luva de Academia v2,Esporte e Lazer,195.54,296.18,100.64,36,178.0,0.49,35.0,5.86,71.77,72,Saudável,6843.9,0.0,0.0
+216,Corda de Pular v2,Esporte e Lazer,224.69,455.1,230.41,31,291.9,0.8,32.4,11.64,40.51,62,Saudável,7279.96,0.0,0.0
+217,Mochila Esportiva v2,Esporte e Lazer,673.05,1275.02,601.97,35,1673.0,4.58,276.5,7.4,60.32,70,Saudável,186098.32,0.0,0.0
+218,Garrafa Térmica v3,Esporte e Lazer,567.1,981.0,413.9,29,1061.5,2.91,182.3,6.91,62.68,58,Saudável,103382.33,0.0,0.0
+219,Faixa Elástica v3,Esporte e Lazer,431.76,967.44,535.68,32,343.4,0.94,44.7,9.35,47.51,64,Saudável,19299.67,0.0,0.0
+220,Bola de Treino v3,Esporte e Lazer,280.87,500.01,219.14,21,329.2,0.9,63.1,6.21,69.96,42,Saudável,17722.9,0.0,0.0
+221,Luva de Academia v3,Esporte e Lazer,445.62,703.22,257.6,32,18.1,0.05,1.7,12.07,34.28,64,Saudável,757.55,0.0,0.0
+222,Corda de Pular v3,Esporte e Lazer,625.24,1341.32,716.08,34,110.7,0.3,10.8,12.03,35.61,68,Saudável,6752.59,0.0,0.0
+223,Mochila Esportiva v3,Esporte e Lazer,161.84,355.28,193.44,25,289.7,0.79,44.2,7.78,55.69,50,Saudável,7153.33,0.0,0.0
+224,Garrafa Térmica v4,Esporte e Lazer,375.64,650.79,275.15,38,178.6,0.49,31.9,6.75,65.19,76,Saudável,11982.92,0.0,0.0
+225,Faixa Elástica v4,Esporte e Lazer,565.79,1266.19,700.4,35,139.6,0.38,20.3,8.22,53.08,70,Saudável,11485.54,0.0,0.0
+226,Bola de Treino v4,Esporte e Lazer,115.75,191.09,75.34,22,473.7,1.3,75.1,7.53,57.87,44,Saudável,8692.82,0.0,0.0
+227,Luva de Academia v4,Esporte e Lazer,314.73,523.86,209.13,40,274.0,0.75,42.9,7.8,57.15,80,Saudável,13501.92,0.0,0.0
+228,Corda de Pular v4,Esporte e Lazer,337.8,751.11,413.31,33,1046.5,2.87,509.9,2.44,177.84,66,Excesso de estoque,172244.22,108322.28,0.0
+229,Mochila Esportiva v4,Esporte e Lazer,233.82,518.04,284.22,29,103.0,0.28,10.9,11.86,38.63,58,Saudável,2548.64,0.0,0.0
+230,Garrafa Térmica v5,Esporte e Lazer,479.11,754.83,275.72,28,87.2,0.24,7.6,12.18,31.81,56,Saudável,3641.24,0.0,0.0
+231,Faixa Elástica v5,Esporte e Lazer,44.65,77.72,33.07,28,129.1,0.35,19.6,8.39,55.41,56,Saudável,875.14,0.0,0.0
+232,Bola de Treino v5,Esporte e Lazer,169.02,265.21,96.19,40,60.4,0.17,10.5,6.9,63.45,80,Saudável,1774.71,0.0,0.0
+233,Luva de Academia v5,Esporte e Lazer,239.87,380.65,140.78,37,336.8,0.92,54.7,7.62,59.28,74,Saudável,13120.89,0.0,0.0
+234,Corda de Pular v5,Esporte e Lazer,117.98,228.12,110.14,37,159.2,0.44,19.8,9.64,45.4,74,Saudável,2336.0,0.0,0.0
+235,Mochila Esportiva v5,Esporte e Lazer,608.11,1101.92,493.81,37,63.1,0.17,9.5,7.93,54.95,74,Saudável,5777.04,0.0,0.0
+236,Garrafa Térmica v6,Esporte e Lazer,542.35,1130.8,588.45,30,59.9,0.16,5.8,11.96,35.34,60,Saudável,3145.63,0.0,0.0
+237,Faixa Elástica v6,Esporte e Lazer,510.96,939.66,428.7,36,122.9,0.34,15.7,9.75,46.63,72,Saudável,8022.07,0.0,0.0
+238,Bola de Treino v6,Esporte e Lazer,456.75,947.79,491.04,28,110.1,0.3,11.4,11.81,37.79,56,Saudável,5206.95,0.0,0.0
+239,Luva de Academia v6,Esporte e Lazer,341.33,638.94,297.61,39,116.4,0.32,12.7,10.24,39.82,78,Saudável,4334.89,0.0,0.0
+240,Corda de Pular v6,Esporte e Lazer,494.31,903.34,409.03,25,273.6,0.75,26.3,12.05,35.09,50,Saudável,13000.35,0.0,0.0
+241,Mochila Esportiva v6,Esporte e Lazer,45.27,103.92,58.65,28,88.2,0.24,9.9,10.05,40.97,56,Saudável,448.17,0.0,0.0
+242,Garrafa Térmica v7,Esporte e Lazer,58.39,113.22,54.83,32,289.7,0.79,50.2,6.66,63.25,64,Saudável,2931.18,0.0,0.0
+243,Faixa Elástica v7,Esporte e Lazer,230.67,457.13,226.46,23,564.5,1.55,109.6,6.16,70.87,46,Saudável,25281.43,0.0,0.0
+244,Bola de Treino v7,Esporte e Lazer,409.54,616.24,206.7,37,17.6,0.05,1.9,11.87,39.4,74,Saudável,778.13,0.0,0.0
+245,Luva de Academia v7,Esporte e Lazer,105.22,231.05,125.83,35,127.6,0.35,58.8,2.55,168.2,70,Excesso de estoque,6186.94,3612.07,0.0
+246,Corda de Pular v7,Esporte e Lazer,220.26,488.06,267.8,33,516.4,1.41,91.3,6.88,64.53,66,Saudável,20109.74,0.0,0.0
+247,Mochila Esportiva v7,Esporte e Lazer,531.26,987.79,456.53,24,209.0,0.57,31.6,8.17,55.19,48,Saudável,16787.82,0.0,0.0
+248,Garrafa Térmica v8,Esporte e Lazer,395.79,829.17,433.38,23,233.6,0.64,43.5,6.57,67.97,46,Saudável,17216.87,0.0,0.0
+249,Faixa Elástica v8,Esporte e Lazer,424.84,971.58,546.74,20,230.6,0.63,33.3,7.78,52.71,40,Saudável,14147.17,0.0,0.0
+250,Bola de Treino v8,Esporte e Lazer,614.62,1208.12,593.5,29,206.3,0.57,108.5,2.25,191.97,58,Excesso de estoque,66686.27,46537.85,0.0
+251,Luva de Academia v8,Esporte e Lazer,611.74,945.65,333.91,22,380.2,1.04,64.6,7.43,62.02,44,Saudável,39518.4,0.0,0.0
+252,Corda de Pular v8,Esporte e Lazer,244.23,481.88,237.65,35,56.4,0.15,5.5,11.96,35.59,70,Saudável,1343.26,0.0,0.0
+253,Mochila Esportiva v8,Esporte e Lazer,33.58,55.57,21.99,29,264.8,0.73,35.6,9.26,49.07,58,Saudável,1195.45,0.0,0.0
+254,Garrafa Térmica v9,Esporte e Lazer,370.59,781.26,410.67,27,124.1,0.34,15.0,9.14,44.12,54,Saudável,5558.85,0.0,0.0
+255,Faixa Elástica v9,Esporte e Lazer,83.8,156.69,72.89,28,78.3,0.21,13.2,7.01,61.53,56,Saudável,1106.16,0.0,0.0
+256,Bola de Treino v9,Esporte e Lazer,322.05,582.17,260.12,38,80.8,0.22,10.1,8.99,45.62,76,Saudável,3252.7,0.0,0.0
+257,Luva de Academia v9,Esporte e Lazer,667.15,1181.17,514.02,29,10.4,0.03,1.0,12.12,35.1,58,Saudável,667.15,0.0,0.0
+258,Corda de Pular v9,Esporte e Lazer,501.65,941.45,439.8,28,45.2,0.12,7.4,7.54,59.76,56,Saudável,3712.21,0.0,0.0
+259,Mochila Esportiva v9,Esporte e Lazer,675.38,1165.71,490.33,21,106.8,0.29,18.6,6.66,63.57,42,Saudável,12562.07,0.0,0.0
+260,Garrafa Térmica v10,Esporte e Lazer,596.99,1186.53,589.54,22,193.9,0.53,26.8,9.03,50.45,44,Saudável,15999.33,0.0,0.0
+261,Faixa Elástica v10,Esporte e Lazer,555.76,862.95,307.19,29,186.2,0.51,27.5,8.16,53.91,58,Saudável,15283.4,0.0,0.0
+262,Bola de Treino v10,Esporte e Lazer,111.31,245.83,134.52,40,1852.7,5.08,341.4,6.55,67.26,80,Saudável,38001.23,0.0,0.0
+263,Luva de Academia v10,Esporte e Lazer,361.5,613.63,252.13,38,95.7,0.26,8.8,12.0,33.56,76,Risco de ruptura,3181.2,0.0,293.3
+264,Corda de Pular v10,Esporte e Lazer,565.63,921.3,355.67,28,76.4,0.21,8.6,10.94,41.09,56,Saudável,4864.42,0.0,0.0
+265,Mochila Esportiva v10,Esporte e Lazer,692.9,1087.52,394.62,40,60.9,0.17,12.5,5.81,74.92,80,Saudável,8661.25,0.0,0.0
+266,Caderno Universitário,Papelaria,25.77,67.59,41.82,14,50.0,0.14,4.7,12.15,34.31,28,Saudável,121.12,0.0,0.0
+267,Caneta Gel (cx),Papelaria,10.38,22.51,12.13,17,26.4,0.07,5.1,6.27,70.51,34,Excesso de estoque,52.94,27.41,0.0
+268,Marcador de Texto,Papelaria,81.31,248.95,167.64,8,76.3,0.21,9.1,9.86,43.53,16,Excesso de estoque,739.92,467.97,0.0
+269,Agenda Anual,Papelaria,3.06,7.36,4.3,19,136.2,0.37,26.3,6.15,70.48,38,Saudável,80.48,0.0,0.0
+270,Pasta Organizadora,Papelaria,64.12,198.27,134.15,20,327.6,0.9,95.3,4.05,106.18,40,Excesso de estoque,6110.64,3808.64,0.0
+271,Post-it Colorido,Papelaria,78.08,233.79,155.71,20,499.6,1.37,203.7,2.92,148.82,40,Excesso de estoque,15904.9,11629.96,0.0
+272,Caderno Universitário v2,Papelaria,14.91,35.78,20.87,12,354.7,0.97,72.1,5.84,74.19,24,Excesso de estoque,1075.01,727.27,0.0
+273,Caneta Gel (cx) v2,Papelaria,48.39,151.57,103.18,18,30.5,0.08,5.7,6.43,68.21,36,Saudável,275.82,0.0,0.0
+274,Marcador de Texto v2,Papelaria,14.01,43.3,29.29,10,462.6,1.27,77.3,7.06,60.99,20,Excesso de estoque,1082.97,727.85,0.0
+275,Agenda Anual v2,Papelaria,80.44,215.38,134.94,12,132.5,0.36,26.4,5.83,72.72,24,Excesso de estoque,2123.62,1422.8,0.0
+276,Pasta Organizadora v2,Papelaria,46.49,91.37,44.88,16,148.5,0.41,57.4,3.1,141.08,32,Excesso de estoque,2668.53,2063.26,0.0
+277,Post-it Colorido v2,Papelaria,60.19,162.61,102.42,16,207.0,0.57,18.6,12.16,32.8,32,Saudável,1119.53,0.0,0.0
+278,Caderno Universitário v3,Papelaria,13.72,35.58,21.86,7,188.0,0.52,16.6,12.12,32.23,14,Excesso de estoque,227.75,128.82,0.0
+279,Caneta Gel (cx) v3,Papelaria,17.93,43.62,25.69,12,95.3,0.26,9.6,11.88,36.77,24,Saudável,172.13,0.0,0.0
+280,Marcador de Texto v3,Papelaria,67.06,157.7,90.64,14,624.8,1.71,335.5,2.2,195.99,28,Excesso de estoque,22498.63,19284.45,0.0
+281,Agenda Anual v3,Papelaria,87.61,168.4,80.79,13,124.8,0.34,17.3,8.88,50.6,26,Saudável,1515.65,0.0,0.0
+282,Pasta Organizadora v3,Papelaria,48.47,130.81,82.34,17,722.5,1.98,240.9,3.54,121.7,34,Excesso de estoque,11676.42,8414.33,0.0
+283,Post-it Colorido v3,Papelaria,37.14,105.09,67.95,13,249.6,0.68,49.8,5.82,72.82,26,Excesso de estoque,1849.57,1189.23,0.0
+284,Caderno Universitário v4,Papelaria,45.93,104.06,58.13,13,63.4,0.17,8.9,8.57,51.24,26,Saudável,408.78,0.0,0.0
+285,Caneta Gel (cx) v4,Papelaria,41.3,94.22,52.92,17,1211.0,3.32,240.0,5.88,72.34,34,Excesso de estoque,9912.0,5253.13,0.0
+286,Marcador de Texto v4,Papelaria,56.87,174.76,117.89,18,272.0,0.75,37.7,8.1,50.59,36,Saudável,2144.0,0.0,0.0
+287,Agenda Anual v4,Papelaria,41.59,114.18,72.59,17,131.5,0.36,14.0,11.9,38.86,34,Saudável,582.26,0.0,0.0
+288,Pasta Organizadora v4,Papelaria,60.92,178.78,117.86,20,100.4,0.28,10.6,11.95,38.54,40,Saudável,645.75,0.0,0.0
+289,Post-it Colorido v4,Papelaria,31.38,88.51,57.13,10,136.8,0.37,56.2,2.92,149.95,20,Excesso de estoque,1763.56,1528.33,0.0
+290,Caderno Universitário v5,Papelaria,20.5,40.58,20.08,10,246.5,0.68,106.6,2.75,157.85,20,Excesso de estoque,2185.3,1908.41,0.0
+291,Caneta Gel (cx) v5,Papelaria,60.91,141.18,80.27,7,704.0,1.93,276.1,2.99,143.15,14,Excesso de estoque,16817.25,15172.51,0.0
+292,Marcador de Texto v5,Papelaria,53.13,143.58,90.45,16,190.9,0.52,42.3,5.49,80.88,32,Excesso de estoque,2247.4,1358.19,0.0
+293,Agenda Anual v5,Papelaria,66.15,165.6,99.45,8,70.2,0.19,9.2,9.71,47.83,16,Excesso de estoque,608.58,405.02,0.0
+294,Pasta Organizadora v5,Papelaria,50.19,135.99,85.8,17,140.8,0.39,14.7,11.89,38.11,34,Saudável,737.79,0.0,0.0
+295,Post-it Colorido v5,Papelaria,7.97,23.14,15.17,12,102.1,0.28,14.7,8.35,52.55,24,Excesso de estoque,117.16,63.65,0.0
+296,Caderno Universitário v6,Papelaria,31.02,78.63,47.61,10,226.2,0.62,111.1,2.41,179.27,20,Excesso de estoque,3446.32,3061.84,0.0
+297,Caneta Gel (cx) v6,Papelaria,58.5,162.73,104.23,20,382.7,1.05,73.9,6.1,70.48,40,Saudável,4323.15,0.0,0.0
+298,Marcador de Texto v6,Papelaria,55.86,139.5,83.64,12,294.5,0.81,66.0,5.24,81.8,24,Excesso de estoque,3686.76,2605.07,0.0
+299,Agenda Anual v6,Papelaria,46.39,101.41,55.02,8,853.4,2.34,314.6,3.23,134.55,16,Excesso de estoque,14594.29,12858.88,0.0
+300,Pasta Organizadora v6,Papelaria,80.74,190.63,109.89,12,689.0,1.89,110.2,7.1,58.38,24,Excesso de estoque,8897.55,5239.69,0.0
+301,Post-it Colorido v6,Papelaria,14.05,42.98,28.93,11,410.0,1.12,61.2,7.62,54.48,22,Excesso de estoque,859.86,512.65,0.0
+302,Caderno Universitário v7,Papelaria,13.25,30.67,17.42,8,300.7,0.82,116.3,3.12,141.17,16,Excesso de estoque,1540.98,1366.32,0.0
+303,Caneta Gel (cx) v7,Papelaria,88.81,210.63,121.82,17,223.7,0.61,37.8,6.92,61.68,34,Saudável,3357.02,0.0,0.0
+304,Marcador de Texto v7,Papelaria,40.65,92.46,51.81,18,79.4,0.22,41.4,2.33,190.31,36,Excesso de estoque,1682.91,1364.57,0.0
+305,Agenda Anual v7,Papelaria,14.66,33.43,18.77,8,47.4,0.13,5.7,9.74,43.89,16,Excesso de estoque,83.56,53.1,0.0
+306,Pasta Organizadora v7,Papelaria,78.84,250.67,171.83,18,34.8,0.1,4.4,9.6,46.15,36,Saudável,346.9,0.0,0.0
+307,Post-it Colorido v7,Papelaria,22.25,52.99,30.74,17,86.8,0.24,15.7,6.34,66.02,34,Saudável,349.32,0.0,0.0
+308,Caderno Universitário v8,Papelaria,37.38,72.1,34.72,15,890.3,2.44,195.8,5.53,80.27,30,Excesso de estoque,7319.0,4583.71,0.0
+309,Caneta Gel (cx) v8,Papelaria,72.4,159.55,87.15,10,250.0,0.68,40.3,7.16,58.84,20,Excesso de estoque,2917.72,1925.94,0.0
+310,Marcador de Texto v8,Papelaria,19.41,47.05,27.64,16,312.8,0.86,59.3,6.05,69.2,32,Excesso de estoque,1151.01,618.72,0.0
+311,Agenda Anual v8,Papelaria,10.83,27.09,16.26,16,123.9,0.34,65.5,2.26,192.96,32,Excesso de estoque,709.36,591.72,0.0
+312,Pasta Organizadora v8,Papelaria,85.24,255.01,169.77,10,127.8,0.35,17.6,8.28,50.27,20,Excesso de estoque,1500.22,903.31,0.0
+313,Post-it Colorido v8,Papelaria,74.6,212.35,137.75,9,53.6,0.15,29.5,2.14,200.89,18,Excesso de estoque,2200.7,2003.51,0.0
+314,Caderno Universitário v9,Papelaria,28.91,80.2,51.29,17,190.7,0.52,35.0,6.2,66.99,34,Saudável,1011.85,0.0,0.0
+315,Caneta Gel (cx) v9,Papelaria,31.44,66.09,34.65,12,2754.8,7.55,498.1,6.34,66.0,24,Excesso de estoque,15660.26,9965.3,0.0
+316,Marcador de Texto v9,Papelaria,77.1,214.8,137.7,13,316.9,0.87,28.2,12.2,32.48,26,Saudável,2174.22,0.0,0.0
+317,Agenda Anual v9,Papelaria,21.95,56.2,34.25,14,61.5,0.17,5.9,12.06,35.02,28,Saudável,129.5,0.0,0.0
+318,Pasta Organizadora v9,Papelaria,10.48,30.24,19.76,8,68.2,0.19,9.4,8.92,50.31,16,Excesso de estoque,98.51,67.18,0.0
+319,Post-it Colorido v9,Papelaria,72.39,179.05,106.66,15,174.1,0.48,28.1,7.68,58.91,30,Saudável,2034.16,0.0,0.0
+320,Caderno Universitário v10,Papelaria,29.75,68.34,38.59,11,422.2,1.16,63.1,8.21,54.55,22,Excesso de estoque,1877.22,1120.16,0.0
+321,Furadeira Compacta,Ferramentas,221.4,434.8,213.4,30,324.8,0.89,30.1,11.99,33.83,60,Saudável,6664.14,0.0,0.0
+322,Kit Chaves de Fenda,Ferramentas,589.41,976.47,387.06,23,48.3,0.13,8.4,6.59,63.48,46,Saudável,4951.04,0.0,0.0
+323,Trena 5m,Ferramentas,111.23,179.02,67.79,45,82.2,0.23,12.0,8.07,53.28,90,Saudável,1334.76,0.0,0.0
+324,Nível a Laser,Ferramentas,891.76,1634.18,742.42,30,131.0,0.36,22.5,7.04,62.69,60,Saudável,20064.6,0.0,0.0
+325,Parafusadeira,Ferramentas,160.25,228.12,67.87,45,102.9,0.28,17.3,7.49,61.37,90,Saudável,2772.32,0.0,0.0
+326,Serra Manual,Ferramentas,109.58,196.29,86.71,44,43.4,0.12,4.8,10.99,40.37,88,Risco de ruptura,525.98,0.0,37.44
+327,Furadeira Compacta v2,Ferramentas,649.36,1009.11,359.75,31,46.0,0.13,7.4,7.47,58.72,62,Saudável,4805.26,0.0,0.0
+328,Kit Chaves de Fenda v2,Ferramentas,422.33,762.55,340.22,40,948.2,2.6,451.5,2.51,173.8,80,Excesso de estoque,190682.0,102911.41,0.0
+329,Trena 5m v2,Ferramentas,80.81,137.12,56.31,30,802.7,2.2,123.2,7.37,56.02,60,Saudável,9955.79,0.0,0.0
+330,Nível a Laser v2,Ferramentas,238.34,470.92,232.58,26,447.1,1.22,41.1,11.94,33.55,52,Saudável,9795.77,0.0,0.0
+331,Parafusadeira v2,Ferramentas,634.96,1009.2,374.24,43,39.9,0.11,6.6,7.16,60.38,86,Saudável,4190.74,0.0,0.0
+332,Serra Manual v2,Ferramentas,390.87,728.08,337.21,30,616.7,1.69,110.2,6.43,65.22,60,Saudável,43073.87,0.0,0.0
+333,Furadeira Compacta v3,Ferramentas,441.54,797.3,355.76,33,25.3,0.07,3.3,8.98,47.61,66,Saudável,1457.08,0.0,0.0
+334,Kit Chaves de Fenda v3,Ferramentas,179.06,283.88,104.82,36,300.6,0.82,136.2,2.62,165.38,72,Excesso de estoque,24387.97,13770.35,0.0
+335,Trena 5m v3,Ferramentas,894.12,1618.24,724.12,42,105.2,0.29,42.1,2.95,146.07,84,Saudável,37642.45,0.0,0.0
+336,Nível a Laser v3,Ferramentas,833.42,1464.28,630.86,20,65.1,0.18,9.7,7.75,54.39,40,Saudável,8084.17,0.0,0.0
+337,Parafusadeira v3,Ferramentas,577.43,1107.81,530.38,27,439.1,1.2,59.4,8.56,49.38,54,Saudável,34299.34,0.0,0.0
+338,Serra Manual v3,Ferramentas,140.97,269.35,128.38,28,61.0,0.17,10.6,6.7,63.43,56,Saudável,1494.28,0.0,0.0
+339,Furadeira Compacta v4,Ferramentas,720.22,1294.04,573.82,33,102.1,0.28,15.0,8.0,53.62,66,Saudável,10803.3,0.0,0.0
+340,Kit Chaves de Fenda v4,Ferramentas,625.22,1044.75,419.53,21,96.6,0.26,9.9,11.89,37.41,42,Saudável,6189.68,0.0,0.0
+341,Trena 5m v4,Ferramentas,430.52,788.03,357.51,36,313.5,0.86,68.3,5.41,79.52,72,Saudável,29404.52,0.0,0.0
+342,Nível a Laser v4,Ferramentas,75.46,114.28,38.82,33,827.8,2.27,188.1,5.32,82.94,66,Saudável,14194.03,0.0,0.0
+343,Parafusadeira v4,Ferramentas,303.09,490.26,187.17,36,234.7,0.64,31.7,9.14,49.3,72,Saudável,9607.95,0.0,0.0
+344,Serra Manual v4,Ferramentas,730.87,1257.37,526.5,41,149.6,0.41,21.0,8.36,51.24,82,Saudável,15348.27,0.0,0.0
+345,Furadeira Compacta v5,Ferramentas,497.24,762.24,265.0,44,591.2,1.62,79.2,9.04,48.9,88,Saudável,39381.41,0.0,0.0
+346,Kit Chaves de Fenda v5,Ferramentas,41.56,80.32,38.76,42,296.9,0.81,102.2,3.51,125.64,84,Saudável,4247.43,0.0,0.0
+347,Trena 5m v5,Ferramentas,775.18,1456.58,681.4,36,23.8,0.07,8.9,3.16,136.49,72,Saudável,6899.1,0.0,0.0
+348,Nível a Laser v5,Ferramentas,425.82,663.55,237.73,42,635.8,1.74,140.8,5.34,80.83,84,Saudável,59955.46,0.0,0.0
+349,Parafusadeira v5,Ferramentas,695.09,1319.99,624.9,26,108.8,0.3,23.5,5.59,78.84,52,Saudável,16334.62,0.0,0.0
+350,Serra Manual v5,Ferramentas,427.69,844.17,416.48,23,42.3,0.12,3.8,12.17,32.79,46,Saudável,1625.22,0.0,0.0
+351,Furadeira Compacta v6,Ferramentas,662.18,1196.12,533.94,42,27.0,0.07,4.1,7.75,55.43,84,Saudável,2714.94,0.0,0.0
+352,Kit Chaves de Fenda v6,Ferramentas,753.0,1178.94,425.94,27,856.4,2.35,131.5,7.86,56.05,54,Saudável,99019.5,0.0,0.0
+353,Trena 5m v6,Ferramentas,304.39,558.37,253.98,20,436.4,1.2,39.2,12.09,32.79,40,Saudável,11932.09,0.0,0.0
+354,Nível a Laser v6,Ferramentas,772.29,1372.68,600.39,20,570.3,1.56,120.1,5.75,76.87,40,Saudável,92752.03,0.0,0.0
+355,Parafusadeira v6,Ferramentas,790.09,1466.75,676.66,36,93.5,0.26,17.5,6.43,68.32,72,Saudável,13826.58,0.0,0.0
+356,Serra Manual v6,Ferramentas,353.78,565.58,211.8,33,56.4,0.15,6.7,9.4,43.36,66,Saudável,2370.33,0.0,0.0
+357,Furadeira Compacta v7,Ferramentas,414.87,652.28,237.41,31,84.8,0.23,12.9,8.16,55.52,62,Saudável,5351.82,0.0,0.0
+358,Kit Chaves de Fenda v7,Ferramentas,564.75,959.17,394.42,29,395.7,1.08,136.6,3.43,126.0,58,Excesso de estoque,77144.85,41634.3,0.0
+359,Trena 5m v7,Ferramentas,471.6,789.94,318.34,25,179.8,0.49,63.8,3.32,129.52,50,Excesso de estoque,30088.08,18472.51,0.0
+360,Nível a Laser v7,Ferramentas,733.9,1322.05,588.15,38,358.0,0.98,71.6,5.86,73.0,76,Saudável,52547.24,0.0,0.0
+361,Parafusadeira v7,Ferramentas,635.34,986.48,351.14,34,24.8,0.07,5.1,5.87,75.06,68,Saudável,3240.23,0.0,0.0
+362,Serra Manual v7,Ferramentas,37.49,67.26,29.77,26,28.3,0.08,14.6,2.29,188.3,52,Excesso de estoque,547.35,396.2,0.0
+363,Furadeira Compacta v8,Ferramentas,133.4,238.07,104.67,23,344.8,0.94,50.4,8.16,53.35,46,Saudável,6723.36,0.0,0.0
+364,Kit Chaves de Fenda v8,Ferramentas,255.64,428.76,173.12,41,78.5,0.22,9.3,9.84,43.24,82,Saudável,2377.45,0.0,0.0
+365,Trena 5m v8,Ferramentas,322.68,578.59,255.91,45,208.8,0.57,31.9,7.92,55.76,90,Saudável,10293.49,0.0,0.0
+366,Nível a Laser v8,Ferramentas,642.22,1182.19,539.97,33,61.0,0.17,7.6,9.38,45.48,66,Saudável,4880.87,0.0,0.0
+367,Parafusadeira v8,Ferramentas,852.61,1488.76,636.15,40,71.4,0.2,10.4,8.49,53.17,80,Saudável,8867.14,0.0,0.0
+368,Serra Manual v8,Ferramentas,475.64,736.66,261.02,27,206.7,0.57,35.1,7.05,61.98,54,Saudável,16694.96,0.0,0.0
+369,Furadeira Compacta v9,Ferramentas,707.21,1175.71,468.5,34,70.6,0.19,12.1,7.15,62.56,68,Saudável,8557.24,0.0,0.0
+370,Kit Chaves de Fenda v9,Ferramentas,30.92,61.41,30.49,21,75.8,0.21,14.5,6.43,69.82,42,Saudável,448.34,0.0,0.0
+371,Trena 5m v9,Ferramentas,335.22,480.05,144.83,43,58.0,0.16,11.5,5.98,72.37,86,Saudável,3855.03,0.0,0.0
+372,Nível a Laser v9,Ferramentas,387.84,629.92,242.08,43,98.5,0.27,54.9,2.12,203.44,86,Excesso de estoque,21292.42,12291.34,0.0
+373,Parafusadeira v9,Ferramentas,708.16,1314.22,606.06,38,218.8,0.6,38.1,6.98,63.56,76,Saudável,26980.9,0.0,0.0
+374,Serra Manual v9,Ferramentas,472.85,861.39,388.54,37,228.2,0.63,37.8,7.19,60.46,74,Saudável,17873.73,0.0,0.0
+375,Furadeira Compacta v10,Ferramentas,759.83,1074.5,314.67,43,55.2,0.15,5.9,11.96,39.01,86,Risco de ruptura,4483.0,0.0,189.75
+376,Kit Chaves de Fenda v10,Ferramentas,220.23,314.55,94.32,26,108.2,0.3,17.7,7.51,59.71,52,Saudável,3898.07,0.0,0.0
+377,Trena 5m v10,Ferramentas,155.01,295.11,140.1,45,68.6,0.19,10.5,7.72,55.87,90,Saudável,1627.6,0.0,0.0
+378,Nível a Laser v10,Ferramentas,795.92,1210.43,414.51,25,98.6,0.27,33.2,3.48,122.9,50,Excesso de estoque,26424.54,15674.17,0.0
+379,Parafusadeira v10,Ferramentas,244.35,355.7,111.35,28,766.7,2.1,166.3,5.62,79.17,56,Saudável,40635.4,0.0,0.0
+380,Serra Manual v10,Ferramentas,707.57,1187.21,479.64,35,40.5,0.11,7.6,6.26,68.49,70,Saudável,5377.53,0.0,0.0
+381,Ração Premium 3kg,Pet,119.1,245.96,126.86,21,104.2,0.29,17.6,7.16,61.65,42,Saudável,2096.16,0.0,0.0
+382,Brinquedo Mordedor,Pet,69.56,167.26,97.7,12,40.0,0.11,6.7,7.07,61.14,24,Excesso de estoque,466.05,283.1,0.0
+383,Coleira Ajustável,Pet,136.34,270.13,133.79,14,60.7,0.17,6.9,10.05,41.49,28,Saudável,940.75,0.0,0.0
+384,Areia Sanitária,Pet,171.84,442.49,270.65,13,64.4,0.18,12.9,6.1,73.11,26,Excesso de estoque,2216.74,1428.44,0.0
+385,Petisco Natural,Pet,118.39,245.56,127.17,17,590.1,1.62,82.9,8.35,51.28,34,Saudável,9814.53,0.0,0.0
+386,Cama Pet,Pet,59.19,135.89,76.7,13,464.7,1.27,84.6,6.71,66.45,26,Excesso de estoque,5007.47,3048.17,0.0
+387,Ração Premium 3kg v2,Pet,234.87,485.83,250.96,24,362.1,0.99,34.4,12.02,34.68,48,Saudável,8079.53,0.0,0.0
+388,Brinquedo Mordedor v2,Pet,34.72,71.34,36.62,19,111.0,0.3,10.0,12.18,32.88,38,Saudável,347.2,0.0,0.0
+389,Coleira Ajustável v2,Pet,226.95,554.86,327.91,25,307.7,0.84,69.4,5.4,82.32,50,Saudável,15750.33,0.0,0.0
+390,Areia Sanitária v2,Pet,25.16,64.52,39.36,13,154.1,0.42,19.7,9.17,46.66,26,Saudável,495.65,0.0,0.0
+391,Petisco Natural v2,Pet,58.79,100.67,41.88,25,215.4,0.59,22.4,11.75,37.96,50,Saudável,1316.9,0.0,0.0
+392,Cama Pet v2,Pet,175.03,355.84,180.81,17,343.0,0.94,150.0,2.71,159.62,34,Excesso de estoque,26254.5,20662.17,0.0
+393,Ração Premium 3kg v3,Pet,88.35,217.56,129.21,24,1736.6,4.76,299.2,6.63,62.89,48,Saudável,26434.32,0.0,0.0
+394,Brinquedo Mordedor v3,Pet,226.14,576.34,350.2,24,62.4,0.17,12.6,6.11,73.7,48,Saudável,2849.36,0.0,0.0
+395,Coleira Ajustável v3,Pet,218.27,501.65,283.38,24,567.5,1.55,105.8,6.29,68.05,48,Saudável,23092.97,0.0,0.0
+396,Areia Sanitária v3,Pet,230.61,463.04,232.43,13,71.3,0.2,12.5,7.0,63.99,26,Excesso de estoque,2882.62,1711.38,0.0
+397,Petisco Natural v3,Pet,92.2,238.84,146.64,12,44.9,0.12,4.0,12.22,32.52,24,Saudável,368.8,0.0,0.0
+398,Cama Pet v3,Pet,11.61,22.82,11.21,13,385.5,1.06,72.4,6.27,68.55,26,Excesso de estoque,840.56,521.75,0.0
+399,Ração Premium 3kg v4,Pet,232.79,570.59,337.8,12,671.5,1.84,121.8,6.43,66.21,24,Excesso de estoque,28353.82,18075.35,0.0
+400,Brinquedo Mordedor v4,Pet,176.49,348.77,172.28,12,189.6,0.52,25.2,9.34,48.51,24,Excesso de estoque,4447.55,2247.27,0.0
+401,Coleira Ajustável v4,Pet,80.06,148.76,68.7,10,197.5,0.54,33.2,7.26,61.36,20,Excesso de estoque,2657.99,1791.59,0.0
+402,Areia Sanitária v4,Pet,176.37,377.65,201.28,24,261.1,0.72,53.6,5.67,74.93,48,Saudável,9453.43,0.0,0.0
+403,Petisco Natural v4,Pet,241.64,485.05,243.41,14,61.0,0.17,11.5,6.25,68.81,28,Excesso de estoque,2778.86,1648.12,0.0
+404,Cama Pet v4,Pet,204.15,368.02,163.87,19,479.3,1.31,166.2,3.4,126.57,38,Excesso de estoque,33929.73,23742.7,0.0
+405,Ração Premium 3kg v5,Pet,210.99,543.84,332.85,19,54.2,0.15,7.3,8.5,49.16,38,Saudável,1540.23,0.0,0.0
+406,Brinquedo Mordedor v5,Pet,135.17,255.83,120.66,21,340.6,0.93,76.1,5.32,81.55,42,Saudável,10286.44,0.0,0.0
+407,Coleira Ajustável v5,Pet,182.72,438.64,255.92,23,38.0,0.1,5.7,7.88,54.75,46,Saudável,1041.5,0.0,0.0
+408,Areia Sanitária v5,Pet,80.13,196.25,116.12,10,211.6,0.58,70.7,3.57,121.95,20,Excesso de estoque,5665.19,4736.12,0.0
+409,Petisco Natural v5,Pet,89.88,190.24,100.36,25,493.6,1.35,153.9,3.83,113.8,50,Excesso de estoque,13832.53,7755.17,0.0
+410,Cama Pet v5,Pet,197.68,419.44,221.76,23,224.7,0.62,40.2,6.45,65.3,46,Saudável,7946.74,0.0,0.0
+411,Ração Premium 3kg v6,Pet,189.98,432.35,242.37,21,230.5,0.63,37.9,7.18,60.02,42,Saudável,7200.24,0.0,0.0
+412,Brinquedo Mordedor v6,Pet,138.84,249.86,111.02,15,335.3,0.92,32.7,11.81,35.6,30,Saudável,4540.07,0.0,0.0
+413,Coleira Ajustável v6,Pet,18.99,48.42,29.43,20,172.4,0.47,62.3,3.28,131.9,40,Excesso de estoque,1183.08,824.3,0.0
+414,Areia Sanitária v6,Pet,113.91,266.76,152.85,18,103.2,0.28,15.2,7.76,53.76,36,Saudável,1731.43,0.0,0.0
+415,Petisco Natural v6,Pet,21.92,53.49,31.57,23,323.6,0.89,49.6,7.53,55.95,46,Saudável,1087.23,0.0,0.0
+416,Cama Pet v6,Pet,198.44,493.28,294.84,21,52.1,0.14,6.7,9.77,46.94,42,Saudável,1329.55,0.0,0.0
+417,Ração Premium 3kg v7,Pet,90.16,153.74,63.58,18,495.4,1.36,62.2,9.65,45.83,36,Saudável,5607.95,0.0,0.0
+418,Brinquedo Mordedor v7,Pet,193.73,403.78,210.05,13,433.0,1.19,58.7,8.4,49.48,26,Saudável,11371.95,0.0,0.0
+419,Coleira Ajustável v7,Pet,96.48,229.43,132.95,19,395.4,1.08,82.7,5.82,76.34,38,Excesso de estoque,7978.9,4007.3,0.0
+420,Areia Sanitária v7,Pet,143.69,360.32,216.63,17,221.6,0.61,28.5,9.82,46.94,34,Saudável,4095.16,0.0,0.0
+421,Petisco Natural v7,Pet,174.93,311.04,136.11,14,161.5,0.44,76.3,2.53,172.44,28,Excesso de estoque,13347.16,11179.94,0.0
+422,Cama Pet v7,Pet,161.35,407.34,245.99,25,1230.2,3.37,271.2,5.53,80.46,50,Saudável,43758.12,0.0,0.0
+423,Ração Premium 3kg v8,Pet,188.29,475.46,287.17,21,1522.4,4.17,181.7,10.42,43.56,42,Saudável,34212.29,0.0,0.0
+424,Brinquedo Mordedor v8,Pet,147.19,323.72,176.53,20,239.2,0.66,98.2,2.91,149.85,40,Excesso de estoque,14454.06,10595.66,0.0
+425,Coleira Ajustável v8,Pet,186.93,473.2,286.27,23,230.7,0.63,29.6,9.47,46.83,46,Saudável,5533.13,0.0,0.0
+426,Areia Sanitária v8,Pet,190.43,374.49,184.06,11,24.4,0.07,8.1,3.57,121.17,22,Excesso de estoque,1542.48,1262.42,0.0
+427,Petisco Natural v8,Pet,18.44,36.18,17.74,14,701.4,1.92,88.4,9.56,46.0,28,Saudável,1630.1,0.0,0.0
+428,Cama Pet v8,Pet,207.54,398.5,190.96,17,97.9,0.27,12.6,8.72,46.98,34,Saudável,2615.0,0.0,0.0
+429,Ração Premium 3kg v9,Pet,166.94,416.02,249.08,14,170.9,0.47,50.0,4.1,106.79,28,Excesso de estoque,8347.0,6158.39,0.0
+430,Brinquedo Mordedor v9,Pet,162.4,332.52,170.12,24,50.7,0.14,4.9,12.12,35.28,48,Saudável,795.76,0.0,0.0
+431,Coleira Ajustável v9,Pet,125.01,315.59,190.58,12,90.7,0.25,37.8,2.88,152.12,24,Excesso de estoque,4725.38,3979.84,0.0
+432,Areia Sanitária v9,Pet,83.33,185.56,102.23,12,667.8,1.83,80.5,9.87,44.0,24,Saudável,6708.06,0.0,0.0
+433,Petisco Natural v9,Pet,191.02,452.2,261.18,21,155.6,0.43,83.4,2.19,195.64,42,Excesso de estoque,15931.07,12510.92,0.0
+434,Cama Pet v9,Pet,228.94,568.48,339.54,12,171.9,0.47,24.9,7.88,52.87,24,Excesso de estoque,5700.61,3112.89,0.0
+435,Ração Premium 3kg v10,Pet,116.86,217.21,100.35,15,1013.2,2.78,130.5,9.05,47.01,30,Saudável,15250.23,0.0,0.0
+436,Café em Grãos 500g,Alimentos Não Perecíveis,25.93,40.06,14.13,12,581.0,1.59,304.6,2.25,191.36,24,Excesso de estoque,7898.28,6907.68,0.0
+437,Barra de Cereal (cx),Alimentos Não Perecíveis,40.83,89.12,48.29,11,93.5,0.26,8.0,12.18,31.23,22,Saudável,326.64,0.0,0.0
+438,Azeite Extra Virgem,Alimentos Não Perecíveis,29.44,60.62,31.18,17,80.4,0.22,9.2,9.81,41.77,34,Saudável,270.85,0.0,0.0
+439,Macarrão Tipo 1,Alimentos Não Perecíveis,58.89,113.02,54.13,16,112.4,0.31,15.7,8.52,50.98,32,Saudável,924.57,0.0,0.0
+440,Molho de Tomate,Alimentos Não Perecíveis,50.71,76.72,26.01,13,67.5,0.18,12.4,6.43,67.05,26,Excesso de estoque,628.8,384.98,0.0
+441,Chá em Sachês,Alimentos Não Perecíveis,19.15,41.4,22.25,14,131.7,0.36,15.5,10.04,42.96,28,Saudável,296.82,0.0,0.0
+442,Café em Grãos 500g v2,Alimentos Não Perecíveis,43.67,89.16,45.49,7,149.5,0.41,21.3,8.78,52.0,14,Excesso de estoque,930.17,679.76,0.0
+443,Barra de Cereal (cx) v2,Alimentos Não Perecíveis,51.88,82.25,30.37,16,782.8,2.14,119.5,8.34,55.72,32,Saudável,6199.66,0.0,0.0
+444,Azeite Extra Virgem v2,Alimentos Não Perecíveis,56.82,114.22,57.4,7,90.6,0.25,12.6,8.59,50.76,14,Excesso de estoque,715.93,518.48,0.0
+445,Macarrão Tipo 1 v2,Alimentos Não Perecíveis,43.14,83.63,40.49,15,49.9,0.14,6.7,8.94,49.01,30,Saudável,289.04,0.0,0.0
+446,Molho de Tomate v2,Alimentos Não Perecíveis,48.05,93.41,45.36,11,291.8,0.8,53.7,6.5,67.17,22,Excesso de estoque,2580.28,1735.18,0.0
+447,Chá em Sachês v2,Alimentos Não Perecíveis,54.55,96.42,41.87,7,939.0,2.57,130.9,8.56,50.88,14,Excesso de estoque,7140.6,5175.9,0.0
+448,Café em Grãos 500g v3,Alimentos Não Perecíveis,49.99,96.87,46.88,18,325.8,0.89,59.9,6.46,67.11,36,Saudável,2994.4,0.0,0.0
+449,Barra de Cereal (cx) v3,Alimentos Não Perecíveis,38.25,66.92,28.67,16,158.8,0.44,29.3,6.53,67.35,32,Excesso de estoque,1120.73,588.2,0.0
+450,Azeite Extra Virgem v3,Alimentos Não Perecíveis,19.44,39.57,20.13,7,2408.3,6.6,530.1,5.36,80.34,14,Excesso de estoque,10305.14,8509.41,0.0
+451,Macarrão Tipo 1 v3,Alimentos Não Perecíveis,59.83,102.85,43.02,14,48.7,0.13,7.0,7.84,52.46,28,Saudável,418.81,0.0,0.0
+452,Molho de Tomate v3,Alimentos Não Perecíveis,27.13,55.69,28.56,13,150.4,0.41,67.8,2.64,164.54,26,Excesso de estoque,1839.41,1548.76,0.0
+453,Chá em Sachês v3,Alimentos Não Perecíveis,59.46,112.46,53.0,12,39.6,0.11,5.2,8.7,47.93,24,Saudável,309.19,0.0,0.0
+454,Café em Grãos 500g v4,Alimentos Não Perecíveis,22.78,47.75,24.97,11,141.1,0.39,73.5,2.3,190.13,22,Excesso de estoque,1674.33,1480.59,0.0
+455,Barra de Cereal (cx) v4,Alimentos Não Perecíveis,41.71,63.12,21.41,8,648.1,1.78,211.0,3.58,118.83,16,Excesso de estoque,8800.81,7615.83,0.0
+456,Azeite Extra Virgem v4,Alimentos Não Perecíveis,22.24,46.77,24.53,7,54.7,0.15,8.7,7.7,58.05,14,Excesso de estoque,193.49,146.83,0.0
+457,Macarrão Tipo 1 v4,Alimentos Não Perecíveis,11.33,22.12,10.79,8,87.5,0.24,36.6,2.8,152.67,16,Excesso de estoque,414.68,371.22,0.0
+458,Molho de Tomate v4,Alimentos Não Perecíveis,32.51,63.83,31.32,8,36.0,0.1,5.1,8.03,51.71,16,Excesso de estoque,165.8,114.5,0.0
+459,Chá em Sachês v4,Alimentos Não Perecíveis,15.88,31.58,15.7,18,250.8,0.69,27.7,10.58,40.31,36,Saudável,439.88,0.0,0.0
+460,Café em Grãos 500g v5,Alimentos Não Perecíveis,11.29,17.77,6.48,8,188.3,0.52,72.9,3.11,141.31,16,Excesso de estoque,823.04,729.85,0.0
+461,Barra de Cereal (cx) v5,Alimentos Não Perecíveis,25.39,45.01,19.62,9,174.4,0.48,33.0,6.0,69.07,18,Excesso de estoque,837.87,619.5,0.0
+462,Azeite Extra Virgem v5,Alimentos Não Perecíveis,56.35,86.13,29.78,9,62.0,0.17,6.4,12.06,37.68,18,Excesso de estoque,360.64,188.35,0.0
+463,Macarrão Tipo 1 v5,Alimentos Não Perecíveis,24.05,48.29,24.24,17,285.3,0.78,37.0,9.44,47.34,34,Saudável,889.85,0.0,0.0
+464,Molho de Tomate v5,Alimentos Não Perecíveis,39.26,82.99,43.73,16,1090.1,2.99,143.9,8.4,48.18,32,Saudável,5649.51,0.0,0.0
+465,Chá em Sachês v5,Alimentos Não Perecíveis,6.25,13.07,6.82,15,291.9,0.8,105.2,3.27,131.55,30,Excesso de estoque,657.5,507.55,0.0
+466,Café em Grãos 500g v6,Alimentos Não Perecíveis,43.04,68.36,25.32,16,116.7,0.32,53.4,2.61,167.02,32,Excesso de estoque,2298.34,1857.98,0.0
+467,Barra de Cereal (cx) v6,Alimentos Não Perecíveis,23.45,43.45,20.0,15,177.3,0.49,36.0,5.6,74.11,30,Excesso de estoque,844.2,502.47,0.0
+468,Azeite Extra Virgem v6,Alimentos Não Perecíveis,8.63,13.68,5.05,18,41.0,0.11,22.4,2.16,199.41,36,Excesso de estoque,193.31,158.41,0.0
+469,Macarrão Tipo 1 v6,Alimentos Não Perecíveis,50.93,97.0,46.07,11,119.3,0.33,58.2,2.45,178.06,22,Excesso de estoque,2964.13,2597.9,0.0
+470,Molho de Tomate v6,Alimentos Não Perecíveis,23.16,42.79,19.63,13,63.3,0.17,28.4,2.68,163.76,26,Excesso de estoque,657.74,553.31,0.0
+471,Chá em Sachês v6,Alimentos Não Perecíveis,16.89,25.63,8.74,9,60.5,0.17,5.9,12.04,35.6,18,Saudável,99.65,0.0,0.0
+472,Café em Grãos 500g v7,Alimentos Não Perecíveis,44.43,89.97,45.54,8,396.8,1.09,81.2,5.86,74.69,16,Excesso de estoque,3607.72,2834.9,0.0
+473,Barra de Cereal (cx) v7,Alimentos Não Perecíveis,30.59,64.36,33.77,15,161.2,0.44,19.5,10.37,44.15,30,Saudável,596.5,0.0,0.0
+474,Azeite Extra Virgem v7,Alimentos Não Perecíveis,13.25,25.69,12.44,13,295.1,0.81,63.3,5.58,78.29,26,Excesso de estoque,838.72,560.2,0.0
+475,Macarrão Tipo 1 v7,Alimentos Não Perecíveis,19.22,38.19,18.97,7,123.5,0.34,18.5,8.13,54.68,14,Excesso de estoque,355.57,264.53,0.0
+476,Molho de Tomate v7,Alimentos Não Perecíveis,46.44,81.85,35.41,10,25.6,0.07,2.7,12.0,38.5,20,Saudável,125.39,0.0,0.0
+477,Chá em Sachês v7,Alimentos Não Perecíveis,44.51,89.71,45.2,11,406.0,1.11,64.4,7.67,57.9,22,Excesso de estoque,2866.44,1777.23,0.0
+478,Café em Grãos 500g v8,Alimentos Não Perecíveis,59.36,126.27,66.91,11,282.3,0.77,123.2,2.76,159.29,22,Excesso de estoque,7313.15,6303.12,0.0
+479,Barra de Cereal (cx) v8,Alimentos Não Perecíveis,34.92,70.3,35.38,13,79.7,0.22,39.0,2.44,178.61,26,Excesso de estoque,1361.88,1163.63,0.0
+480,Azeite Extra Virgem v8,Alimentos Não Perecíveis,12.83,21.42,8.59,8,373.1,1.02,192.6,2.3,188.42,16,Excesso de estoque,2471.06,2261.22,0.0
+481,Macarrão Tipo 1 v8,Alimentos Não Perecíveis,13.19,28.65,15.46,10,23.0,0.06,7.5,3.7,119.02,20,Excesso de estoque,98.92,82.3,0.0
+482,Molho de Tomate v8,Alimentos Não Perecíveis,31.7,55.6,23.9,11,2027.2,5.55,408.7,6.03,73.59,22,Excesso de estoque,12955.79,9082.45,0.0
+483,Chá em Sachês v8,Alimentos Não Perecíveis,39.62,80.88,41.26,14,211.9,0.58,19.3,12.03,33.24,28,Saudável,764.67,0.0,0.0
+484,Café em Grãos 500g v9,Alimentos Não Perecíveis,21.33,46.03,24.7,17,66.7,0.18,10.5,7.81,57.46,34,Saudável,223.96,0.0,0.0
+485,Barra de Cereal (cx) v9,Alimentos Não Perecíveis,52.34,104.29,51.95,7,75.5,0.21,10.5,8.8,50.76,14,Excesso de estoque,549.57,398.0,0.0
+486,Azeite Extra Virgem v9,Alimentos Não Perecíveis,32.87,57.75,24.88,15,26.0,0.07,2.6,12.09,36.5,30,Saudável,85.46,0.0,0.0
+487,Macarrão Tipo 1 v9,Alimentos Não Perecíveis,13.83,28.22,14.39,18,767.5,2.1,95.8,9.79,45.56,36,Saudável,1324.91,0.0,0.0
+488,Molho de Tomate v9,Alimentos Não Perecíveis,36.53,61.95,25.42,10,1022.2,2.8,163.5,7.08,58.38,20,Excesso de estoque,5972.66,3926.57,0.0
+489,Chá em Sachês v9,Alimentos Não Perecíveis,22.86,46.68,23.82,11,64.7,0.18,10.8,7.13,60.93,22,Excesso de estoque,246.89,157.74,0.0
+490,Café em Grãos 500g v10,Alimentos Não Perecíveis,7.73,13.19,5.46,7,115.6,0.32,12.3,11.84,38.84,14,Excesso de estoque,95.08,60.8,0.0
+491,Barra de Cereal (cx) v10,Alimentos Não Perecíveis,51.77,83.8,32.03,9,85.2,0.23,15.4,6.66,65.97,18,Excesso de estoque,797.26,579.74,0.0
+492,Azeite Extra Virgem v10,Alimentos Não Perecíveis,31.45,67.49,36.04,16,175.9,0.48,31.9,6.41,66.19,32,Excesso de estoque,1003.25,518.25,0.0
+493,Macarrão Tipo 1 v10,Alimentos Não Perecíveis,8.48,18.07,9.59,17,205.5,0.56,40.8,6.1,72.47,34,Excesso de estoque,345.98,183.66,0.0
+494,Molho de Tomate v10,Alimentos Não Perecíveis,34.91,69.38,34.47,18,35.6,0.1,4.6,9.39,47.16,36,Saudável,160.59,0.0,0.0
+495,Chá em Sachês v10,Alimentos Não Perecíveis,18.63,31.82,13.19,9,82.0,0.22,8.8,11.94,39.17,18,Excesso de estoque,163.94,88.61,0.0
+496,Café em Grãos 500g v11,Alimentos Não Perecíveis,5.45,10.95,5.5,7,86.0,0.24,18.2,5.65,77.24,14,Excesso de estoque,99.19,81.21,0.0
+497,Barra de Cereal (cx) v11,Alimentos Não Perecíveis,37.74,62.45,24.71,8,53.7,0.15,19.7,3.24,133.9,16,Excesso de estoque,743.48,654.64,0.0
+498,Azeite Extra Virgem v11,Alimentos Não Perecíveis,32.04,69.82,37.78,15,2178.5,5.97,411.8,6.16,69.0,30,Excesso de estoque,13194.07,7457.16,0.0
+499,Macarrão Tipo 1 v11,Alimentos Não Perecíveis,42.53,71.98,29.45,10,50.7,0.14,4.4,12.19,31.68,20,Saudável,187.13,0.0,0.0
+500,Molho de Tomate v11,Alimentos Não Perecíveis,20.87,45.66,24.79,18,22.5,0.06,3.6,7.78,58.4,36,Saudável,75.13,0.0,0.0
